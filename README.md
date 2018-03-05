@@ -1,6 +1,6 @@
-# node-nyc-preview
+# liminalnetwork
 
-> A decentralized crypto lounge.
+> A decentralized creative studio.
 
 ## Build Setup
 
