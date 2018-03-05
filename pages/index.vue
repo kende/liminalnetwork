@@ -24,8 +24,8 @@
     </section>  
 
     <section class='landing-footer'>
-      <span class='footer-item'><a href='http://byzantine.network/' targt='_blank'>a byzantine thing</a> 🦄</span>  
-      <span class='footer-item'><a href='' targt='_blank'>privacy policy & terms</a></span> 
+      <span class='footer-item'><a href='http://byzantine.network/' target='_blank'>a byzantine thing</a> 🦄</span>  
+      <span class='footer-item'><a href='' target='_blank'>privacy policy & terms</a></span> 
     </section>  
   </div>
 </template>
