@@ -7,15 +7,15 @@
     
 
     <section class='images-grid'>
-      <div class='image rowspan3 colspan3'>1</div>
-      <div class='image rowspan4 colspan2'>2</div>
-      <div class='image rowspan2'>3</div>
-      <div class='image rowspan2'>4</div>
-      <div class='image rowspan2'>5</div>
-      <div class='image rowspan2 colspan2'>6</div>
-      <div class='image rowspan3 colspan3'>7</div>
-      <div class='image rowspan2 colspan2'>8</div>
-      <div class='image rowspan2'>9</div>
+      <div class='image rowspan3 colspan3'><img src='~/assets/IMG_2600.jpg'></div>
+      <div class='image rowspan4 colspan2'><img src='~/assets/drone-over-the-city.jpg'></div>
+      <div class='image rowspan2'><img src='~/assets/IMG_2746.jpg'></div>
+      <div class='image rowspan2'><img src='~/assets/IMG_5894.jpg'></div>
+      <div class='image rowspan2'><img src='~/assets/IMG_6272.jpg'></div>
+      <div class='image rowspan2 colspan2'><img src='~/assets/IMG_7195.jpg'></div>
+      <div class='image rowspan3 colspan3'><img src='~/assets/1600px-Red_EPIC_camera.jpg'></div>
+      <div class='image rowspan2 colspan2'><img src='~/assets/IMG_8830.jpg'></div>
+      <div class='image rowspan2'><img src='~/assets/nadia.png'></div>
     </section>
    
     <section class='apply-section'>
@@ -59,8 +59,20 @@
 }
 
 .image {
+  position: relative;
   padding-top: 66%;
   background: #eee;
+  overflow: hidden;
+}
+.image img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  animation: blurin 1s;
 }
 
 .rowspan2 {
@@ -113,6 +125,15 @@
   text-decoration: none;
   color: #424242;
   word-spacing: 0px;
+}
+
+@keyframes blurin {
+  from {
+    filter:  blur(4px);
+  }
+  to {
+    filter:  blur(0px);
+  }
 }
 
 @media screen and (max-width: 960px) {
