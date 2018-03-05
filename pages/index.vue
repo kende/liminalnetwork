@@ -6,18 +6,16 @@
     </section>
     
 
-    <section class='grid-wrapper'>
-      <div class='images-grid'>
-        <div class='image rowspan3 colspan3'>1</div>
-        <div class='image rowspan4 colspan2'>2</div>
-        <div class='image rowspan2'>3</div>
-        <div class='image rowspan2'>4</div>
-        <div class='image rowspan2'>5</div>
-        <div class='image rowspan2 colspan2'>6</div>
-        <div class='image rowspan3 colspan3'>7</div>
-        <div class='image rowspan2 colspan2'>8</div>
-        <div class='image rowspan2'>9</div> 
-      </div>
+    <section class='images-grid'>
+      <div class='image rowspan3 colspan3'>1</div>
+      <div class='image rowspan4 colspan2'>2</div>
+      <div class='image rowspan2'>3</div>
+      <div class='image rowspan2'>4</div>
+      <div class='image rowspan2'>5</div>
+      <div class='image rowspan2 colspan2'>6</div>
+      <div class='image rowspan3 colspan3'>7</div>
+      <div class='image rowspan2 colspan2'>8</div>
+      <div class='image rowspan2'>9</div>
     </section>
    
     <section class='apply-section'>
@@ -53,22 +51,15 @@
   line-height: 1em;
 }
 
-.grid-wrapper {
-  position: relative;
-  padding-top: 80%;
-}
 .images-grid {
   display: grid;
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  grid-template-rows: repeat(7, 1fr);
+  grid-template-rows: auto;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 10px;
 }
 
 .image {
+  padding-top: 66%;
   background: #eee;
 }
 
@@ -122,5 +113,11 @@
   text-decoration: none;
   color: #424242;
   word-spacing: 0px;
+}
+
+@media screen and (max-width: 960px) {
+  .images-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
 </style>
