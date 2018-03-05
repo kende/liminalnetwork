@@ -7,15 +7,6 @@
     
 
     <section class='images-grid'>
-      <div class='image rowspan3 colspan3'><img src='~/assets/IMG_2600.jpg'></div>
-      <div class='image rowspan4 colspan2'><img src='~/assets/drone-over-the-city.jpg'></div>
-      <div class='image rowspan2'><img src='~/assets/IMG_2746.jpg'></div>
-      <div class='image rowspan2'><img src='~/assets/IMG_5894.jpg'></div>
-      <div class='image rowspan2'><img src='~/assets/IMG_6272.jpg'></div>
-      <div class='image rowspan2 colspan2'><img src='~/assets/IMG_7195.jpg'></div>
-      <div class='image rowspan3 colspan3'><img src='~/assets/1600px-Red_EPIC_camera.jpg'></div>
-      <div class='image rowspan2 colspan2'><img src='~/assets/IMG_8830.jpg'></div>
-      <div class='image rowspan2'><img src='~/assets/nadia.png'></div>
     </section>
    
     <section class='apply-section'>
@@ -129,10 +120,10 @@
 
 @keyframes blurin {
   from {
-    filter:  blur(4px);
+    filter: blur(4px);
   }
   to {
-    filter:  blur(0px);
+    filter: blur(0px);
   }
 }
 
