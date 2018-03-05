@@ -7,6 +7,15 @@
     
 
     <section class='images-grid'>
+      <div class='image rowspan3 colspan3'><img src='~/assets/IMG_7195.jpg'></div>
+      <div class='image rowspan4 colspan2'><img src='~/assets/IMG_7195.jpg'></div>
+      <div class='image rowspan2'><img src='~/assets/IMG_7195.jpg'></div>
+      <div class='image rowspan2'><img src='~/assets/IMG_7195.jpg'></div>
+      <div class='image rowspan2'><img src='~/assets/IMG_7195.jpg'></div>
+      <div class='image rowspan2 colspan2'><img src='~/assets/IMG_7195.jpg'></div>
+      <div class='image rowspan3 colspan3'><img src='~/assets/IMG_7195.jpg'></div>
+      <div class='image rowspan2 colspan2'><img src='~/assets/IMG_7195.jpg'></div>
+      <div class='image rowspan2'><img src='~/assets/IMG_7195.jpg'></div>
     </section>
    
     <section class='apply-section'>
