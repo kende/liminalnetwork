@@ -17,6 +17,7 @@ html {
 *, *:before, *:after {
   box-sizing: border-box;
   margin: 0;
+  outline: none;
 }
 
 @font-face {

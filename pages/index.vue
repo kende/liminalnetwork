@@ -1,469 +1,126 @@
 <template>
-  <div class="landing">
-    <div class="landing-header">
-      <div class="brand">
-        <div class="thumbnail"><img src="~/assets/node-fb-img.png"></div>
-        <nuxt-link to="/">
-          <img class="logo" src="~/assets/node_logo.png" alt="brand logo">
-        </nuxt-link>
-        <ul class="navbar">
-          <li class="navItem"><nuxt-link to="/about">ABOUT US</nuxt-link></li>
-          <li class="navItem apply-link"><a href="https://byzantine.typeform.com/to/fXpCQa" target="_blank">APPLY</a></li>
-        </ul>
-      </div>
+  <div class='landing'>
+    <section class='landing-header'>
+      <div class='title'>THE LIMINAL NETWORK</div>
+      <div class='subtitle'>a decentralized creative studio</div>
+    </section>
+    
 
-      <div class="text">
-        <div class="page-subtitle">FROM SAN FRANCISCO TO WILLIAMSBURG</div>
-        <div class="page-title">WELCOME HOME</div>
-        <div class="apply"><a class="apply-btn" href="https://byzantine.typeform.com/to/fXpCQa" target="_blank">APPLY NOW</a></div>
+    <section class='grid-wrapper'>
+      <div class='images-grid'>
+        <div class='image rowspan3 colspan3'>1</div>
+        <div class='image rowspan4 colspan2'>2</div>
+        <div class='image rowspan2'>3</div>
+        <div class='image rowspan2'>4</div>
+        <div class='image rowspan2'>5</div>
+        <div class='image rowspan2 colspan2'>6</div>
+        <div class='image rowspan3 colspan3'>7</div>
+        <div class='image rowspan2 colspan2'>8</div>
+        <div class='image rowspan2'>9</div> 
       </div>
-    </div>
-    <div class="slogan">
-      <div class="title">Blockchain Based Decentralized Space</div>
-      <div class="row">
-        <div class="column">
-          <ul class="slogan-list">
-            <img src="~/assets/icon-access.png"/>
-            <li><span>Exclusive Access</span></li>
-            <li>For $200/month, you’ll have access to every node space around the world, including the original location in SF and the first NYC location</li>
-          </ul>
-        </div>
-        <div class="column">
-          <ul class="slogan-list">
-            <img src="~/assets/icon-events.png"/>
-            <li><span>Unique Events</span></li>
-            <li>Weekly events on blockchain, crypto, and more are free for members</li>
-          </ul>
-        </div>
-        <div class="column">
-          <ul class="slogan-list">
-            <img src="~/assets/icon-blockchain.png"/>
-            <li><span>Encoded on the blockchain</span></li>
-            <li>Each member reserves their own unique ERC-721 token as proof of membership - Live with network token launch</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-    <div class="benefits">
-      <div class="benefits-container">
-        <div class="title">BENEFITS</div>
-        <ul class="benefit-list">
-          <li>24/7 access to a shared collaboration space</li>
-          <li>Unique food and drinks</li>
-          <li>Super fast wifi</li>
-          <li>Exceptional content series for the crypto-curious</li>
-          <li>Access to every other Node around the world</li>
-        </ul>
-      </div>
-    </div>
-    <div class="apply-form" id="apply-form">
-      <div class="title">APPLY TO NODE</div>
-      <div class="subtitle">We are currenly accepting applications for the first members of Node NYC.</div>
-      <div class="typeform-btn" target="_blank"><a href="https://byzantine.typeform.com/to/fXpCQa">APPLY</a></div>
-      <!-- <form>
-        <div class="row">
-          <div class="column first-name input-group" label="First name">
-            <input class="input-box" type="text">
-          </div>
-          <div class="column second-name input-group" label="Last name">
-            <input class="input-box" type="text">
-          </div>
-        </div>
-        <div class="email input-group" label="Email">
-          <input class="input-box" type="text">
-        </div>
-        <div class="social input-group" label="Social accounts (Facebook, Instagram, Twitter, Steemit, etc.)">
-          <input class="input-box" type="text">
-        </div>
-        <div class="phone input-group" label="Phone">
-          <input class="input-box phone-box" type="text" maxlength="3" @keyup="phoneValidator($event, 3, 0)">
-          <input class="input-box phone-box" type="text" maxlength="3" @keyup="phoneValidator($event, 3, 1)">
-          <input class="input-box phone-box" type="text" maxlength="4" @keyup="phoneValidator($event, 4, 2)">
-        </div>
-        <div class="express input-group" label="What three links express you best?">
-          <input class="input-box" type="text">
-        </div>
-        <div class="accomplishment input-group" label="What creative accomplishment are you most pround of?">
-          <input class="input-box" type="text">
-        </div>
-        <div class="contribute input-group" label="With what do you see yourself contributing to Node?">
-          <input class="input-box" type="text">
-        </div>
-        <div><input type="submit" class="submit-btn" value="SUBMIT"></div>
-      </form> -->
-    </div>
-    <div class="footer">Node:02 in the Node Network 🦄 <a href="https://nodeworldwide.com"><span class="highlight">Return to Node:01</span></a></div>
-    <div class="policies">
-        <a href="https://app.termly.io/document/terms-of-use-for-saas/c434d77d-667b-4b76-bb03-a69230544d07" target="_blank"><span class="highlight">Terms of Service</span></a> & <a href="https://app.termly.io/document/privacy-policy-for-website/a84c7ecf-d07a-47bd-b714-ff63bab2f3ab" target="_blank"><span class="highlight">Privacy Policy</span></a>
-    </div>
+    </section>
+   
+    <section class='apply-section'>
+      <div class='title'>APPLY TO JOIN LIMINAL</div>
+      <div><a class='apply-btn' href='https://byzantine.typeform.com/to/T7O1TA' target='_blank'>apply</a></div>
+    </section>  
+
+    <section class='landing-footer'>
+      <span class='footer-item'><a href='' targt='_blank'>a byzantine thing 🦄</a></span>  
+      <span class='footer-item'><a href='' targt='_blank'>privacy policy & terms</a></span> 
+    </section>  
   </div>
 </template>
 
 <script>
-import axios from 'axios'
-
-export default {
-  methods: {
-    phoneValidator (e, maxLength, boxIndex) {
-      const el = e.target
-      const value = el.value
-      const lastChar = parseInt(value.slice(-1))
-      switch (e.keyCode) {
-      case 8:
-        if (boxIndex !== 0 && value.length === 0) el.previousElementSibling.focus()
-        return
-      default:
-        if (value.length >= maxLength && boxIndex !== 2) el.nextElementSibling.focus()
-      }
-      if (!(lastChar >= 0 && lastChar <= 9)) {
-        el.value = value.substring(0, value.length - 2)
-      }
-    }
-    // submit () {
-    //   axios.get('https://script.google.com/macros/s/AKfycby3hdLs2aMMlhHrZIQHRIsELEhGHksR0kBXfRTPCXwSmWOftjk/exec', { params: {Item: "Door", Cost: "$15", Stocked: "2", "Ship Date": "3/15/2016"
-    //   }})
-    // }
-  }
-}
 </script>
 
 <style scoped>
 .landing-header {
+  padding: 40px 24px;
+  text-align: center;
+}
+.title {
+  font-family: arame-regular, sans-serif;
+  font-size: 24px;
+  line-height: 1em;
+  letter-spacing: 8px;
+}
+.subtitle {
+  margin-top: 8px;
+  font-family: rational-light, sans-serif;
+  font-size: 16px;
+  line-height: 1em;
+}
+
+.grid-wrapper {
   position: relative;
-  background-image: url(~/assets/glitch-bk.png);
-  background-position: center;
-  background-size: cover;
-  padding: 20px 48px;
-  height: 100vh;
+  padding-top: 80%;
 }
-.brand {
-  position: relative;
-  padding: 24px;
-}
-.logo {
-  height: 30px;
-}
-.navbar {
+.images-grid {
+  display: grid;
   position: absolute;
   top: 0;
-  right: 0;
-  list-style: none;
+  height: 100%;
+  width: 100%;
+  grid-template-rows: repeat(7, 1fr);
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 10px;
 }
-.navItem {
-  display: inline-block;
-  padding: 24px 20px;
-  font-family: "arame-regular", sans-serif;
-  font-size: 1.2em;
-  color: #fff;
-  line-height: 30px;
-  cursor: pointer;
+
+.image {
+  background: #eee;
 }
-.navItem a {
-  color: #fff;
-  text-decoration: none;
+
+.rowspan2 {
+  grid-row: span 2;
+}
+.rowspan3 {
+  grid-row: span 3;
+}
+.rowspan4 {
+  grid-row: span 4;
+}
+
+.colspan2 {
+  grid-column: span 2;
+}
+.colspan3 {
+  grid-column: span 3;
+}
+
+.apply-section {
+  padding: 100px 0;
+  text-align: center;
 }
 .apply-btn {
   display: inline-block;
-  padding: 24px 20px;
-  font-family: "arame-regular", sans-serif;
-  font-size: 1.2em;
+  margin-top: 20px;
+  padding: 0 40px;
+  height: 40px;
+  background: linear-gradient(90deg, #D028E8, #5F70FA);
+  border: none;
+  font-family: rational-light, sans-serif;
+  font-size: 20px;
+  line-height: 36px;
   color: #fff;
-  line-height: 30px;
+  text-decoration: none;
   cursor: pointer;
 }
 
-.text {
-  position: absolute;
-  top: 50%;
-  color: #fff;
-  padding: 0 24px;
-  transform: translateY(-50%);
+.landing-footer {
+  padding:  24px 0;
+  background: #fafafa;
+  text-align: right;
 }
-.page-title,
-.page-subtitle {
-  font-family: "rational-light", sans-serif;
-  font-size: 1.8em;
-  color: #fff;
-}
-.page-title {
-  font-family: "arame-regular", sans-serif;
-  font-size: 10vw;
-}
-.apply {
-  margin-top: 40px;
-}
-.text .apply-btn {
-  padding: 16px 40px;
-  /* height: 50px; */
-  background: #D90086;
-  border: none;
-  font-family: "arame-regular", sans-serif;
-  font-size: 1em;
-  text-decoration: none;
-  color: #fff;
-  letter-spacing: 2px;
-  outline: none;
-}
-.apply-btn:hover{
-  background: #93005B;
-}
-.apply-btn:active{
-  background: #D90086;
-}
-.typeform-btn {
-  display: inline-block;
-  padding: 16px 40px;
-  height: 50px;
-  background: #D90086;
-  border: none;
-  font-family: "arame-regular", sans-serif;
-  font-size: 1em;
-}
-.typeform-btn a{
-  text-decoration: none;
-  color: #fff;
-  letter-spacing: 2px;
-  outline: none;
-}
-.typeform-btn:hover{
-  background: #93005B;
-}
-.typeform-btn:active {
-  background: #D90086;
-}
-/* .slogan {
-  padding: 100px 20px;
-  font-family: 'Archivo Black', sans-serif;
-  font-size: 2.4vw;
-  text-align: center;
-  letter-spacing: 2px;
-} */
-.highlight {
-  text-decoration: none;
-  /* color: #ccc; */
-}
-
-
-.slogan{
-  padding: 80px 24px;
-  margin: 0 auto;
-  max-width: 1000px;
-}
-.slogan .title {
-  font-family: "arame-regular", sans-serif;
-  margin-bottom: 40px;
-  padding-left: 24px;
-  text-align: left;
-  font-size: 1.5em;
-  font-weight: 800;
-  letter-spacing: 2px;
-}
-.slogan .row {
-  margin: auto;
-  max-width: 1000px;
-}
-.slogan-list {
-  padding: 0;
-  list-style: none;
-  font-family: "rational-light", sans-serif;
-}
-.slogan-list li {
-  padding: 0 24px 5px 24px;
+.footer-item {
+  margin: 24px;
   font-size: .8em;
-  text-align: left;
+  font-family: rational-light, sans-serif;
 }
-.slogan-list img{
-  padding: 0 24px;
-  margin-bottom: 5px;
-  height: 30px;
-}
-.slogan-list li span{
-  font-family: "arame-regular", sans-serif;
-}
-
-.benefits {
-  background: #000;
-  text-align: left;
-  padding: 80px auto;
-}
-.benefits-container{
-  margin: auto;
-  max-width: 1000px;
-  padding: 60px 48px;
-  color: #fff;
-}
-.benefits .title {
-  font-family: "arame-regular", sans-serif;
-  margin: 0 auto;
-  margin-bottom: 40px;
-  font-size: 1.5em;
-  font-weight: 800;
-  letter-spacing: 3px;
-  max-width: 1000px;
-}
-.benefits .row {
-  margin: auto;
-  max-width: 840px;
-}
-.benefit-list {
-  font-family: "rational-light", sans-serif;
-  padding: 0;
-  list-style: none;
-}
-.benefit-list li {
-  padding: 10px 0;
-  font-size: .9em;
-  text-align: left;
-}
-
-
-.apply-form {
-  margin: auto;
-  padding: 80px 48px;
-  max-width: 1000px;
-}
-.apply-form .title{
-  font-family: "arame-regular", sans-serif;
-  margin: 0 auto;
-  margin-bottom: 40px;
-  font-size: 1.5em;
-  font-weight: 800;
-  letter-spacing: 3px;
-  max-width: 1000px;
-}
-.apply-form .subtitle {
-  font-family: "rational-light", sans-serif;
-  margin-bottom: 40px;
-  font-size: .8em;
-  text-align: left;
-  color: #424242;
-}
-.apply-form .row{
-  max-width: 600px;
-}
-
-.input-group {
-  max-width: 600px;
-  padding: 20px 0px;
-  color: #424242;
-}
-.first-name{
-  padding-right: 10px;
-}
-.input-group:before {
-  font-family: "rational-light", sans-serif;
-  content: attr(label);
-  display: block;
-  margin-bottom: 4px;
-  font-size: .7em;
-  line-height: 1.2em;
-  color: #212121;
-}
-.input-box {
-  margin-top: 10px;
-  padding: 0 10px;
-  width: 100%;
-  height: 40px;
-  border: 1px solid #616161;
-  outline: none;
-}
-.input-group .input-box:first-child {
-  margin-top: 0;
-}
-.phone-box {
-  margin-top: 0;
-  margin-right: 10px;
-  max-width: 60px;
-}
-.submit-btn {
-  font-family: "arame-regular", sans-serif;
-  margin: 20px 0px;
-  padding: 0 40px;
-  height: 50px;
-  background: #D90086;
-  border: none;
-  font-size: 1em;
-  letter-spacing: 2px;
-  color: #fff;
-  outline: none;
-}
-.submit-btn:hover{
-  background: #93005B;
-}
-.submit-btn:active {
-  background: #D90086;
-}
-
-.footer {
-  padding: 40px 0 0 0;
-  font-size: 10px;
-  color: #212121;
-  text-align: center;
-  font-family: "rational-light", sans-serif;
-}
-.footer a {
-  color: #212121;
+.footer-item a {
   text-decoration: none;
-}
-.footer a:hover {
-  text-decoration: underline;
-}
-
-.policies {
-  padding: 5px 0 20px 0;
-  font-size: 10px;
-  color: #212121;
-  text-align: center;
-  font-family: "rational-light", sans-serif;
-}
-.policies a {
-  color: #212121;
-  text-decoration: none;
-}
-.policies a:hover {
-  text-decoration: underline;
-}
-
-.thumbnail {
-  position: fixed;
-  top: 100%;
-  left: 100%;
-  z-index: -100;
-  opacity: 0;
-}
-
-@media (max-width: 767px) {
-  .landing-header {
-    padding: 24px;
-  }
-  .page-title {
-    font-size: 14vw;
-    line-height: 1em;
-  }
-  .page-subtitle {
-    margin-bottom: 20px;
-    font-size: 1.4em;
-  }
-
-  .slogan {
-    text-align: center;
-  }
-  .slogan .row {
-    display: block;
-  }
-  .slogan .column {
-    margin: 20px 0;
-  }
-  .slogan-list li {
-    text-align: center;
-  }
-}
-@media (max-width: 425px) {
-  .landing-header {
-    padding: 0;
-  }
-  .apply-link{
-    display: none;
-  }
+  color: #424242;
+  word-spacing: 0px;
 }
 </style>

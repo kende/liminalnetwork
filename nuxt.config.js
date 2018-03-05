@@ -3,22 +3,22 @@ module.exports = {
   ** Headers of the page
   */
   head: {
-    title: 'Node NYC',
+    title: 'The Liminal Network',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'A decentralized crypto lounge.' },
-      { property: 'og:title', content: 'Node NYC' },
-      { property: 'og:description', content: 'A decentralized crypto lounge.' },
-      { property: 'og:image', content: 'https://node.nyc/_nuxt/img/node-fb-img.a9fc22d.png' },
-      { property: 'og:url', content: 'https://node.nyc' }
+      { hid: 'description', name: 'description', content: 'A decentralized creative studio.' },
+      // { property: 'og:title', content: 'Node NYC' },
+      // { property: 'og:description', content: 'A decentralized crypto lounge.' },
+      // { property: 'og:image', content: 'https://node.nyc/_nuxt/img/node-fb-img.a9fc22d.png' },
+      // { property: 'og:url', content: 'https://node.nyc' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/node-favicon.png' },
-      { href: 'https://fonts.googleapis.com/css?family=Archivo+Black', rel: 'stylesheet'}
+      // { href: 'https://fonts.googleapis.com/css?family=Archivo+Black', rel: 'stylesheet'}
     ],
     script: [
-      { src: 'https://js.stripe.com/v3/'}
+      // { src: 'https://js.stripe.com/v3/'}
     ]
   },
   /*
