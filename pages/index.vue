@@ -4,18 +4,19 @@
       <div class='title'>THE LIMINAL NETWORK</div>
       <div class='subtitle'>a decentralized creative studio</div>
     </section>
+    <img class="logo" src="~/assets/node_logo.png" alt="brand logo">
     
 
     <section class='images-grid'>
-      <div class='image rowspan3 colspan3'><img src='~/assets/IMG_7195.jpg'></div>
-      <div class='image rowspan4 colspan2'><img src='~/assets/IMG_7195.jpg'></div>
-      <div class='image rowspan2'><img src='~/assets/IMG_7195.jpg'></div>
-      <div class='image rowspan2'><img src='~/assets/IMG_7195.jpg'></div>
-      <div class='image rowspan2'><img src='~/assets/IMG_7195.jpg'></div>
-      <div class='image rowspan2 colspan2'><img src='~/assets/IMG_7195.jpg'></div>
-      <div class='image rowspan3 colspan3'><img src='~/assets/IMG_7195.jpg'></div>
-      <div class='image rowspan2 colspan2'><img src='~/assets/IMG_7195.jpg'></div>
-      <div class='image rowspan2'><img src='~/assets/IMG_7195.jpg'></div>
+      <div class='image rowspan3 colspan3'></div>
+      <div class='image rowspan4 colspan2'></div>
+      <div class='image rowspan2'></div>
+      <div class='image rowspan2'></div>
+      <div class='image rowspan2'></div>
+      <div class='image rowspan2 colspan2'></div>
+      <div class='image rowspan3 colspan3'></div>
+      <div class='image rowspan2 colspan2'></div>
+      <div class='image rowspan2'></div>
     </section>
    
     <section class='apply-section'>
