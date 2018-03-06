@@ -7,15 +7,15 @@
     
 
     <section class='images-grid'>
-      <div class='image rowspan3 colspan3'><img class="logo" src="~/assets/node_logo.png" alt="brand logo"></div>
-      <div class='image rowspan4 colspan2'><img class="logo" src="~/assets/node_logo.png" alt="brand logo"></div>
-      <div class='image rowspan2'><img class="logo" src="~/assets/node_logo.png" alt="brand logo"></div>
-      <div class='image rowspan2'><img class="logo" src="~/assets/node_logo.png" alt="brand logo"></div>
-      <div class='image rowspan2'><img class="logo" src="~/assets/node_logo.png" alt="brand logo"></div>
-      <div class='image rowspan2 colspan2'><img class="logo" src="~/assets/node_logo.png" alt="brand logo"></div>
-      <div class='image rowspan3 colspan3'><img class="logo" src="~/assets/node_logo.png" alt="brand logo"></div>
-      <div class='image rowspan2 colspan2'><img class="logo" src="~/assets/node_logo.png" alt="brand logo"></div>
-      <div class='image rowspan2'><img class="logo" src="~/assets/node_logo.png" alt="brand logo"></div>
+      <div class='image rowspan3 colspan3'><img src="~/assets/nadia.png" alt="image gallerty"></div>
+      <div class='image rowspan4 colspan2'><img src="~/assets/nadia.png" alt="image gallerty"></div>
+      <div class='image rowspan2'><img src="~/assets/nadia.png" alt="image gallerty"></div>
+      <div class='image rowspan2'><img src="~/assets/nadia.png" alt="image gallerty"></div>
+      <div class='image rowspan2'><img src="~/assets/nadia.png" alt="image gallerty"></div>
+      <div class='image rowspan2 colspan2'><img src="~/assets/nadia.png" alt="image gallerty"></div>
+      <div class='image rowspan3 colspan3'><img src="~/assets/nadia.png" alt="image gallerty"></div>
+      <div class='image rowspan2 colspan2'><img src="~/assets/nadia.png" alt="image gallerty"></div>
+      <div class='image rowspan2'><img src="~/assets/nadia.png" alt="image gallerty"></div>
     </section>
    
     <section class='apply-section'>
