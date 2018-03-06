@@ -25,7 +25,7 @@
 
     <section class='landing-footer'>
       <span class='footer-item'><a href='http://byzantine.network/' target='_blank'>a byzantine thing</a> 🦄</span>  
-      <span class='footer-item'><a href='' target='_blank'>privacy policy & terms</a></span> 
+      <span class='footer-item'><a href='https://app.termly.io/document/privacy-policy-for-website/c596a054-bb10-4bc0-b04d-d582f48ee43e' target='_blank'>privacy policy</a> &amp; <a href='https://app.termly.io/document/terms-of-use-for-website/afc96613-61ec-4c6d-89fa-c6720e93ffa1' target='_blank'>terms</a></span> 
     </section>  
   </div>
 </template>
@@ -125,6 +125,9 @@
   text-decoration: none;
   color: #424242;
   word-spacing: 0px;
+}
+.footer-item a:hover {
+  text-decoration: underline;
 }
 
 @keyframes blurin {
