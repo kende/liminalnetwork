@@ -14,7 +14,7 @@ module.exports = {
       // { property: 'og:url', content: 'https://node.nyc' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/node-favicon.png' },
+      { rel: 'icon', type: 'image/x-icon', href: '/liminal-favicon.png' },
       // { href: 'https://fonts.googleapis.com/css?family=Archivo+Black', rel: 'stylesheet'}
     ],
     script: [

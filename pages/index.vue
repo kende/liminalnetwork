@@ -4,29 +4,29 @@
       <div class='title'>THE LIMINAL NETWORK</div>
       <div class='subtitle'>a decentralized creative studio</div>
     </section>
-    
+
 
     <section class='images-grid'>
-      <div class='image rowspan3 colspan3'><img src="~/assets/nadia.png" alt="image gallerty"></div>
-      <div class='image rowspan4 colspan2'><img src="~/assets/nadia.png" alt="image gallerty"></div>
-      <div class='image rowspan2'><img src="~/assets/nadia.png" alt="image gallerty"></div>
-      <div class='image rowspan2'><img src="~/assets/nadia.png" alt="image gallerty"></div>
-      <div class='image rowspan2'><img src="~/assets/nadia.png" alt="image gallerty"></div>
-      <div class='image rowspan2 colspan2'><img src="~/assets/nadia.png" alt="image gallerty"></div>
-      <div class='image rowspan3 colspan3'><img src="~/assets/nadia.png" alt="image gallerty"></div>
-      <div class='image rowspan2 colspan2'><img src="~/assets/nadia.png" alt="image gallerty"></div>
-      <div class='image rowspan2'><img src="~/assets/nadia.png" alt="image gallerty"></div>
+      <div class='image rowspan3 colspan3'><img src="~/assets/1.png" alt="image gallerty"></div>
+      <div class='image rowspan4 colspan2'><img src="~/assets/2.png" alt="image gallerty"></div>
+      <div class='image rowspan2'><img src="~/assets/3.png" alt="image gallerty"></div>
+      <div class='image rowspan2'><img src="~/assets/4.png" alt="image gallerty"></div>
+      <div class='image rowspan2'><img src="~/assets/5.png" alt="image gallerty"></div>
+      <div class='image rowspan2 colspan2'><img src="~/assets/6.png" alt="image gallerty"></div>
+      <div class='image rowspan3 colspan3'><img src="~/assets/7.png" alt="image gallerty"></div>
+      <div class='image rowspan2 colspan2'><img src="~/assets/8.png" alt="image gallerty"></div>
+      <div class='image rowspan2'><img src="~/assets/9.png" alt="image gallerty"></div>
     </section>
-   
+
     <section class='apply-section'>
       <div class='title'>APPLY TO JOIN LIMINAL</div>
       <div><a class='apply-btn' href='https://byzantine.typeform.com/to/T7O1TA' target='_blank'>apply</a></div>
-    </section>  
+    </section>
 
     <section class='landing-footer'>
-      <span class='footer-item'><a href='http://byzantine.network/' target='_blank'>a byzantine thing</a> 🦄</span>  
-      <span class='footer-item'><a href='https://app.termly.io/document/privacy-policy-for-website/c596a054-bb10-4bc0-b04d-d582f48ee43e' target='_blank'>privacy policy</a> &amp; <a href='https://app.termly.io/document/terms-of-use-for-website/afc96613-61ec-4c6d-89fa-c6720e93ffa1' target='_blank'>terms</a></span> 
-    </section>  
+      <span class='footer-item'><a href='http://byzantine.network/' target='_blank'>a byzantine thing</a> 🦄</span>
+      <span class='footer-item'><a href='https://app.termly.io/document/privacy-policy-for-website/c596a054-bb10-4bc0-b04d-d582f48ee43e' target='_blank'>privacy policy</a> &amp; <a href='https://app.termly.io/document/terms-of-use-for-website/afc96613-61ec-4c6d-89fa-c6720e93ffa1' target='_blank'>terms</a></span>
+    </section>
   </div>
 </template>
 
