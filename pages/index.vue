@@ -2,7 +2,7 @@
   <div class='landing'>
     <section class='landing-header'>
       <div class='title'>THE LIMINAL NETWORK</div>
-      <div class='subtitle'>a decentralized creative studio</div>
+      <div class='subtitle'>decentralized creative space</div>
     </section>
 
 
