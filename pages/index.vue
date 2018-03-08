@@ -1,5 +1,6 @@
 <template>
   <div class='landing'>
+    <div class="thumbnail"><img src="~/assets/liminal.png"></div>
     <section class='landing-header'>
       <div class='title'>THE LIMINAL NETWORK</div>
       <div class='subtitle'>decentralized creative space</div>
@@ -128,6 +129,15 @@
 }
 .footer-item a:hover {
   text-decoration: underline;
+}
+
+.thumbnail {
+  position: fixed;
+  top: 110%;
+  left: 110%;
+  z-index: -100;
+  opacity: 0;
+  transform: scale(0);
 }
 
 @keyframes blurin {
