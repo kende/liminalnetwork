@@ -7,11 +7,11 @@ module.exports = {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: 'A decentralized creative studio.' },
-      // { property: 'og:title', content: 'Node NYC' },
-      // { property: 'og:description', content: 'A decentralized crypto lounge.' },
-      // { property: 'og:image', content: 'https://node.nyc/_nuxt/img/node-fb-img.a9fc22d.png' },
-      // { property: 'og:url', content: 'https://node.nyc' }
+      { hid: 'description', name: 'description', content: 'Decentralized creative space.' },
+      { property: 'og:title', content: 'The Liminal Network' },
+      { property: 'og:description', content: 'Decentralized creative space.' },
+      { property: 'og:image', content: 'https://liminal.network/assets/social/liminal.png' },
+      { property: 'og:url', content: 'https://liminal.network' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/liminal-favicon.png' },
