@@ -20,8 +20,25 @@
     </section>
 
     <section class='apply-section'>
-      <div class='title'>APPLY TO JOIN LIMINAL</div>
-      <div><a class='apply-btn' href='https://byzantine.typeform.com/to/T7O1TA' target='_blank'>apply</a></div>
+      <div class='title'>LOOKING FOR A PLAYGROUND <br /> TO CALL HOME?</div>
+      <div class='price-row'>
+        <div class='price-card event-pass'>
+          <div class='card-title'>EVENT PASS</div>
+          <div class='price'>$125 / month</div>
+          <div class='detail'>2 event + 3 guest passes</div>
+        </div>
+        <div class='price-card early-bird'>
+          <div class='card-title'>FIRST 100</div>
+          <div class='price'>$300 / month</div>
+          <div class='detail'>Early access on April 1st</div>
+        </div>
+        <div class='price-card grand-opening'>
+          <div class='card-title'>GRAND OPENING</div>
+          <div class='price'>$1000 / month</div>
+          <div class='detail'>Opening on May 10th</div>
+        </div>
+      </div>
+      <div><a class='apply-btn' href='https://byzantine.typeform.com/to/T7O1TA' target='_blank'>APPLY</a></div>
     </section>
 
     <section class='landing-footer'>
@@ -42,8 +59,8 @@
 .title {
   font-family: arame-regular, sans-serif;
   font-size: 24px;
-  line-height: 1em;
-  letter-spacing: 8px;
+  line-height: 1.4em;
+  letter-spacing: 5px;
 }
 .subtitle {
   margin-top: 8px;
@@ -94,7 +111,7 @@
 }
 
 .apply-section {
-  padding: 100px 0;
+  padding: 100px 24px;
   text-align: center;
 }
 .apply-btn {
@@ -102,12 +119,13 @@
   margin-top: 20px;
   padding: 0 40px;
   height: 40px;
-  background: linear-gradient(90deg, #D028E8, #5F70FA);
+  background: #D32DF8;
   border: none;
-  font-family: rational-light, sans-serif;
-  font-size: 20px;
-  line-height: 36px;
+  font-family: arame-regular, sans-serif;
+  font-size: 16px;
   color: #fff;
+  line-height: 40px;
+  letter-spacing: 2px;
   text-decoration: none;
   cursor: pointer;
 }
@@ -140,6 +158,50 @@
   transform: scale(0);
 }
 
+.price-row {
+  display: flex;
+  justify-content: space-around;
+  margin: 40px auto;
+  font-family: rational-light, sans-serif;
+  max-width: 1000px;
+}
+.price-card {
+  margin: 10px;
+  padding: 40px 20px;
+  min-width: 278px;
+  border:  1px solid transparent;
+  font-size: 18px;
+}
+.event-pass {
+  border-color: #06C3FF;
+  color: #06C3FF;
+}
+.early-bird {
+  border-color: #D32DF8;
+  color: #D32DF8;
+}
+.grand-opening {
+  background: #f5f5f5;
+  border-color: #a5a5a5;
+}
+
+.card-title {
+  letter-spacing: 4px;
+}
+.price-card .price {
+  margin: 40px 0;
+  color: #212121;
+}
+.price-card .detail {
+  font-size: 14px;
+  color: #212121;
+}
+.grand-opening,
+.grand-opening .price,
+.grand-opening .detail {
+  color: #a5a5a5;
+}
+
 @keyframes blurin {
   from {
     filter: blur(4px);
@@ -149,9 +211,16 @@
   }
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 963px) {
   .images-grid {
     grid-template-columns: repeat(3, 1fr);
+  }
+  .price-row {
+    flex-wrap: wrap;
+    max-width: 600px;
+  }
+  .price-card {
+    flex: none;
   }
 }
 </style>
