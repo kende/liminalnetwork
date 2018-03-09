@@ -8,10 +8,14 @@
       </div>
       <div class='background-mobile'>
         <img src='~/assets/featured_mobile.png' alt='featured'>
-        <div class='page-text'>
-          <div class='page-title'><small>THE</small><br/>LIMINAL<br/>NETWORK</div>
-          <div class='page-subtitle'>DECENTRALIZED CREATIVE STUDIOS</div>
+      </div>
+      <div class='page-text'>
+        <div class='page-title'>
+          <div><small>THE</small></div>
+          <div>LIMINAL</div>
+          <div>NETWORK</div>
         </div>
+        <div class='page-subtitle'>DECENTRALIZED CREATIVE STUDIOS</div>
       </div>
 
     </section>
@@ -164,18 +168,20 @@ export default {
 }
 .page-text {
   position: absolute;
-  top: 28vh;
+  top: 18vh;
   width: 100%;
   font-family: arame-regular, sans-serif;
+  font-size: 20px;
   color: #fff;
   text-align: center;
   letter-spacing: 10px;
 }
 .page-title {
-  font-size: 16vw;
+  font-size: 100px;
+  letter-spacing: 14px;
 }
 .page-title small {
-  font-size: 7vw;
+  font-size: 40px;
 }
 .page-subtitle {
   margin-top: 20px;
@@ -381,6 +387,13 @@ export default {
 @media screen and (max-width: 767px) {
   .feature-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .page-title {
+    font-size: 16vw;
+    letter-spacing: 10px;
+  }
+  .page-title small {
+    font-size: 7vw;
   }
   .background-img {
     display: none;
