@@ -2,9 +2,10 @@
   <div class='landing'>
     <div class='thumbnail'><img src='~/assets/liminal.png'></div>
     <section class='landing-header'>
-      <img class='background-img' src='~/assets/featured.png' alt='featured'>
-      <!-- <div class='title'>THE LIMINAL NETWORK</div>
-      <div class='subtitle'>decentralized creative space</div> -->
+      <div class='background-img'>
+        <img class='small-size' src='~/assets/featured_small.png' alt='featured small'>
+        <img class='full-size' src='~/assets/featured.png' alt='featured' @load='imageLoaded'>
+      </div>
       <div class='background-mobile'>
         <img src='~/assets/featured_mobile.png' alt='featured'>
         <div class='page-text'>
@@ -14,7 +15,6 @@
       </div>
       
     </section>
-
 
     <!-- <section class='images-grid'>
       <div class='image rowspan3 colspan3'><img src='~/assets/1.png' alt='image gallerty'></div>
@@ -119,11 +119,17 @@
 </template>
 
 <script>
+export default {
+  methods: {
+    imageLoaded () {
+      document.querySelector('.small-size').remove()
+    }
+  }
+}
 </script>
 
 <style scoped>
 .landing-header {
-  margin-bottom: 40px;
   text-align: center;
 }
 .title {
@@ -138,7 +144,17 @@
   font-size: 16px;
   line-height: 1em;
 }
-.background-img,
+
+.background-img {
+  position: relative;
+}
+.small-size {
+  position: absolute;
+  left: 0;
+  top: 0;
+  filter: blur(2px);
+}
+.background-img img,
 .background-mobile img {
   width: 100%;
 }
