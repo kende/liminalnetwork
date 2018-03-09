@@ -333,6 +333,11 @@
   .feature-grid {
     grid-template-columns: 1fr;
   }
+  .feature-grid .item {
+    display: flex;
+    padding: 0 24px;
+    line-height: 50px;
+  }
   
 }
 </style>
