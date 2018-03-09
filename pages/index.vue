@@ -1,6 +1,6 @@
 <template>
   <div class='landing'>
-    <div class="thumbnail"><img src="~/assets/liminal.png"></div>
+    <div class='thumbnail'><img src='~/assets/liminal.png'></div>
     <section class='landing-header'>
       <div class='title'>THE LIMINAL NETWORK</div>
       <div class='subtitle'>decentralized creative space</div>
@@ -8,15 +8,57 @@
 
 
     <section class='images-grid'>
-      <div class='image rowspan3 colspan3'><img src="~/assets/1.png" alt="image gallerty"></div>
-      <div class='image rowspan4 colspan2'><img src="~/assets/2.png" alt="image gallerty"></div>
-      <div class='image rowspan2'><img src="~/assets/3.png" alt="image gallerty"></div>
-      <div class='image rowspan2'><img src="~/assets/4.png" alt="image gallerty"></div>
-      <div class='image rowspan2'><img src="~/assets/5.png" alt="image gallerty"></div>
-      <div class='image rowspan2 colspan2'><img src="~/assets/6.png" alt="image gallerty"></div>
-      <div class='image rowspan3 colspan3'><img src="~/assets/7.png" alt="image gallerty"></div>
-      <div class='image rowspan2 colspan2'><img src="~/assets/8.png" alt="image gallerty"></div>
-      <div class='image rowspan2'><img src="~/assets/9.png" alt="image gallerty"></div>
+      <div class='image rowspan3 colspan3'><img src='~/assets/1.png' alt='image gallerty'></div>
+      <div class='image rowspan4 colspan2'><img src='~/assets/2.png' alt='image gallerty'></div>
+      <div class='image rowspan2'><img src='~/assets/3.png' alt='image gallerty'></div>
+      <div class='image rowspan2'><img src='~/assets/4.png' alt='image gallerty'></div>
+      <div class='image rowspan2'><img src='~/assets/5.png' alt='image gallerty'></div>
+      <div class='image rowspan2 colspan2'><img src='~/assets/6.png' alt='image gallerty'></div>
+      <div class='image rowspan3 colspan3'><img src='~/assets/7.png' alt='image gallerty'></div>
+      <div class='image rowspan2 colspan2'><img src='~/assets/8.png' alt='image gallerty'></div>
+      <div class='image rowspan2'><img src='~/assets/9.png' alt='image gallerty'></div>
+    </section>
+
+    <section class='opening-section'>
+      <div class='title'>OPEN IN BUSHWICK</div>
+      <div class='feature-grid'>
+        <div class='item'>
+          <img class='feature-icon' src='~/assets/icon/1.png' alt='feature icon'>
+          <div class='feature-text'>crypto/blockchain dev</div>
+        </div>
+        <div class='item'>
+          <img class='feature-icon' src='~/assets/icon/2.png' alt='feature icon'>
+          <div class='feature-text'>24/7 access</div>
+        </div>
+        <div class='item'>
+          <img class='feature-icon' src='~/assets/icon/3.png' alt='feature icon'>
+          <div class='feature-text'>gigabit internet</div>
+        </div>
+        <div class='item'>
+          <img class='feature-icon' src='~/assets/icon/4.png' alt='feature icon'>
+          <div class='feature-text'>movement studios</div>
+        </div>
+        <div class='item'>
+          <img class='feature-icon' src='~/assets/icon/5.png' alt='feature icon'>
+          <div class='feature-text'>audio production</div>
+        </div>
+        <div class='item'>
+          <img class='feature-icon' src='~/assets/icon/6.png' alt='feature icon'>
+          <div class='feature-text'>film &amp; livestreaming</div>
+        </div>
+        <div class='item'>
+          <img class='feature-icon' src='~/assets/icon/7.png' alt='feature icon'>
+          <div class='feature-text'>AR/VR creative production</div>
+        </div>
+        <div class='item'>
+          <img class='feature-icon' src='~/assets/icon/8.png' alt='feature icon'>
+          <div class='feature-text'>wireless mesh R&amp;D</div>
+        </div>
+        <div class='item'>
+          <div class='feature-icon'></div>
+          <div class='feature-text'>and more ...</div>
+        </div>
+      </div>
     </section>
 
     <section class='apply-section'>
@@ -116,7 +158,6 @@
 }
 .apply-btn {
   display: inline-block;
-  margin-top: 20px;
   padding: 0 40px;
   height: 40px;
   background: #D32DF8;
@@ -158,6 +199,32 @@
   transform: scale(0);
 }
 
+.opening-section {
+  margin: 30px 0;
+  text-align: center;
+  font-family: rational-light, sans-serif;
+}
+.feature-grid {
+  margin: 20px auto 0;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 960px;
+}
+.feature-grid .item {
+  padding: 30px;
+}
+.feature-icon {
+  display: inline-block;
+  margin: 10px;
+  height: 30px;
+  width: 30px;
+  object-fit: contain;
+}
+.feature-text {
+  font-size: 14px;
+}
+
 .price-row {
   display: flex;
   justify-content: space-around;
@@ -169,7 +236,7 @@
   margin: 10px;
   padding: 40px 20px;
   min-width: 278px;
-  border:  1px solid transparent;
+  border: 1px solid transparent;
   font-size: 18px;
 }
 .event-pass {
@@ -222,5 +289,16 @@
   .price-card {
     flex: none;
   }
+}
+@media screen and (max-width: 767px) {
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 425px) {
+  .feature-grid {
+    grid-template-columns: 1fr;
+  }
+  
 }
 </style>
