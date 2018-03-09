@@ -83,9 +83,28 @@
       <div><a class='apply-btn' href='https://byzantine.typeform.com/to/T7O1TA' target='_blank'>APPLY</a></div>
     </section>
 
+    <section class='event-section'>
+      <div class='title'>UPCOMING EVENTS</div>
+      <div class='event'>
+        <div class='event-name'>The Art of Crypto Assets</div>
+        <div class='event-time'>April 12th</div>
+        <div class='event-place'>@ The Williamsburg Hotel</div>
+      </div>
+      <div class='event'>
+        <div class='event-name'>The Rise of Crypto Games</div>
+        <div class='event-time'>May 10th</div>
+        <div class='event-place'>@ The Generator</div>
+      </div>
+      <div class='event'>
+        <div class='event-name'>Blockparty</div>
+        <div class='event-time'>May 12th</div>
+        <div class='event-place'>@ The Williamsburg Hotel</div>
+      </div>
+    </section>
+
     <section class='landing-footer'>
-      <span class='footer-item'><a href='http://byzantine.network/' target='_blank'>a byzantine thing</a> 🦄</span>
-      <span class='footer-item'><a href='https://app.termly.io/document/privacy-policy-for-website/c596a054-bb10-4bc0-b04d-d582f48ee43e' target='_blank'>privacy policy</a> &amp; <a href='https://app.termly.io/document/terms-of-use-for-website/afc96613-61ec-4c6d-89fa-c6720e93ffa1' target='_blank'>terms</a></span>
+      <div class='footer-item'><a href='http://byzantine.network/' target='_blank'>a byzantine thing</a> 🦄</div>
+      <div class='footer-item'><a href='https://app.termly.io/document/privacy-policy-for-website/c596a054-bb10-4bc0-b04d-d582f48ee43e' target='_blank'>privacy policy</a> &amp; <a href='https://app.termly.io/document/terms-of-use-for-website/afc96613-61ec-4c6d-89fa-c6720e93ffa1' target='_blank'>terms</a></div>
     </section>
   </div>
 </template>
@@ -172,14 +191,18 @@
 }
 
 .landing-footer {
+  display: flex;
   padding:  24px 0;
   background: #fafafa;
   text-align: right;
+  flex-flow: wrap;
+  justify-content: flex-end;
 }
 .footer-item {
-  margin: 24px;
+  margin: 10px 24px;
   font-size: .8em;
   font-family: rational-light, sans-serif;
+  text-align: center;
 }
 .footer-item a {
   text-decoration: none;
@@ -200,7 +223,7 @@
 }
 
 .opening-section {
-  margin: 30px 0;
+  padding: 60px 0 20px;
   text-align: center;
   font-family: rational-light, sans-serif;
 }
@@ -267,6 +290,17 @@
 .grand-opening .price,
 .grand-opening .detail {
   color: #a5a5a5;
+}
+
+.event-section {
+  margin: 30px 0 80px;
+  text-align: center;
+}
+.event {
+  margin: 30px 0;
+  font-family: rational-light, sans-serif;
+  font-size: 14px;
+  color: #D32DF8;
 }
 
 @keyframes blurin {
