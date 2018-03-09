@@ -2,12 +2,21 @@
   <div class='landing'>
     <div class='thumbnail'><img src='~/assets/liminal.png'></div>
     <section class='landing-header'>
-      <div class='title'>THE LIMINAL NETWORK</div>
-      <div class='subtitle'>decentralized creative space</div>
+      <img class='background-img' src='~/assets/featured.png' alt='featured'>
+      <!-- <div class='title'>THE LIMINAL NETWORK</div>
+      <div class='subtitle'>decentralized creative space</div> -->
+      <div class='background-mobile'>
+        <img src='~/assets/featured_mobile.png' alt='featured'>
+        <div class='page-text'>
+          <div class='page-title'><small>THE</small><br/>LIMINAL<br/>NETWORK</div>
+          <div class='page-subtitle'>DECENTRALIZED CREATIVE STUDIOS</div>
+        </div>
+      </div>
+      
     </section>
 
 
-    <section class='images-grid'>
+    <!-- <section class='images-grid'>
       <div class='image rowspan3 colspan3'><img src='~/assets/1.png' alt='image gallerty'></div>
       <div class='image rowspan4 colspan2'><img src='~/assets/2.png' alt='image gallerty'></div>
       <div class='image rowspan2'><img src='~/assets/3.png' alt='image gallerty'></div>
@@ -17,10 +26,10 @@
       <div class='image rowspan3 colspan3'><img src='~/assets/7.png' alt='image gallerty'></div>
       <div class='image rowspan2 colspan2'><img src='~/assets/8.png' alt='image gallerty'></div>
       <div class='image rowspan2'><img src='~/assets/9.png' alt='image gallerty'></div>
-    </section>
+    </section> -->
 
     <section class='opening-section'>
-      <div class='title'>OPEN IN BUSHWICK</div>
+      <div class='title'>OPENING IN BUSHWICK</div>
       <div class='feature-grid'>
         <div class='item'>
           <img class='feature-icon' src='~/assets/icon/1.png' alt='feature icon'>
@@ -114,7 +123,7 @@
 
 <style scoped>
 .landing-header {
-  padding: 40px 24px;
+  margin-bottom: 40px;
   text-align: center;
 }
 .title {
@@ -129,7 +138,35 @@
   font-size: 16px;
   line-height: 1em;
 }
+.background-img,
+.background-mobile img {
+  width: 100%;
+}
+.background-mobile {
+  display: none;
+  position: relative;
+}
+.page-text {
+  position: absolute;
+  top: 28vh;
+  width: 100%;
+  font-family: arame-regular, sans-serif;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 10px;
+}
+.page-title {
+  font-size: 16vw;
+}
+.page-title small {
+  font-size: 7vw;
+}
+.page-subtitle {
+  margin-top: 20px;
+  padding: 0 20px;
+}
 
+/*
 .images-grid {
   display: grid;
   grid-template-rows: auto;
@@ -170,6 +207,7 @@
 .colspan3 {
   grid-column: span 3;
 }
+*/
 
 .apply-section {
   padding: 100px 24px;
@@ -327,6 +365,12 @@
 @media screen and (max-width: 767px) {
   .feature-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  .background-img {
+    display: none;
+  }
+  .background-mobile {
+    display: block;
   }
 }
 @media screen and (max-width: 425px) {
