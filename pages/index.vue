@@ -13,7 +13,7 @@
           <div class='page-subtitle'>DECENTRALIZED CREATIVE STUDIOS</div>
         </div>
       </div>
-      
+
     </section>
 
     <!-- <section class='images-grid'>
@@ -76,7 +76,7 @@
         <div class='price-card event-pass'>
           <div class='card-title'>EVENT PASS</div>
           <div class='price'>$125 / month</div>
-          <div class='detail'>2 event + 3 guest passes</div>
+          <div class='detail'>2 events + 3 guest passes</div>
         </div>
         <div class='price-card early-bird'>
           <div class='card-title'>FIRST 100</div>
@@ -86,7 +86,7 @@
         <div class='price-card grand-opening'>
           <div class='card-title'>GRAND OPENING</div>
           <div class='price'>$1000 / month</div>
-          <div class='detail'>Opening on May 10th</div>
+          <div class='detail'>Starting on May 10th</div>
         </div>
       </div>
       <div><a class='apply-btn' href='https://byzantine.typeform.com/to/T7O1TA' target='_blank'>APPLY</a></div>
@@ -398,6 +398,6 @@ export default {
     padding: 0 24px;
     line-height: 50px;
   }
-  
+
 }
 </style>
