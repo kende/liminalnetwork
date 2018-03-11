@@ -78,9 +78,9 @@
       <div class='title'>LOOKING FOR A PLAYGROUND <br /> TO CALL HOME?</div>
       <div class='price-row'>
         <div class='price-card event-pass'>
-          <div class='card-title'>EVENT PASS</div>
+          <div class='card-title'>NOMAD PASS</div>
           <div class='price'>$125 / month</div>
-          <div class='detail'>2 events + 3 guest passes</div>
+          <div class='detail'>One week each month</div>
         </div>
         <div class='price-card early-bird'>
           <div class='card-title'>FIRST 100</div>
