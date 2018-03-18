@@ -78,20 +78,29 @@
       <div class='title'>LOOKING FOR A PLAYGROUND <br /> TO CALL HOME?</div>
       <div class='price-row'>
         <div class='price-card event-pass'>
-          <div class='card-title'>NOMAD PASS</div>
+          <div class='card-title'>FIRST 100</div>
+          <div class='card-title'>NOMADS</div>
           <div class='price'>$125 / month</div>
           <div class='detail'>One week each month</div>
+          <div class='detail'>$425 after launch</div>
         </div>
         <div class='price-card early-bird'>
           <div class='card-title'>FIRST 100</div>
+          <div class='card-title'>CREATORS</div>
           <div class='price'>$300 / month</div>
-          <div class='detail'>Early access on April 1st</div>
+          <div class='detail'>All access April 1st</div>
+          <div class='detail'>$1000+ after launch</div>
         </div>
-        <div class='price-card grand-opening'>
-          <div class='card-title'>GRAND OPENING</div>
-          <div class='price'>$1000 / month</div>
-          <div class='detail'>Starting on May 10th</div>
-        </div>
+        <a class="spacequest" href="https://byzantine.network/spacequest/" target="_blank">
+          <div class='price-card grand-opening'>
+            <div class='card-title'>BYZANTINE</div>
+            <div class='card-title'>SPACE QUEST</div>
+            <div>
+              <img class='spacequest-icon' src='~/assets/eth-token-icon.png' alt='space quest icon'>
+            </div>
+            <div class='detail'>10k Limited Release</div>
+          </div>
+        </a>
       </div>
       <div><a class='apply-btn' href='https://byzantine.typeform.com/to/T7O1TA' target='_blank'>APPLY</a></div>
     </section>
@@ -308,6 +317,9 @@ export default {
   font-size: 14px;
 }
 
+a.spacequest{
+  text-decoration: none;
+}
 .price-row {
   display: flex;
   justify-content: space-around;
@@ -323,20 +335,29 @@ export default {
   font-size: 18px;
 }
 .event-pass {
+  /* border-color: #06C3FF;
+  color: #06C3FF; */
   border-color: #06C3FF;
-  color: #06C3FF;
+  color: #008EBB;
+  background-color: #B4EDFF;
 }
 .early-bird {
+  /* border-color: #D32DF8;
+  color: #D32DF8; */
   border-color: #D32DF8;
-  color: #D32DF8;
+  color: #BC18E1;
+  background-color: #F1C0FC;
 }
 .grand-opening {
-  background: #f5f5f5;
-  border-color: #a5a5a5;
+  background: #161C6D;
+  border-color: #161C6D;
 }
 
 .card-title {
-  letter-spacing: 4px;
+  letter-spacing: 5px;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+  font-family: arame-regular, sans-serif;
 }
 .price-card .price {
   margin: 40px 0;
@@ -349,7 +370,15 @@ export default {
 .grand-opening,
 .grand-opening .price,
 .grand-opening .detail {
-  color: #a5a5a5;
+  color: #fff;
+}
+
+.spacequest-icon {
+  display: inline-block;
+  margin: 20px;
+  height: 80px;
+  width: 80px;
+  object-fit: contain;
 }
 
 .event-section {
@@ -359,7 +388,7 @@ export default {
 .event {
   margin: 30px 0;
   font-family: rational-light, sans-serif;
-  font-size: 14px;
+  font-size: 12px;
   color: #D32DF8;
 }
 
