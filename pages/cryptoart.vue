@@ -73,7 +73,7 @@
       <p class="location-text">The Ballroom at The Williamsburg Hotel</p>
       <p class="location-text">Blockchain Week (May 11-18th, specific date TBD)</p>
       <div class="get-tickets">
-        <button class="ticket-btn">GET TICKETS</button>
+        <a class="ticket-btn" href="#">GET TICKETS</a>
       </div>
     </section>
     <div>
@@ -117,35 +117,44 @@ export default {
         vm.posY = (vm.canvash - vm.imageh) / 2
         vm.moveX = 1
         vm.moveY = 1
-        setInterval(vm.imgAnimation, 20)
+        vm.interval = setInterval(vm.imgAnimation, 20)
         
       }
     },
     imgAnimation () {
       const vm = this
       vm.ctx.clearRect(0, 0, vm.canvasw, vm.canvash)
-      if (vm.posX < 0 || vm.posX > (vm.canvasw - vm.imagew)) { vm.moveX = -vm.moveX }
-      if (vm.posY < 0 || vm.posY > (vm.canvash - vm.imageh)) { vm.moveY = -vm.moveY }
+      if (vm.posX <= 0 || vm.posX >= (vm.canvasw - vm.imagew)) { vm.moveX = -vm.moveX }
+      if (vm.posY <= 0 || vm.posY >= (vm.canvash - vm.imageh)) { vm.moveY = -vm.moveY }
       vm.posX += vm.moveX
       vm.posY += vm.moveY
       vm.ctx.drawImage(vm.image, vm.posX, vm.posY, vm.imagew, vm.imageh)
     },
     onResize () {
+
       const vm = this
-      const el = document.querySelector('.banner')
-      vm.canvash = el.clientHeight
-      vm.canvasw = el.clientWidth
-      vm.imagew = vm.canvasw / 2
-      vm.imageh = vm.imagew * 0.66
-      vm.canvas.height = vm.canvash
-      vm.canvas.width = vm.canvasw
+      if (vm.timeout) clearTimeout(vm.timeout)
+      if (vm.interval) clearInterval(vm.interval)
+      vm.ctx.clearRect(0, 0, vm.canvasw, vm.canvash)
+      vm.timeout = setTimeout(function() {
+        const el = document.querySelector('.banner')
+        vm.canvash = el.clientHeight
+        vm.canvasw = el.clientWidth
+        vm.imagew = vm.canvasw / 2
+        vm.imageh = vm.imagew * 0.66
+        vm.canvas.height = vm.canvash
+        vm.canvas.width = vm.canvasw
+        vm.posX = (vm.canvasw - vm.imagew) / 2
+        vm.posY = (vm.canvash - vm.imageh) / 2
+        vm.interval = setInterval(vm.imgAnimation, 20)
+      }, 500)
+
     }
   },
   mounted () {
     this.draw()
     window.addEventListener('resize', this.onResize)
   },
-
   beforeDestroy() {
     window.removeEventListener('resize', this.onResize)
   }
@@ -290,9 +299,12 @@ export default {
   font-family: rational-light, sans-serif;
   color: #ff1bf3;
 }
-.ticket-btn {
-  padding: 14px 0 12px;
+.get-tickets {
   margin: 40px 0;
+}
+.ticket-btn {
+  display: inline-block;
+  padding: 14px 0 12px;
   width: 100%;
   max-width: 200px;
   background: #ff1bf3;
@@ -301,8 +313,12 @@ export default {
   font-size: 1.2em;
   line-height: 1em;
   color: #fff;
+  text-decoration: none;
   letter-spacing: 1px;
   cursor: pointer;
+}
+.ticket-btn:hover {
+  opacity: .8;
 }
 
 @media (max-width: 767px) {
