@@ -101,7 +101,10 @@
       <p class="location-text">The Ballroom at The Williamsburg Hotel</p>
       <p class="location-text">May 10, 2018</p>
       <div class="get-tickets">
-        <a class="ticket-btn" href="#">GET TICKETS</a>
+        <!-- <script src="https://www.universe.com/embed2.js" data-state=""></script> -->
+        <a class="ticket-btn unii-listing-button unii-custom unii-medium Light" href="https://www.universe.com/events/the-art-of-crypto-assets-tickets-FXY5T6?buttonColor=#ff1bf3&buttonText=Get Tickets">
+          GET TICKETS
+        </a>
       </div>
     </section>
     <div>

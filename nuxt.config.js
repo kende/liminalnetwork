@@ -19,6 +19,7 @@ module.exports = {
     ],
     script: [
       // { src: 'https://js.stripe.com/v3/'}
+      { src: 'https://www.universe.com/embed2.js', 'data-state': '' }
     ]
   },
   /*
