@@ -14,7 +14,15 @@
     <section class="description">
       <div class="section-title">DEMOCRATIZED ART OWNERSHIP IN A BLOCKCHAIN WORLD</div>
       <div class="text-wrapper">
-        <p class="paragraph">Byzantine will be hosting the Crypto/Art event of the year (to date!) in the Ballroom at the Williamsburg Hotel during blockchain week in NYC. We are very excited to welcome to our panels not only some of the leaders in the NYC art scene from the Met Museum & New Museum but also leaders of the crypto and blockchain world and those few innovators already bringing these two worlds together! You will hear about the fractionalization of art ownership of art, how defining ownership in blockchain works today and thoughts on the vision of democratizing and reformulating art investment. Cross pollinating art and crypto through booze, snacks, and conversation will be the highlight of the night, but in addition you will get access to two star studded panels, and a specially curated art exhibit by the end of the night.</p>
+        <p class="paragraph">
+          Byzantine is proud to host the Crypto/Art event of the year (to date!) in the Grand Ballroom of the Williamsburg Hotel on May 10th, 2018, at the transition between Creative Tech Week &  Blockchain Week in NYC.
+          <br>
+          <br>
+          We are very excited to welcome to our panels not only some of leaders in the global art scene but also crypto leaders from around the world, and those few innovators already bringing these together! You will hear about the fractionalization of ownership in art, and how it defines the exchange and appreciation of value when everything is tokenized. The cross pollination of art and crypto through booze, snacks, and conversation will be the highlight of our day, but you will also get access to two star studded panels navigating very complex new terrains.
+          <br>
+          <br>
+          Stay for a specially curated art exhibit and ERC-721 exclusive token release for ticket holders only at the end of the show.
+        </p>
         <p class="side-paragraph">Expect crypto whales 🐳 underground brooklyn artists 🎨, blockchain developers, art dealers, and collectors to make appearances. Ticket sales go toward funding the Liminal Art Residency program which supports artists experimenting in VR, AR & Blockchain. Get your tickets soon! There are only 300 🎟️ and we expect them to go quickly. As an added bonus each ticket holder that comes to the event can redeem their ticket for a unique ERC-721 tokenized art piece made for the event by Dada.NYC artists!</p>
       </div>
     </section>
@@ -22,6 +30,46 @@
       <div class="section-title">SPEAKERS</div>
       <div class="cards-wrapper">
         <div class="speaker-card">
+          <img class="img" src="~/assets/steven.jpg" alt="Steven Waterhouse">
+          <div class="text">
+            <div class="name">
+              Steven Waterhouse
+            </div>
+            CEO of Orchid Labs
+          </div>
+        </div>
+        <div class="speaker-card">
+          <img class="img" src="~/assets/seth.jpg" alt="Seth Goldstein">
+          <div class="text">
+            <div class="name">Seth Goldstein</div>
+            Entrepreneur & Angel Investor
+          </div>
+        </div>
+        <div class="speaker-card">
+          <img class="img" src="~/assets/jonathan.jpg" alt="Jonathan mann">
+          <div class="text">
+            <div class="name">Jonathan Mann</div>
+            an American singer-songwriter</div>
+        </div>
+        <div class="speaker-card">
+          <img class="img" src="~/assets/jakob.jpg" alt="Jakob Balslev">
+          <div class="text">
+            <div class="name">
+              Jakob Balslev
+            </div>
+            CEO & Founder @ Rokoko
+          </div>
+        </div>
+        <div class="speaker-card">
+          <img class="img" src="~/assets/nadia-profile.png" alt="Nadia Chilmonik">
+          <div class="text">
+            <div class="name">
+              Nadia Chilmonik
+            </div>
+            Moderator, Artist & CDO @ Byzantine
+          </div>
+        </div>
+        <!-- <div class="speaker-card">
           <img class="img" src="~/assets/vaporwave_bk.png" alt="New Museum">
           <div class="text">New Museum</div>
         </div>
@@ -32,27 +80,7 @@
         <div class="speaker-card">
           <img class="img" src="~/assets/vaporwave_bk.png" alt="New Museum">
           <div class="text">New Museum</div>
-        </div>
-        <div class="speaker-card">
-          <img class="img" src="~/assets/vaporwave_bk.png" alt="New Museum">
-          <div class="text">New Museum</div>
-        </div>
-        <div class="speaker-card">
-          <img class="img" src="~/assets/vaporwave_bk.png" alt="New Museum">
-          <div class="text">New Museum</div>
-        </div>
-        <div class="speaker-card">
-          <img class="img" src="~/assets/vaporwave_bk.png" alt="New Museum">
-          <div class="text">New Museum</div>
-        </div>
-        <div class="speaker-card">
-          <img class="img" src="~/assets/vaporwave_bk.png" alt="New Museum">
-          <div class="text">New Museum</div>
-        </div>
-        <div class="speaker-card">
-          <img class="img" src="~/assets/vaporwave_bk.png" alt="New Museum">
-          <div class="text">New Museum</div>
-        </div>
+        </div> -->
       </div>
     </section>
     <section class="organazations">
@@ -225,6 +253,7 @@ export default {
 .paragraph {
   flex: 2;
   max-width: 604px;
+  padding-bottom: 20px;
   line-height: 1.6em;
 }
 .side-paragraph {
@@ -248,12 +277,16 @@ export default {
 .speaker-card .img {
   width: 100%;
   height: 100%;
+  max-height: 208px;
   object-fit: cover;
 }
 .speaker-card .text {
   padding: 20px 0;
   font-family: rational-light, sans-serif;
   font-size: .9em;
+}
+.speaker-card .text .name{
+  /* padding-bottom: 0px; */
 }
 
 .organazations {
@@ -337,6 +370,9 @@ export default {
     margin-top: 30px;
     margin-left: 0;
     max-width: 100%;
+  }
+  .speaker-card .img {
+    max-height: none;
   }
 }
 </style>
