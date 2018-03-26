@@ -18,7 +18,7 @@
           Byzantine is proud to host the Crypto/Art event of the year (to date!) in the Grand Ballroom of the Williamsburg Hotel on May 10th, 2018, at the transition between Creative Tech Week &  Blockchain Week in NYC.
           <br>
           <br>
-          We are very excited to welcome to our panels not only some of leaders in the global art scene but also crypto leaders from around the world, and those few innovators already bringing these together! You will hear about the fractionalization of ownership in art, and how it defines the exchange and appreciation of value when everything is tokenized. The cross pollination of art and crypto through booze, snacks, and conversation will be the highlight of our day, but you will also get access to two star studded panels navigating very complex new terrains.
+          We are very excited to welcome to our panels not only leaders in the global art scene but also crypto luminaries from around the world, and those few innovators already bringing these together! You will hear about the fractionalization of ownership in art, and how it defines the exchange and appreciation of value when everything is tokenized. The cross pollination of art and crypto through booze, snacks, and conversation will be the highlight of our day, but you will also get access to two star studded panels navigating very complex new terrains.
           <br>
           <br>
           Stay for a specially curated art exhibit and ERC-721 exclusive token release for ticket holders only at the end of the show.
