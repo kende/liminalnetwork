@@ -137,6 +137,9 @@ export default {
     imageLoaded () {
       document.querySelector('.small-size').remove()
     }
+  },
+  mounted () {
+    document.querySelector('#fbImage').content = require('~/assets/liminal.png')
   }
 }
 </script>

@@ -10,7 +10,7 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Decentralized creative space.' },
       { property: 'og:title', content: 'The Liminal Network' },
       { property: 'og:description', content: 'Decentralized creative space.' },
-      { property: 'og:image', content: 'https://liminal.network/_nuxt/img/liminal.aaf41b4.png' },
+      { property: 'og:image', id: 'fbImage', content: 'https://liminal.network/_nuxt/img/liminal.aaf41b4.png'},
       { property: 'og:url', content: 'https://liminal.network' }
     ],
     link: [

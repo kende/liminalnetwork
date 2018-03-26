@@ -185,6 +185,7 @@ export default {
   mounted () {
     this.draw()
     window.addEventListener('resize', this.onResize)
+    document.querySelector('#fbImage').content = require('~/assets/social_media_cryptoart.png')
   },
   beforeDestroy() {
     window.removeEventListener('resize', this.onResize)
