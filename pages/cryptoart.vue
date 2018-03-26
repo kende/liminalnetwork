@@ -1,444 +1,342 @@
 <template>
-  <div class='landing'>
-    <div class='thumbnail'><img src='~/assets/liminal.png'></div>
-    <section class='landing-header'>
-      <div class='background-img'>
-        <img class='small-size' src='~/assets/featured_small.png' alt='featured small'>
-        <img class='full-size' src='~/assets/featured.png' alt='featured' @load='imageLoaded'>
-      </div>
-      <div class='background-mobile'>
-        <img src='~/assets/featured_mobile.png' alt='featured'>
-      </div>
-      <div class='page-text'>
-        <div class='page-title'>
-          <div><small>THE ART OF</small></div>
-          <div>CRYPTO ASSETS</div>
+  <div class="cryptoart">
+    <section class="banner">
+      <div class="bouncing-img"><canvas id="canvas"></canvas></div>
+      <div class="page-title">
+        THE ART OF
+        <div>
+          <div class="text-shadow" data-text='CRYPTO'>CRYPTO</div>
+          <div class="text-shadow" data-text='ASSETS'>ASSETS</div>
         </div>
-        <div class='page-subtitle'>May 15 @ the Williamsburg Hotel</div>
+        <small>MAY 15 @ THE VILLIAMSBURG HOTEL</small>
       </div>
-
     </section>
-
-    <!-- <section class='images-grid'>
-      <div class='image rowspan3 colspan3'><img src='~/assets/1.png' alt='image gallerty'></div>
-      <div class='image rowspan4 colspan2'><img src='~/assets/2.png' alt='image gallerty'></div>
-      <div class='image rowspan2'><img src='~/assets/3.png' alt='image gallerty'></div>
-      <div class='image rowspan2'><img src='~/assets/4.png' alt='image gallerty'></div>
-      <div class='image rowspan2'><img src='~/assets/5.png' alt='image gallerty'></div>
-      <div class='image rowspan2 colspan2'><img src='~/assets/6.png' alt='image gallerty'></div>
-      <div class='image rowspan3 colspan3'><img src='~/assets/7.png' alt='image gallerty'></div>
-      <div class='image rowspan2 colspan2'><img src='~/assets/8.png' alt='image gallerty'></div>
-      <div class='image rowspan2'><img src='~/assets/9.png' alt='image gallerty'></div>
-    </section> -->
-
-    <section class='opening-section'>
-      <div class='title'>ODemocratized art ownership in a blockchain world</div>
-      <div class='feature-grid'>
-        <div class='item'>
-          <img class='feature-icon' src='~/assets/icon/1.png' alt='feature icon'>
-          <div class='feature-text'>crypto/blockchain dev</div>
+    <section class="description">
+      <div class="section-title">DEMOCRATIZED ART OWNERSHIP IN A BLOCKCHAIN WORLD</div>
+      <div class="text-wrapper">
+        <p class="paragraph">Byzantine will be hosting the Crypto/Art event of the year (to date!) in the Ballroom at the Williamsburg Hotel during blockchain week in NYC. We are very excited to welcome to our panels not only some of the leaders in the NYC art scene from the Met Museum & New Museum but also leaders of the crypto and blockchain world and those few innovators already bringing these two worlds together! You will hear about the fractionalization of art ownership of art, how defining ownership in blockchain works today and thoughts on the vision of democratizing and reformulating art investment. Cross pollinating art and crypto through booze, snacks, and conversation will be the highlight of the night, but in addition you will get access to two star studded panels, and a specially curated art exhibit by the end of the night.</p>
+        <p class="side-paragraph">Expect crypto whales 🐳 underground brooklyn artists 🎨, blockchain developers, art dealers, and collectors to make appearances. Ticket sales go toward funding the Liminal Art Residency program which supports artists experimenting in VR, AR & Blockchain. Get your tickets soon! There are only 300 🎟️ and we expect them to go quickly. As an added bonus each ticket holder that comes to the event can redeem their ticket for a unique ERC-721 tokenized art piece made for the event by Dada.NYC artists!</p>
+      </div>
+    </section>
+    <section class="speakers">
+      <div class="section-title">SPEAKERS</div>
+      <div class="cards-wrapper">
+        <div class="speaker-card">
+          <img class="img" src="~/assets/vaporwave_bk.png" alt="New Museum">
+          <div class="text">New Museum</div>
         </div>
-        <div class='item'>
-          <img class='feature-icon' src='~/assets/icon/2.png' alt='feature icon'>
-          <div class='feature-text'>24/7 access</div>
+        <div class="speaker-card">
+          <img class="img" src="~/assets/vaporwave_bk.png" alt="New Museum">
+          <div class="text">New Museum</div>
         </div>
-        <div class='item'>
-          <img class='feature-icon' src='~/assets/icon/3.png' alt='feature icon'>
-          <div class='feature-text'>gigabit internet</div>
+        <div class="speaker-card">
+          <img class="img" src="~/assets/vaporwave_bk.png" alt="New Museum">
+          <div class="text">New Museum</div>
         </div>
-        <div class='item'>
-          <img class='feature-icon' src='~/assets/icon/4.png' alt='feature icon'>
-          <div class='feature-text'>movement studios</div>
+        <div class="speaker-card">
+          <img class="img" src="~/assets/vaporwave_bk.png" alt="New Museum">
+          <div class="text">New Museum</div>
         </div>
-        <div class='item'>
-          <img class='feature-icon' src='~/assets/icon/5.png' alt='feature icon'>
-          <div class='feature-text'>audio production</div>
+        <div class="speaker-card">
+          <img class="img" src="~/assets/vaporwave_bk.png" alt="New Museum">
+          <div class="text">New Museum</div>
         </div>
-        <div class='item'>
-          <img class='feature-icon' src='~/assets/icon/6.png' alt='feature icon'>
-          <div class='feature-text'>film &amp; livestreaming</div>
+        <div class="speaker-card">
+          <img class="img" src="~/assets/vaporwave_bk.png" alt="New Museum">
+          <div class="text">New Museum</div>
         </div>
-        <div class='item'>
-          <img class='feature-icon' src='~/assets/icon/7.png' alt='feature icon'>
-          <div class='feature-text'>AR/VR creative production</div>
+        <div class="speaker-card">
+          <img class="img" src="~/assets/vaporwave_bk.png" alt="New Museum">
+          <div class="text">New Museum</div>
         </div>
-        <div class='item'>
-          <img class='feature-icon' src='~/assets/icon/8.png' alt='feature icon'>
-          <div class='feature-text'>wireless mesh R&amp;D</div>
-        </div>
-        <div class='item'>
-          <div class='feature-icon'></div>
-          <div class='feature-text'>and more ...</div>
+        <div class="speaker-card">
+          <img class="img" src="~/assets/vaporwave_bk.png" alt="New Museum">
+          <div class="text">New Museum</div>
         </div>
       </div>
     </section>
-
-    <section class='apply-section'>
-      <div class='title'>LOOKING FOR A PLAYGROUND <br /> TO CALL HOME?</div>
-      <div class='price-row'>
-        <div class='price-card event-pass'>
-          <div class='card-title'>FIRST 100</div>
-          <div class='card-title'>NOMADS</div>
-          <div class='price'>$125 / month</div>
-          <div class='detail'>One week each month</div>
-          <div class='detail'>$425 after launch</div>
+    <section class="organazations">
+      <div class="org-wrapper ">
+        <div class="logo-card">
+          <img class="img" src="~/assets/logo_wbh.png" alt="">
         </div>
-        <div class='price-card early-bird'>
-          <div class='card-title'>FIRST 100</div>
-          <div class='card-title'>CREATORS</div>
-          <div class='price'>$300 / month</div>
-          <div class='detail'>All access April 1st</div>
-          <div class='detail'>$1000+ after launch</div>
+        <div class="logo-card">
+          <img class="img" src="~/assets/logo_dispatch.png" alt="">
         </div>
-        <a class="spacequest" href="https://byzantine.network/spacequest/" target="_blank">
-          <div class='price-card grand-opening'>
-            <div class='card-title'>BYZANTINE</div>
-            <div class='card-title'>SPACE QUEST</div>
-            <div>
-              <img class='spacequest-icon' src='~/assets/eth-token-icon.png' alt='space quest icon'>
-            </div>
-            <div class='detail'>10k Limited Release</div>
-          </div>
-        </a>
-      </div>
-      <div><a class='apply-btn' href='https://byzantine.typeform.com/to/T7O1TA' target='_blank'>APPLY</a></div>
-    </section>
-
-    <section class='event-section'>
-      <div class='title'>UPCOMING EVENTS</div>
-      <div class='event'>
-        <div class='event-name'>The Art of Crypto Assets</div>
-        <div class='event-time'>April 12th</div>
-        <div class='event-place'>@ The Williamsburg Hotel</div>
-      </div>
-      <div class='event'>
-        <div class='event-name'>The Rise of Crypto Games</div>
-        <div class='event-time'>May 10th</div>
-        <div class='event-place'>@ The Generator</div>
-      </div>
-      <div class='event'>
-        <div class='event-name'>Blockparty</div>
-        <div class='event-time'>May 12th</div>
-        <div class='event-place'>@ The Williamsburg Hotel</div>
+        <div class="logo-card">
+          <img class="img" src="~/assets/bureau-icon-small.png" alt="">
+        </div>
       </div>
     </section>
-
-    <section class='landing-footer'>
-      <div class='footer-item'><a href='http://byzantine.network/' target='_blank'>a byzantine thing</a> 🦄</div>
-      <div class='footer-item'><a href='https://app.termly.io/document/privacy-policy-for-website/c596a054-bb10-4bc0-b04d-d582f48ee43e' target='_blank'>privacy policy</a> &amp; <a href='https://app.termly.io/document/terms-of-use-for-website/afc96613-61ec-4c6d-89fa-c6720e93ffa1' target='_blank'>terms</a></div>
+    <section class="location">
+      <div class="deets">THE DEETS</div>
+      <p class="location-text">The Ballroom at The Williamsburg Hotel</p>
+      <p class="location-text">Blockchain Week (May 11-18th, specific date TBD)</p>
+      <div class="get-tickets">
+        <a class="ticket-btn" href="#">GET TICKETS</a>
+      </div>
     </section>
+    <div>
+      <Footer />
+    </div>
   </div>
 </template>
 
 <script>
+import Footer from '~/components/Footer.vue'
+
 export default {
-  methods: {
-    imageLoaded () {
-      document.querySelector('.small-size').remove()
+  components: {
+    Footer
+  },
+  data () {
+    return {
+      canvash: 0,
+      canvasw: 0,
     }
+  },
+  methods: {
+    draw () {
+      const vm = this
+      const el = document.querySelector('.banner')
+      vm.canvash = el.clientHeight
+      vm.canvasw = el.clientWidth
+      vm.imagew = vm.canvasw / 2
+      vm.imageh = vm.imagew * 0.66
+
+      vm.canvas = document.querySelector('#canvas')
+      vm.ctx = canvas.getContext('2d')
+      vm.canvas.height = vm.canvash
+      vm.canvas.width = vm.canvasw
+
+      vm.image = new Image()
+      vm.image.src = require('~/assets/vaporwave_bk.png')
+
+      vm.image.onload = function() {
+        vm.posX = (vm.canvasw - vm.imagew) / 2
+        vm.posY = (vm.canvash - vm.imageh) / 2
+        vm.moveX = 1
+        vm.moveY = 1
+        vm.interval = setInterval(vm.imgAnimation, 20)
+
+      }
+    },
+    imgAnimation () {
+      const vm = this
+      vm.ctx.clearRect(0, 0, vm.canvasw, vm.canvash)
+      if (vm.posX <= 0 || vm.posX >= (vm.canvasw - vm.imagew)) { vm.moveX = -vm.moveX }
+      if (vm.posY <= 0 || vm.posY >= (vm.canvash - vm.imageh)) { vm.moveY = -vm.moveY }
+      vm.posX += vm.moveX
+      vm.posY += vm.moveY
+      vm.ctx.drawImage(vm.image, vm.posX, vm.posY, vm.imagew, vm.imageh)
+    },
+    onResize () {
+
+      const vm = this
+      if (vm.timeout) clearTimeout(vm.timeout)
+      if (vm.interval) clearInterval(vm.interval)
+      vm.ctx.clearRect(0, 0, vm.canvasw, vm.canvash)
+      vm.timeout = setTimeout(function() {
+        const el = document.querySelector('.banner')
+        vm.canvash = el.clientHeight
+        vm.canvasw = el.clientWidth
+        vm.imagew = vm.canvasw / 2
+        vm.imageh = vm.imagew * 0.66
+        vm.canvas.height = vm.canvash
+        vm.canvas.width = vm.canvasw
+        vm.posX = (vm.canvasw - vm.imagew) / 2
+        vm.posY = (vm.canvash - vm.imageh) / 2
+        vm.interval = setInterval(vm.imgAnimation, 20)
+      }, 500)
+
+    }
+  },
+  mounted () {
+    this.draw()
+    window.addEventListener('resize', this.onResize)
+  },
+  beforeDestroy() {
+    window.removeEventListener('resize', this.onResize)
   }
 }
 </script>
 
 <style scoped>
-.landing-header {
-  text-align: center;
-}
-.title {
-  font-family: arame-regular, sans-serif;
-  font-size: 24px;
-  line-height: 1.4em;
-  letter-spacing: 5px;
-}
-.subtitle {
-  margin-top: 8px;
-  font-family: rational-light, sans-serif;
-  font-size: 16px;
-  line-height: 1em;
-}
-
-.background-img {
-  position: relative;
-}
-.small-size {
-  position: absolute;
-  left: 0;
-  top: 0;
-  filter: blur(2px);
-}
-.background-img img,
-.background-mobile img {
-  width: 100%;
-}
-.background-mobile {
-  display: none;
-  position: relative;
-}
-.page-text {
-  position: absolute;
-  top: 18vh;
-  width: 100%;
-  font-family: arame-regular, sans-serif;
-  font-size: 20px;
-  color: #fff;
-  text-align: center;
-  letter-spacing: 10px;
+.banner {
+  height: 100vh;
+  background: #feff00;
 }
 .page-title {
-  font-size: 100px;
-  letter-spacing: 14px;
-}
-.page-title small {
-  font-size: 40px;
-}
-.page-subtitle {
-  margin-top: 20px;
-  padding: 0 20px;
-}
-
-/*
-.images-grid {
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 10px;
-}
-
-.image {
-  position: relative;
-  padding-top: 66%;
-  background: #eee;
-  overflow: hidden;
-}
-.image img {
   position: absolute;
   top: 50%;
-  left: 50%;
+  padding: 0 20px;
+  width: 100%;
+  font-family: arame-regular, sans-serif;
+  font-size: 2.8em;
+  color: #ff1bf3;
+  text-align: center;
+  transform: translateY(-50%);
+}
+.text-shadow {
+  display: inline-block;
+  position: relative;
+  margin: 0 .2em;
+  font-size: 3.4em;
+  color: #feff00;
+  z-index: 1;
+}
+.text-shadow:after {
+  content: attr(data-text);
+  position: absolute;
+  top: .05em;
+  left: .05em;
+  width: 100%;
+  background: -webkit-linear-gradient(180deg, rgba(1, 238, 255, .8) 20%, rgba(255, 27, 243, .8));
+  background: -o-linear-gradient(180deg, rgba(1, 238, 255, .8) 20%, rgba(255, 27, 243, .8));
+  background: linear-gradient(180deg, rgba(1, 238, 255, .8) 20%, rgba(255, 27, 243, .8));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  z-index: -1;
+}
+.page-title small {
+  font-size: .6em;
+  letter-spacing: .2em;
+}
+
+.section-title {
+  padding: 30px 0;
+  font-size: 1.4em;
+  font-family: arame-regular, sans-serif;
+  letter-spacing: .3em;
+  line-height: 1.6em;
+}
+
+.description {
+  margin: auto;
+  padding: 40px 24px;
+  max-width: 1000px;
+}
+.text-wrapper {
+  display: flex;
+  justify-content: space-between;
+  font-family: rational-light, sans-serif;
+}
+.paragraph {
+  flex: 2;
+  max-width: 604px;
+  line-height: 1.6em;
+}
+.side-paragraph {
+  flex: 1;
+  margin-left: 40px;
+  max-width: 284px;
+  font-size: .8em;
+  line-height: 1.5em;
+}
+
+.speakers {
+  margin: 0 auto 40px;
+  padding: 40px 24px;
+  max-width: 1000px;
+}
+.cards-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 40px;
+}
+.speaker-card .img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  transform: translate(-50%, -50%);
-  animation: blurin 1s;
 }
-
-.rowspan2 {
-  grid-row: span 2;
-}
-.rowspan3 {
-  grid-row: span 3;
-}
-.rowspan4 {
-  grid-row: span 4;
-}
-
-.colspan2 {
-  grid-column: span 2;
-}
-.colspan3 {
-  grid-column: span 3;
-}
-*/
-
-.apply-section {
-  padding: 100px 24px;
-  text-align: center;
-}
-.apply-btn {
-  display: inline-block;
-  padding: 0 40px;
-  height: 40px;
-  background: #D32DF8;
-  border: none;
-  font-family: arame-regular, sans-serif;
-  font-size: 16px;
-  color: #fff;
-  line-height: 40px;
-  letter-spacing: 2px;
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.landing-footer {
-  display: flex;
-  padding:  24px 0;
-  background: #fafafa;
-  text-align: right;
-  flex-flow: wrap;
-  justify-content: flex-end;
-}
-.footer-item {
-  margin: 10px 24px;
-  font-size: .8em;
+.speaker-card .text {
+  padding: 20px 0;
   font-family: rational-light, sans-serif;
-  text-align: center;
-}
-.footer-item a {
-  text-decoration: none;
-  color: #424242;
-  word-spacing: 0px;
-}
-.footer-item a:hover {
-  text-decoration: underline;
+  font-size: .9em;
 }
 
-.thumbnail {
-  position: fixed;
-  top: 110%;
-  left: 110%;
-  z-index: -100;
-  opacity: 0;
-  transform: scale(0);
+.organazations {
+  background: linear-gradient(180deg, #02efff, #fff);
 }
-
-.opening-section {
-  padding: 60px 0 20px;
-  text-align: center;
-  font-family: rational-light, sans-serif;
-}
-.feature-grid {
-  margin: 20px auto 0;
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: repeat(3, 1fr);
-  max-width: 960px;
-}
-.feature-grid .item {
-  padding: 30px;
-}
-.feature-icon {
-  display: inline-block;
-  margin: 10px;
-  height: 30px;
-  width: 30px;
-  object-fit: contain;
-}
-.feature-text {
-  font-size: 14px;
-}
-
-a.spacequest{
-  text-decoration: none;
-}
-.price-row {
+.org-wrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
-  margin: 40px auto;
-  font-family: rational-light, sans-serif;
+  margin: auto;
+  padding: 40px 24px;
   max-width: 1000px;
 }
-.price-card {
-  margin: 10px;
-  padding: 40px 20px;
-  min-width: 278px;
-  border: 1px solid transparent;
-  font-size: 18px;
-}
-.event-pass {
-  /* border-color: #06C3FF;
-  color: #06C3FF; */
-  border-color: #06C3FF;
-  color: #008EBB;
-  background-color: #B4EDFF;
-}
-.early-bird {
-  /* border-color: #D32DF8;
-  color: #D32DF8; */
-  border-color: #D32DF8;
-  color: #BC18E1;
-  background-color: #F1C0FC;
-}
-.grand-opening {
-  background: #161C6D;
-  border-color: #161C6D;
-}
-
-.card-title {
-  letter-spacing: 5px;
-  margin-bottom: 5px;
-  font-size: 1.2em;
-  font-family: arame-regular, sans-serif;
-}
-.price-card .price {
-  margin: 40px 0;
-  color: #212121;
-}
-.price-card .detail {
-  font-size: 14px;
-  color: #212121;
-}
-.grand-opening,
-.grand-opening .price,
-.grand-opening .detail {
-  color: #fff;
-}
-
-.spacequest-icon {
-  display: inline-block;
+.logo-card {
+  flex: 1;
   margin: 20px;
-  height: 80px;
-  width: 80px;
+  min-width: 200px;
+  max-width: 200px;
+}
+.logo-card .img {
+  width: 100%;
+  height: 100%;
   object-fit: contain;
 }
+.logo-card:last-child .img {
+  transform: scale(0.7);
+}
 
-.event-section {
-  margin: 30px 0 80px;
+.location {
+  margin: 0 auto 40px;
+  padding: 40px 24px;
+  max-width: 1000px;
   text-align: center;
 }
-.event {
-  margin: 30px 0;
+.deets {
+  padding: 30px 0;
+  font-size: 1.8em;
+  font-family: arame-regular, sans-serif;
+  letter-spacing: .2em;
+  line-height: 1.6em;
+}
+.location-text {
   font-family: rational-light, sans-serif;
-  font-size: 12px;
-  color: #D32DF8;
+  color: #ff1bf3;
+}
+.get-tickets {
+  margin: 40px 0;
+}
+.ticket-btn {
+  display: inline-block;
+  padding: 14px 0 12px;
+  width: 100%;
+  max-width: 200px;
+  background: #ff1bf3;
+  border: none;
+  font-family: arame-regular, sans-serif;
+  font-size: 1.2em;
+  line-height: 1em;
+  color: #fff;
+  text-decoration: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.ticket-btn:hover {
+  opacity: .8;
 }
 
-@keyframes blurin {
-  from {
-    filter: blur(4px);
+@media (max-width: 767px) {
+  .text-shadow {
+    font-size: 20vw;
   }
-  to {
-    filter: blur(0px);
-  }
-}
-
-@media screen and (max-width: 963px) {
-  .images-grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-  .price-row {
+  .text-wrapper {
     flex-wrap: wrap;
-    max-width: 600px;
   }
-  .price-card {
+  .paragraph {
     flex: none;
+    max-width: 100%;
   }
-}
-@media screen and (max-width: 767px) {
-  .feature-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .side-paragraph {
+    flex: none;
+    margin-top: 30px;
+    margin-left: 0;
+    max-width: 100%;
   }
-  .page-title {
-    font-size: 16vw;
-    letter-spacing: 10px;
-  }
-  .page-title small {
-    font-size: 7vw;
-  }
-  .background-img {
-    display: none;
-  }
-  .background-mobile {
-    display: block;
-  }
-}
-@media screen and (max-width: 425px) {
-  .feature-grid {
-    grid-template-columns: 1fr;
-  }
-  .feature-grid .item {
-    display: flex;
-    padding: 0 24px;
-    line-height: 50px;
-  }
-
 }
 </style>
