@@ -8,7 +8,7 @@
           <div class="text-shadow" data-text='CRYPTO'>CRYPTO</div>
           <div class="text-shadow" data-text='ASSETS'>ASSETS</div>
         </div>
-        <small>MAY 15 @ THE VILLIAMSBURG HOTEL</small>
+        <small>MAY 10 @ THE WILLIAMSBURG HOTEL</small>
       </div>
     </section>
     <section class="description">
@@ -71,7 +71,7 @@
     <section class="location">
       <div class="deets">THE DEETS</div>
       <p class="location-text">The Ballroom at The Williamsburg Hotel</p>
-      <p class="location-text">Blockchain Week (May 11-18th, specific date TBD)</p>
+      <p class="location-text">May 10, 2018</p>
       <div class="get-tickets">
         <a class="ticket-btn" href="#">GET TICKETS</a>
       </div>
