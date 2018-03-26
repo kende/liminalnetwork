@@ -8,7 +8,7 @@
           <div class="text-shadow" data-text='CRYPTO'>CRYPTO</div>
           <div class="text-shadow" data-text='ASSETS'>ASSETS</div>
         </div>
-        <small>MAY 15 @ THE VILLIAMSBURG HOTEL</small>
+        <small>MAY 10 @ THE WILLIAMSBURG HOTEL</small>
       </div>
     </section>
     <section class="description">
@@ -53,7 +53,7 @@
           <img class="img" src="~/assets/vaporwave_bk.png" alt="New Museum">
           <div class="text">New Museum</div>
         </div>
-      </div>  
+      </div>
     </section>
     <section class="organazations">
       <div class="org-wrapper ">
@@ -71,7 +71,7 @@
     <section class="location">
       <div class="deets">THE DEETS</div>
       <p class="location-text">The Ballroom at The Williamsburg Hotel</p>
-      <p class="location-text">Blockchain Week (May 11-18th, specific date TBD)</p>
+      <p class="location-text">May 10, 2018</p>
       <div class="get-tickets">
         <!-- <script src="https://www.universe.com/embed2.js" data-state=""></script> -->
         <a class="ticket-btn unii-listing-button unii-custom unii-medium Light" href="https://www.universe.com/events/the-art-of-crypto-assets-tickets-FXY5T6?buttonColor=#ff1bf3&buttonText=Get Tickets">
@@ -121,7 +121,7 @@ export default {
         vm.moveX = 1
         vm.moveY = 1
         vm.interval = setInterval(vm.imgAnimation, 20)
-        
+
       }
     },
     imgAnimation () {
