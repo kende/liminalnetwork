@@ -126,7 +126,11 @@ export default {
         { hid: 'og_title', property: 'og:title', content: 'The Art of Crypto Assets' },
         { hid: 'og_description', property: 'og:description', content: 'MAY 10 @ THE WILLIAMSBURG HOTEL' },
         { hid: 'og_image', property: 'og:image', content: require('~/assets/social_media_cryptoart.png')},
-        { hid: 'og_url', property: 'og:url', content: 'https://liminal.network/cryptoart/' }
+        { hid: 'og_url', property: 'og:url', content: 'https://liminal.network/cryptoart/' },
+        { hid: 'twitter_title', property: 'twitter:title', content: 'The Art of Crypto Assets' },
+        { hid: 'twitter_description', property: 'twitter:description', content: 'MAY 10 @ THE WILLIAMSBURG HOTEL' },
+        { hid: 'twitter_image', property: 'twitter:image', content: require('~/assets/social_media_cryptoart.png')},
+        { hid: 'twitter_url', property: 'twitter:url', content: 'https://liminal.network/cryptoart/' }
       ]
     }
   },
