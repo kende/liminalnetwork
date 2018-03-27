@@ -8,10 +8,10 @@ module.exports = {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: 'Decentralized creative space.' },
-      { property: 'og:title', content: 'The Liminal Network' },
-      { property: 'og:description', content: 'Decentralized creative space.' },
-      { property: 'og:image', id: 'fbImage', content: 'https://liminal.network/_nuxt/img/liminal.aaf41b4.png'},
-      { property: 'og:url', content: 'https://liminal.network' }
+      { hid: 'og_title', property: 'og:title', content: 'The Liminal Network' },
+      { hid: 'og_description', property: 'og:description', content: 'Decentralized creative space.' },
+      { hid: 'og_image', property: 'og:image', content: 'https://liminal.network/_nuxt/img/liminal.aaf41b4.png'},
+      { hid: 'og_url', property: 'og:url', content: 'https://liminal.network' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/liminal-favicon.png' },

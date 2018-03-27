@@ -120,6 +120,16 @@ export default {
   components: {
     Footer
   },
+  head () {
+    return {
+      meta: [
+        { hid: 'og_title', property: 'og:title', content: 'The Art of Crypto Assets' },
+        { hid: 'og_description', property: 'og:description', content: 'MAY 10 @ THE WILLIAMSBURG HOTEL' },
+        { hid: 'og_image', property: 'og:image', content: require('~/assets/social_media_cryptoart.png')},
+        { hid: 'og_url', property: 'og:url', content: 'https://liminal.network/cryptoart/' }
+      ]
+    }
+  },
   data () {
     return {
       canvash: 0,
@@ -162,7 +172,6 @@ export default {
       vm.ctx.drawImage(vm.image, vm.posX, vm.posY, vm.imagew, vm.imageh)
     },
     onResize () {
-
       const vm = this
       if (vm.timeout) clearTimeout(vm.timeout)
       if (vm.interval) clearInterval(vm.interval)
@@ -185,7 +194,6 @@ export default {
   mounted () {
     this.draw()
     window.addEventListener('resize', this.onResize)
-    document.querySelector('#fbImage').content = require('~/assets/social_media_cryptoart.png')
   },
   beforeDestroy() {
     window.removeEventListener('resize', this.onResize)
