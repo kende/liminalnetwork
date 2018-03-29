@@ -30,6 +30,15 @@
       <div class="section-title">SPEAKERS</div>
       <div class="cards-wrapper">
         <div class="speaker-card">
+          <img class="img" src="~/assets/judy.png" alt="Judy Mam">
+          <div class="text">
+            <div class="name">
+              Judy Mam
+            </div>
+            Writer and Co-Founder of dada.nyc
+          </div>
+        </div>
+        <div class="speaker-card">
           <img class="img" src="~/assets/steven.jpg" alt="Steven Waterhouse">
           <div class="text">
             <div class="name">
@@ -60,22 +69,13 @@
             CEO & Founder @ Rokoko
           </div>
         </div>
-        <div class="speaker-card">
+        <div class="speaker-card moderator">
           <img class="img" src="~/assets/nadia-profile.png" alt="Nadia Chilmonik">
           <div class="text">
             <div class="name">
               Nadia Chilmonik
             </div>
             Moderator, Artist & CDO @ Byzantine
-          </div>
-        </div>
-        <div class="speaker-card">
-          <img class="img" src="https://pbs.twimg.com/profile_images/2345873659/onr6nfzr9pfnpm6l6zyv.jpeg" alt="Judy Mam">
-          <div class="text">
-            <div class="name">
-              Judy Mam
-            </div>
-            Writer and Co-Founder of dada.nyc
           </div>
         </div>
         <!-- <div class="speaker-card">
@@ -304,17 +304,14 @@ export default {
 }
 .speaker-card .img {
   width: 100%;
-  height: 100%;
-  max-height: 208px;
-  object-fit: cover;
 }
 .speaker-card .text {
   padding: 20px 0;
   font-family: rational-light, sans-serif;
   font-size: .9em;
 }
-.speaker-card .text .name{
-  /* padding-bottom: 0px; */
+.moderator{
+  grid-column: 1 / 2;
 }
 
 .organazations {
