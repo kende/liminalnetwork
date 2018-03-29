@@ -94,6 +94,9 @@
         <div class="logo-card">
           <img class="img" src="~/assets/bureau-icon-small.png" alt="">
         </div>
+        <div class="logo-card">
+          <img class="img" src="~/assets/Byzantine-Logo.png" alt="">
+        </div>
       </div>
     </section>
     <section class="location">
@@ -319,15 +322,15 @@ export default {
 .logo-card {
   flex: 1;
   margin: 20px;
-  min-width: 200px;
-  max-width: 200px;
+  min-width: 180px;
+  max-width: 180px;
 }
 .logo-card .img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-.logo-card:last-child .img {
+.logo-card:nth-child(3) .img {
   transform: scale(0.7);
 }
 
