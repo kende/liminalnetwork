@@ -69,6 +69,15 @@
             Moderator, Artist & CDO @ Byzantine
           </div>
         </div>
+        <div class="speaker-card">
+          <img class="img" src="https://pbs.twimg.com/profile_images/2345873659/onr6nfzr9pfnpm6l6zyv.jpeg" alt="Judy Mam">
+          <div class="text">
+            <div class="name">
+              Judy Mam
+            </div>
+            Writer and Co-Founder of dada.nyc
+          </div>
+        </div>
         <!-- <div class="speaker-card">
           <img class="img" src="~/assets/vaporwave_bk.png" alt="New Museum">
           <div class="text">New Museum</div>
