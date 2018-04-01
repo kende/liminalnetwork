@@ -48,6 +48,15 @@
           </div>
         </div>
         <div class="speaker-card">
+          <img class="img" src="~/assets/jessica.png" alt="Jessica Angel">
+          <div class="text">
+            <div class="name">
+              Jessica Angel
+            </div>
+            Trans media visual artist
+          </div>
+        </div>
+        <div class="speaker-card">
           <img class="img" src="~/assets/seth.jpg" alt="Seth Goldstein">
           <div class="text">
             <div class="name">Seth Goldstein</div>
