@@ -88,8 +88,8 @@
           <div class='card-title'>FIRST 100</div>
           <div class='card-title'>CREATORS</div>
           <div class='price'>$300 / month</div>
-          <div class='detail'>All access April 1st</div>
-          <div class='detail'>$1000+ after launch</div>
+          <div class='detail'>24/7 access</div>
+          <div class='detail'>$1000 + after launch</div>
         </div>
         <a class="spacequest" href="https://byzantine.network/spacequest/" target="_blank">
           <div class='price-card grand-opening'>
@@ -108,20 +108,24 @@
     <section class='event-section'>
       <div class='title'>UPCOMING EVENTS</div>
       <div class='event'>
-        <div class='event-name'>The Art of Crypto Assets</div>
-        <div class='event-time'>April 12th</div>
-        <div class='event-place'>@ The Williamsburg Hotel</div>
+        <a href="/cryptoart" target="_blank">
+          <div class='event-time'>May 10th</div>
+          <div class='event-name'>The Art of Crypto Assets</div>
+          <div class='event-place'>@ The Williamsburg Hotel</div>
+
+          <div class='ticket-btn'>Get tickets</div>
+        </a>
       </div>
-      <div class='event'>
-        <div class='event-name'>The Rise of Crypto Games</div>
-        <div class='event-time'>May 10th</div>
-        <div class='event-place'>@ The Generator</div>
-      </div>
-      <div class='event'>
+      <!-- <div class='event'>
         <div class='event-name'>Blockparty</div>
         <div class='event-time'>May 12th</div>
         <div class='event-place'>@ The Williamsburg Hotel</div>
       </div>
+      <div class='event'>
+        <div class='event-name'>The Rise of Crypto Games</div>
+        <div class='event-time'>May 15th</div>
+        <div class='event-place'>@ The Generator</div>
+      </div> -->
     </section>
 
     <section class='landing-footer'>
@@ -248,7 +252,8 @@ export default {
   display: inline-block;
   padding: 0 40px;
   height: 40px;
-  background: #D32DF8;
+  /* background: #D32DF8; */
+  background: #ff1bf3;
   border: none;
   font-family: arame-regular, sans-serif;
   font-size: 16px;
@@ -390,6 +395,29 @@ a.spacequest{
   font-family: rational-light, sans-serif;
   font-size: 12px;
   color: #D32DF8;
+}
+.event a{
+  text-decoration: none;
+}
+
+.ticket-btn {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 14px 0 12px;
+  width: 100%;
+  max-width: 200px;
+  /* background: #; */
+  border: none;
+  font-family: arame-regular, sans-serif;
+  font-size: 1.2em;
+  line-height: 1em;
+  color: #ff1bf3;
+  text-decoration: none;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.ticket-btn:hover {
+  opacity: .8;
 }
 
 @keyframes blurin {
