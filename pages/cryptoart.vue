@@ -23,12 +23,21 @@
           <br>
           Stay for a specially curated art exhibit and ERC-721 exclusive token release for ticket holders only at the end of the show.
         </p>
-        <p class="side-paragraph">Expect crypto whales 🐳 underground brooklyn artists 🎨, blockchain developers, art dealers, and collectors to make appearances. Ticket sales go toward funding the Liminal Art Residency program which supports artists experimenting in VR, AR & Blockchain. Get your tickets soon! There are only 300 🎟️ and we expect them to go quickly. As an added bonus each ticket holder that comes to the event can redeem their ticket for a unique ERC-721 tokenized art piece made for the event by Dada.NYC artists!</p>
+        <p class="side-paragraph">Expect crypto whales 🐳 underground brooklyn artists 🎨, blockchain developers, art dealers, and collectors to make appearances. Ticket sales go toward funding the Liminal Art Residency program which supports artists experimenting in VR, AR & Blockchain. Get your tickets soon! There are only 300 🎟️ and we expect them to go quickly. As an added bonus each ticket holder that comes to the event can redeem their ticket for a unique ERC-721 tokenized art piece made for the event!</p>
       </div>
     </section>
     <section class="speakers">
       <div class="section-title">SPEAKERS</div>
       <div class="cards-wrapper">
+        <div class="speaker-card">
+          <img class="img" src="~/assets/judy.png" alt="Judy Mam">
+          <div class="text">
+            <div class="name">
+              Judy Mam
+            </div>
+            Writer and Co-Founder of dada.nyc
+          </div>
+        </div>
         <div class="speaker-card">
           <img class="img" src="~/assets/steven.jpg" alt="Steven Waterhouse">
           <div class="text">
@@ -36,6 +45,15 @@
               Steven Waterhouse
             </div>
             CEO of Orchid Labs
+          </div>
+        </div>
+        <div class="speaker-card">
+          <img class="img" src="~/assets/jessica.png" alt="Jessica Angel">
+          <div class="text">
+            <div class="name">
+              Jessica Angel
+            </div>
+            Trans media visual artist
           </div>
         </div>
         <div class="speaker-card">
@@ -60,7 +78,7 @@
             CEO & Founder @ Rokoko
           </div>
         </div>
-        <div class="speaker-card">
+        <div class="speaker-card moderator">
           <img class="img" src="~/assets/nadia-profile.png" alt="Nadia Chilmonik">
           <div class="text">
             <div class="name">
@@ -94,6 +112,9 @@
         <div class="logo-card">
           <img class="img" src="~/assets/bureau-icon-small.png" alt="">
         </div>
+        <div class="logo-card">
+          <img class="img" src="~/assets/Byzantine-Logo.png" alt="">
+        </div>
       </div>
     </section>
     <section class="location">
@@ -119,6 +140,20 @@ import Footer from '~/components/Footer.vue'
 export default {
   components: {
     Footer
+  },
+  head () {
+    return {
+      meta: [
+        { hid: 'og_title', property: 'og:title', content: 'The Art of Crypto Assets' },
+        { hid: 'og_description', property: 'og:description', content: 'MAY 10 @ THE WILLIAMSBURG HOTEL' },
+        { hid: 'og_image', property: 'og:image', content: require('~/assets/social_media_cryptoart.png')},
+        { hid: 'og_url', property: 'og:url', content: 'https://liminal.network/cryptoart/' },
+        { hid: 'twitter_title', property: 'twitter:title', content: 'The Art of Crypto Assets' },
+        { hid: 'twitter_description', property: 'twitter:description', content: 'MAY 10 @ THE WILLIAMSBURG HOTEL' },
+        { hid: 'twitter_image', property: 'twitter:image', content: require('~/assets/social_media_cryptoart.png')},
+        { hid: 'twitter_url', property: 'twitter:url', content: 'https://liminal.network/cryptoart/' }
+      ]
+    }
   },
   data () {
     return {
@@ -162,7 +197,6 @@ export default {
       vm.ctx.drawImage(vm.image, vm.posX, vm.posY, vm.imagew, vm.imageh)
     },
     onResize () {
-
       const vm = this
       if (vm.timeout) clearTimeout(vm.timeout)
       if (vm.interval) clearInterval(vm.interval)
@@ -279,17 +313,14 @@ export default {
 }
 .speaker-card .img {
   width: 100%;
-  height: 100%;
-  max-height: 208px;
-  object-fit: cover;
 }
 .speaker-card .text {
   padding: 20px 0;
   font-family: rational-light, sans-serif;
   font-size: .9em;
 }
-.speaker-card .text .name{
-  /* padding-bottom: 0px; */
+.moderator{
+  grid-column: 1 / 2;
 }
 
 .organazations {
@@ -306,15 +337,15 @@ export default {
 .logo-card {
   flex: 1;
   margin: 20px;
-  min-width: 200px;
-  max-width: 200px;
+  min-width: 180px;
+  max-width: 180px;
 }
 .logo-card .img {
   width: 100%;
   height: 100%;
   object-fit: contain;
 }
-.logo-card:last-child .img {
+.logo-card:nth-child(3) .img {
   transform: scale(0.7);
 }
 
