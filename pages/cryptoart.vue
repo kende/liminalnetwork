@@ -96,7 +96,6 @@
         <div class="speaker-card">
           <img class="img" src="~/assets/nadia-profile.png" alt="Nadia Chilmonik">
           <div class="text">
-            <div class="mod-title">Moderated by</div>
             <div class="name">
               Nadia Chilmonik
             </div>
@@ -569,6 +568,7 @@ export default {
   }
   .paragraph.detail {
     padding: 24px 24px 24px 20%;
+    text-align: right;
   }
   .cursor-pink .paragraph:not(.detail) {
     margin: -60px auto 0;
