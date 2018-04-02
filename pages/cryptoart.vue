@@ -18,21 +18,12 @@
           Byzantine is proud to host the Crypto/Art event of the year (to date!) in the Grand Ballroom of the Williamsburg Hotel on May 10th, 2018, at the transition between Creative Tech Week &  Blockchain Week in NYC.
           <br>
           <br>
-          We are very excited to welcome to our panels not only leaders in the global art scene but also crypto luminaries from around the world, and those few innovators already bringing these together!
-        </p>
-        <div class="computer-mail">
-          <!-- named after the file in the assets folder -->
-        </div>
-        <p class="paragraph">
-          You will hear about the fractionalization of ownership in art, and how it defines the exchange and appreciation of value when everything is tokenized. The cross pollination of art and crypto through booze, snacks, and conversation will be the highlight of our day, but you will also get access to two star studded panels navigating very complex new terrains.
+          We are very excited to welcome to our panels not only leaders in the global art scene but also crypto luminaries from around the world, and those few innovators already bringing these together! You will hear about the fractionalization of ownership in art, and how it defines the exchange and appreciation of value when everything is tokenized. The cross pollination of art and crypto through booze, snacks, and conversation will be the highlight of our day, but you will also get access to two star studded panels navigating very complex new terrains.
           <br>
           <br>
           Stay for a specially curated art exhibit and ERC-721 exclusive token release for ticket holders only at the end of the show.
         </p>
-        <div class="cursor-pink">
-          <!-- named after the file in the assets folder -->
-        </div>
-        <p class="paragraph">Expect crypto whales 🐳 underground brooklyn artists 🎨, blockchain developers, art dealers, and collectors to make appearances.</p>
+        <p class="side-paragraph">Expect crypto whales 🐳 underground brooklyn artists 🎨, blockchain developers, art dealers, and collectors to make appearances. Ticket sales go toward funding the Liminal Art Residency program which supports artists experimenting in VR, AR & Blockchain. Get your tickets soon! There are only 300 🎟️ and we expect them to go quickly. As an added bonus each ticket holder that comes to the event can redeem their ticket for a unique ERC-721 tokenized art piece made for the event!</p>
       </div>
     </section>
     <section class="speakers">
@@ -90,13 +81,10 @@
         <div class="speaker-card moderator">
           <img class="img" src="~/assets/nadia-profile.png" alt="Nadia Chilmonik">
           <div class="text">
-            <div class="mod-title">Moderated by</div>
             <div class="name">
               Nadia Chilmonik
             </div>
             Moderator, Artist & CDO @ Byzantine
-          </div>
-          <div class="flower-1">
           </div>
         </div>
         <!-- <div class="speaker-card">
@@ -113,54 +101,6 @@
         </div> -->
       </div>
     </section>
-
-    <section class="artists">
-      <div class="section-title">Artists</div>
-      <div class="cards-wrapper">
-        <div class="speaker-card">
-          <img class="img" src="~/assets/judy.png" alt="Judy Mam">
-          <div class="text">
-            <div class="name">
-              Katya
-            </div>
-            Sound and visual artist
-          </div>
-        </div>
-        <div class="speaker-card">
-          <img class="img" src="~/assets/steven.jpg" alt="Steven Waterhouse">
-          <div class="text">
-            <div class="name">
-              Armoni Boone
-            </div>
-            AI poet and artist
-          </div>
-        </div>
-        <div class="speaker-card">
-          <img class="img" src="~/assets/jessica.png" alt="Jessica Angel">
-          <div class="text">
-            <div class="name">
-              Artist
-            </div>
-            artist
-          </div>
-        </div>
-        <div class="speaker-card">
-          <img class="img" src="~/assets/seth.jpg" alt="Seth Goldstein">
-          <div class="text">
-            <div class="name">
-              Artist
-            </div>
-            Artist
-          </div>
-        </div>
-      </div>
-      <div class="flower-2">
-      </div>
-    </section>
-
-<!-- abstract background object canvas
-    <canvas id="canvas"></canvas>-->
-
     <section class="organazations">
       <div class="org-wrapper ">
         <div class="logo-card">
@@ -178,7 +118,7 @@
       </div>
     </section>
     <section class="location">
-      <div class="ticket-text"> Ticket sales go toward funding the Liminal Art Residency program which supports artists experimenting in VR, AR & Blockchain. <br><br> Get your tickets soon! There are only 300 🎟️ and we expect them to go quickly. <br><br> As an added bonus each ticket holder that comes to the event can redeem their ticket for a unique ERC-721 tokenized art piece made for the event!</div>
+      <div class="deets">THE DEETS</div>
       <p class="location-text">The Ballroom at The Williamsburg Hotel</p>
       <p class="location-text">May 10, 2018</p>
       <div class="get-tickets">
@@ -336,25 +276,6 @@ export default {
   letter-spacing: .3em;
   line-height: 1.6em;
 }
-.speakers .section-title{
-  padding: 30px 0;
-  font-size: 4em;
-  font-family: arame-regular, sans-serif;
-  letter-spacing: .3em;
-  line-height: 1.6em;
-  color: #fff;
-  text-shadow: -3px -3px #ff1bf3;
-}
-.artists .section-title{
-  padding: 30px 0;
-  font-size: 4em;
-  font-family: arame-regular, sans-serif;
-  letter-spacing: .3em;
-  line-height: 1.6em;
-  color: #fff;
-  text-shadow: -3px -3px #ff1bf3;
-}
-
 
 .description {
   margin: auto;
@@ -372,22 +293,18 @@ export default {
   padding-bottom: 20px;
   line-height: 1.6em;
 }
-/* .side-paragraph {
+.side-paragraph {
   flex: 1;
   margin-left: 40px;
   max-width: 284px;
   font-size: .8em;
   line-height: 1.5em;
-} */
+}
 
-.speakers, .artists {
+.speakers {
   margin: 0 auto 40px;
   padding: 40px 24px;
   max-width: 1000px;
-  position: relative;
-}
-.artists{
-  padding-bottom: 200px;
 }
 .cards-wrapper {
   display: grid;
@@ -397,12 +314,6 @@ export default {
 .speaker-card .img {
   width: 100%;
 }
-.speaker-card .name{
-  font-size: 1.3em;
-  font-family: arame-regular, sans-serif;
-  letter-spacing: .4em;
-  padding-bottom: 10px;
-}
 .speaker-card .text {
   padding: 20px 0;
   font-family: rational-light, sans-serif;
@@ -410,32 +321,6 @@ export default {
 }
 .moderator{
   grid-column: 1 / 2;
-}
-.flower-1{
-  width: 800px;
-  height: 800px;
-  position: absolute;
-  top: 250px;
-  right: 0;
-  z-index: -100;
-  /* background: #02efff; */
-  background-image: url(~/assets/flower-example.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
-.flower-2{
-  width: 600px;
-  height: 600px;
-  position: absolute;
-  top: 0;
-  left: 50px;
-  z-index: -100;
-  /* background: #02efff; */
-  background-image: url(~/assets/flower-example.png);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center center;
 }
 
 .organazations {
@@ -470,14 +355,12 @@ export default {
   max-width: 1000px;
   text-align: center;
 }
-.ticket-text {
-  max-width: 1200px;
-  padding: 50px 0 100px 0;
-  font-size: 1.2em;
-  font-family: rational-light, sans-serif;
-  letter-spacing: 0em;
+.deets {
+  padding: 30px 0;
+  font-size: 1.8em;
+  font-family: arame-regular, sans-serif;
+  letter-spacing: .2em;
   line-height: 1.6em;
-  text-align: left;
 }
 .location-text {
   font-family: rational-light, sans-serif;
