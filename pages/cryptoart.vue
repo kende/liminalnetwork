@@ -12,25 +12,29 @@
       </div>
     </section>
     <section class="description">
+      <div class="mobile-icon"><img src="~/assets/computer-mail-mobile.png" alt="computer icon for mobile"></div>
       <div class="section-title">DEMOCRATIZED ART OWNERSHIP IN A BLOCKCHAIN WORLD</div>
       <div class="text-wrapper">
         <div class="computer-mail">
           <p class="paragraph">
             Byzantine is proud to host the Crypto/Art event of the year (to date!) in the Grand Ballroom of the Williamsburg Hotel on May 10th, 2018, at the transition between Creative Tech Week &  Blockchain Week in NYC.
-            <br>
-            <br>
-            We are very excited to welcome to our panels not only leaders in the global art scene but also crypto luminaries from around the world, and those few innovators already bringing these together!
+            <span class="hidden-on-mobile">
+              <br>
+              <br>
+              We are very excited to welcome to our panels not only leaders in the global art scene but also crypto luminaries from around the world, and those few innovators already bringing these together!
+            </span>
           </p>
         </div>
         <div class="cursor-pink">
           <div class="cursor-pink-bg"></div>
           <p class="paragraph detail">
-            You will hear about the fractionalization of ownership in art, and how it defines the exchange and appreciation of value when everything is tokenized. The cross pollination of art and crypto through booze, snacks, and conversation will be the highlight of our day, but you will also get access to two star studded panels navigating very complex new terrains.
+            You will hear about the fractionalization of ownership in art, and how it defines the exchange and appreciation of value when everything is tokenized. <span class="hidden-on-mobile">The cross pollination of art and crypto through booze, snacks, and conversation will be the highlight of our day, but you will also get access to two star studded panels navigating very complex new terrains.
             <br>
             <br>
-            Stay for a specially curated art exhibit and ERC-721 exclusive token release for ticket holders only at the end of the show.
+            Stay for a specially curated art exhibit and ERC-721 exclusive token release for ticket holders only at the end of the show.</span>
           </p>
-          <p class="paragraph">Expect crypto whales 🐳 underground brooklyn artists 🎨, blockchain developers, art dealers, and collectors to make appearances.</p>
+          <p class="paragraph hidden-on-mobile">Expect crypto whales 🐳 underground brooklyn artists 🎨, blockchain developers, art dealers, and collectors to make appearances.</p>
+          <p class="paragraph show-on-mobile">Stay for a specially curated art exhibit and ERC-721 exclusive token release for ticket holders only at the end of the show.</p>
         </div>
       </div>
     </section>
@@ -318,12 +322,13 @@ export default {
   letter-spacing: .3em;
   line-height: 1.6em;
 }
-.speakers .section-title{
-  padding: 30px 0;
+.speakers .section-title {
+  padding: 0 20px 30px;
+  background: linear-gradient(0deg, #fff 70%, rgba(255, 255, 255, .01));
   font-size: 4em;
   font-family: arame-regular, sans-serif;
   letter-spacing: .3em;
-  line-height: 1.6em;
+  line-height: 1em;
   color: #fff;
   text-shadow: -3px -3px #ff1bf3;
 }
@@ -401,13 +406,6 @@ export default {
   margin-top: -25px;
 }
 
-.speakers .section-title{
-  padding-top: 0;
-  padding-left: 20px;
-  padding-right: 20px;
-  line-height: 1em;
-  background: linear-gradient(0deg, #fff 50%, rgba(255, 255, 255, .01));
-}
 .cards-wrapper {
   padding: 0 20px;
   display: grid;
@@ -523,9 +521,14 @@ export default {
   opacity: .8;
 }
 
+.mobile-icon,
+.show-on-mobile {
+  display: none;
+}
+
 @media (max-width: 944px) {
   .description .section-title {
-    padding: 0 2%;
+    padding: 0 24px;
   }
   .computer-mail .paragraph {
     padding: 2% 14% 30% 2%;
@@ -582,6 +585,22 @@ export default {
   .flower1,
   .flower2 {
     background: none;
+  }
+
+  .hidden-on-mobile {
+    display: none;
+  }
+  .show-on-mobile {
+    display: block;
+  }
+
+  .mobile-icon {
+    display: block;
+    margin: 20px 0 30px;
+    text-align: center;
+  }
+  .mobile-icon img {
+    height: 80px;
   }
 }
 
