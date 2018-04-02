@@ -112,7 +112,6 @@
           <div class='event-time'>May 10th</div>
           <div class='event-name'>The Art of Crypto Assets</div>
           <div class='event-place'>@ The Williamsburg Hotel</div>
-
           <div class='ticket-btn'>Get tickets</div>
         </a>
       </div>
