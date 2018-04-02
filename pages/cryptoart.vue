@@ -14,28 +14,27 @@
     <section class="description">
       <div class="section-title">DEMOCRATIZED ART OWNERSHIP IN A BLOCKCHAIN WORLD</div>
       <div class="text-wrapper">
-        <p class="paragraph">
-          Byzantine is proud to host the Crypto/Art event of the year (to date!) in the Grand Ballroom of the Williamsburg Hotel on May 10th, 2018, at the transition between Creative Tech Week &  Blockchain Week in NYC.
-          <br>
-          <br>
-          We are very excited to welcome to our panels not only leaders in the global art scene but also crypto luminaries from around the world, and those few innovators already bringing these together!
-        </p>
         <div class="computer-mail">
-          <!-- named after the file in the assets folder -->
+          <p class="paragraph">
+            Byzantine is proud to host the Crypto/Art event of the year (to date!) in the Grand Ballroom of the Williamsburg Hotel on May 10th, 2018, at the transition between Creative Tech Week &  Blockchain Week in NYC.
+            <br>
+            <br>
+            We are very excited to welcome to our panels not only leaders in the global art scene but also crypto luminaries from around the world, and those few innovators already bringing these together!
+          </p>
         </div>
-        <p class="paragraph">
-          You will hear about the fractionalization of ownership in art, and how it defines the exchange and appreciation of value when everything is tokenized. The cross pollination of art and crypto through booze, snacks, and conversation will be the highlight of our day, but you will also get access to two star studded panels navigating very complex new terrains.
-          <br>
-          <br>
-          Stay for a specially curated art exhibit and ERC-721 exclusive token release for ticket holders only at the end of the show.
-        </p>
         <div class="cursor-pink">
-          <!-- named after the file in the assets folder -->
+          <div class="cursor-pink-bg"></div>
+          <p class="paragraph detail">
+            You will hear about the fractionalization of ownership in art, and how it defines the exchange and appreciation of value when everything is tokenized. The cross pollination of art and crypto through booze, snacks, and conversation will be the highlight of our day, but you will also get access to two star studded panels navigating very complex new terrains.
+            <br>
+            <br>
+            Stay for a specially curated art exhibit and ERC-721 exclusive token release for ticket holders only at the end of the show.
+          </p>
+          <p class="paragraph">Expect crypto whales 🐳 underground brooklyn artists 🎨, blockchain developers, art dealers, and collectors to make appearances.</p>
         </div>
-        <p class="paragraph">Expect crypto whales 🐳 underground brooklyn artists 🎨, blockchain developers, art dealers, and collectors to make appearances.</p>
       </div>
     </section>
-    <section class="speakers">
+    <section class="speakers flower1">
       <div class="section-title">SPEAKERS</div>
       <div class="cards-wrapper">
         <div class="speaker-card">
@@ -87,7 +86,10 @@
             CEO & Founder @ Rokoko
           </div>
         </div>
-        <div class="speaker-card moderator">
+      </div>
+      <div class="moderator-title">MODERATED BY</div>
+      <div class="cards-wrapper moderator">
+        <div class="speaker-card">
           <img class="img" src="~/assets/nadia-profile.png" alt="Nadia Chilmonik">
           <div class="text">
             <div class="mod-title">Moderated by</div>
@@ -96,25 +98,11 @@
             </div>
             Moderator, Artist & CDO @ Byzantine
           </div>
-          <div class="flower-1">
-          </div>
         </div>
-        <!-- <div class="speaker-card">
-          <img class="img" src="~/assets/vaporwave_bk.png" alt="New Museum">
-          <div class="text">New Museum</div>
-        </div>
-        <div class="speaker-card">
-          <img class="img" src="~/assets/vaporwave_bk.png" alt="New Museum">
-          <div class="text">New Museum</div>
-        </div>
-        <div class="speaker-card">
-          <img class="img" src="~/assets/vaporwave_bk.png" alt="New Museum">
-          <div class="text">New Museum</div>
-        </div> -->
       </div>
     </section>
 
-    <section class="artists">
+    <!-- <section class="artists flower2">
       <div class="section-title">Artists</div>
       <div class="cards-wrapper">
         <div class="speaker-card">
@@ -154,12 +142,7 @@
           </div>
         </div>
       </div>
-      <div class="flower-2">
-      </div>
-    </section>
-
-<!-- abstract background object canvas
-    <canvas id="canvas"></canvas>-->
+    </section> -->
 
     <section class="organazations">
       <div class="org-wrapper ">
@@ -182,7 +165,6 @@
       <p class="location-text">The Ballroom at The Williamsburg Hotel</p>
       <p class="location-text">May 10, 2018</p>
       <div class="get-tickets">
-        <!-- <script src="https://www.universe.com/embed2.js" data-state=""></script> -->
         <a class="ticket-btn unii-listing-button unii-custom unii-medium Light" href="https://www.universe.com/events/the-art-of-crypto-assets-tickets-FXY5T6?buttonColor=#ff1bf3&buttonText=Get Tickets">
           GET TICKETS
         </a>
@@ -358,40 +340,78 @@ export default {
 
 .description {
   margin: auto;
-  padding: 40px 24px;
+  padding: 40px 24px 0;
   max-width: 1000px;
 }
 .text-wrapper {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   font-family: rational-light, sans-serif;
 }
-.paragraph {
-  flex: 2;
-  max-width: 604px;
-  padding-bottom: 20px;
-  line-height: 1.6em;
+
+.description .section-title {
+  padding: 0 4%;
+  max-width: 1000px;
+  font-size: 1.6em;
 }
-/* .side-paragraph {
-  flex: 1;
-  margin-left: 40px;
-  max-width: 284px;
-  font-size: .8em;
-  line-height: 1.5em;
-} */
+
+.computer-mail {
+  background: url('~/assets/computer-mail.png') no-repeat;
+  background-size: contain;
+}
+.cursor-pink {
+  position: relative;
+}
+.cursor-pink-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  margin-top: -24%;
+  width: 100%;
+  background: url('~/assets/cursor-pink.png') no-repeat;
+  background-size: 100% 100%;
+}
+.paragraph {
+  position: relative;
+  line-height: 1.6em;
+  z-index: 2;
+} 
+.computer-mail .paragraph {
+  padding: 5% 30% 30% 4%;
+}
+.paragraph.detail {
+  padding: 0 0 20% 42%;
+}
+.cursor-pink .paragraph:not(.detail) {
+  padding: 0 40% 20% 8%;
+}
 
 .speakers, .artists {
   margin: 0 auto 40px;
-  padding: 40px 24px;
+  padding: 0 24px 40px;
   max-width: 1000px;
   position: relative;
 }
 .artists{
-  padding-bottom: 200px;
+  padding-bottom: 100px;
+}
+.speakers {
+  margin-top: -25px;
+}
+
+.speakers .section-title{
+  padding-top: 0;
+  padding-left: 20px;
+  padding-right: 20px;
+  line-height: 1em;
+  background: linear-gradient(0deg, #fff 50%, rgba(255, 255, 255, .01));
 }
 .cards-wrapper {
+  padding: 0 20px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
   grid-gap: 40px;
 }
 .speaker-card .img {
@@ -408,32 +428,30 @@ export default {
   font-family: rational-light, sans-serif;
   font-size: .9em;
 }
-.moderator{
-  grid-column: 1 / 2;
+
+.moderator {
+  margin: auto;
+  max-width: 220px;
 }
-.flower-1{
-  width: 800px;
-  height: 800px;
-  position: absolute;
-  top: 250px;
-  right: 0;
-  z-index: -100;
-  /* background: #02efff; */
-  background-image: url(~/assets/flower-example.png);
-  background-size: cover;
+
+.moderator-title {
+  margin: 60px 0 40px;
+  font-size: 1.6em;
+  font-family: arame-regular, sans-serif;
+  text-align: center;
+  letter-spacing: .2em;
+  color: #ff1bf3;
+}
+
+.flower1 {
+  background-image: url('~/assets/flower-example.png');
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
-.flower-2{
-  width: 600px;
-  height: 600px;
-  position: absolute;
-  top: 0;
-  left: 50px;
-  z-index: -100;
-  /* background: #02efff; */
-  background-image: url(~/assets/flower-example.png);
-  background-size: cover;
+.flower2 {
+  background-image: url('~/assets/flower-example.png');
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -505,6 +523,15 @@ export default {
   opacity: .8;
 }
 
+@media (max-width: 944px) {
+  .description .section-title {
+    padding: 0 2%;
+  }
+  .computer-mail .paragraph {
+    padding: 2% 14% 30% 2%;
+  }
+}
+
 @media (max-width: 767px) {
   .text-shadow {
     font-size: 20vw;
@@ -524,6 +551,43 @@ export default {
   }
   .speaker-card .img {
     max-height: none;
+  }
+
+  .computer-mail {
+    background: none;
+  }
+  .cursor-pink-bg {
+    display: none;
+    position: static;
+    background: none;
+  }
+  .computer-mail .paragraph {
+    padding: 24px 10% 24px 24px;
+  }
+  .paragraph.detail {
+    padding: 24px 24px 24px 20%;
+  }
+  .cursor-pink .paragraph:not(.detail) {
+    margin: -60px auto 0;
+    padding: 60% 24px 20% 24px;
+    background: url('~/assets/cursor-pink.png') no-repeat;
+    background-size: contain;
+    max-width: 600px;
+  }
+  .speakers .section-title,
+  .artists .section-title {
+    font-size: 10vw;
+  }
+
+  .flower1,
+  .flower2 {
+    background: none;
+  }
+}
+
+@media (max-width: 487px) {
+  .moderator {
+    max-width: 100%;
   }
 }
 </style>
