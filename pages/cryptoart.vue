@@ -34,7 +34,7 @@
             Stay for a specially curated art exhibit and ERC-721 exclusive token release for ticket holders only at the end of the show.</span>
           </p>
           <p class="paragraph hidden-on-mobile">Expect crypto whales 🐳 underground brooklyn artists 🎨, blockchain developers, art dealers, and collectors to make appearances.</p>
-          <p class="paragraph show-on-mobile">Stay for a specially curated art exhibit and ERC-721 exclusive token release for ticket holders only at the end of the show.</p>
+          <p class="paragraph show-on-mobile"><span>Stay for a specially curated art exhibit and ERC-721 exclusive token release for ticket holders only at the end of the show.</span></p>
         </div>
       </div>
     </section>
@@ -381,7 +381,7 @@ export default {
   position: relative;
   line-height: 1.6em;
   z-index: 2;
-} 
+}
 .computer-mail .paragraph {
   padding: 5% 30% 30% 4%;
 }
@@ -567,11 +567,11 @@ export default {
     padding: 24px 10% 24px 24px;
   }
   .paragraph.detail {
-    padding: 24px 24px 24px 20%;
+    padding: 80px 24px 24px 20%;
     text-align: right;
   }
   .cursor-pink .paragraph:not(.detail) {
-    margin: -60px auto 0;
+    margin: -60px 0 0 0;
     padding: 60% 24px 20% 24px;
     background: url('~/assets/cursor-pink.png') no-repeat;
     background-size: contain;
@@ -605,8 +605,62 @@ export default {
 }
 
 @media (max-width: 487px) {
+
+  .description {
+    margin: auto;
+    padding: 40px 0 0 0;
+    max-width: 1000px;
+  }
+  .paragraph.detail {
+    padding: 40px 24px 50px 20%;
+    text-align: right;
+  }
+  .cursor-pink .paragraph:not(.detail) {
+    margin: -60px auto 0;
+    /* padding: 60% 24px 20% 24px; */
+    padding: 30% 24px 800px 24px;
+    background: url('~/assets/cursor-pink-mobile.png') no-repeat;
+    background-size: cover;
+    max-width: 600px;
+  }
+  .show-on-mobile span{
+    position: absolute;
+    bottom: 25%;
+    margin-right: 30px;
+  }
+  .speakers .section-title {
+    padding: 50px 0 10px 5px;
+    margin: auto;
+    text-align: center;
+    font-size: 3.3em;
+    font-family: arame-regular, sans-serif;
+    letter-spacing: .2em;
+    line-height: 1.6em;
+  }
   .moderator {
     max-width: 100%;
   }
+  .ticket-text {
+    max-width: 1200px;
+    padding: 50px 0 80px 0;
+    font-size: 1em;
+    font-family: rational-light, sans-serif;
+    letter-spacing: 0em;
+    line-height: 1.6em;
+    text-align: left;
+  }
+  .location-text {
+    width: 80%;
+    margin: auto;
+    font-family: rational-light, sans-serif;
+    color: #ff1bf3;
+    /* text-align: left; */
+  }
+  /* .ticket-btn {
+    display: inline-block;
+    padding: 14px 0 12px;
+    width: 100%;
+    max-width: 200px;
+  } */
 }
 </style>
