@@ -164,7 +164,7 @@
       </div>
     </section>
     <section class="location">
-      <div class="ticket-text"> Ticket sales go toward funding the Liminal Art Residency program which supports artists experimenting in VR, AR & Blockchain. <br><br> Get your tickets soon! There are only 300 🎟️ and we expect them to go quickly. <br><br> As an added bonus each ticket holder that comes to the event can redeem their ticket for a unique ERC-721 tokenized art piece made for the event!</div>
+      <div class="ticket-text"> Get your tickets soon! There are only 300 🎟️ and we expect them to go quickly. Ticket sales will fund the Liminal Artist Residency. <br><br> As an added bonus each ticket holder that comes to the event can redeem their ticket for a unique ERC-721 tokenized art piece made for the event!</div>
       <p class="location-text">The Ballroom at The Williamsburg Hotel</p>
       <p class="location-text">May 10, 2018</p>
       <div class="get-tickets">
@@ -486,7 +486,8 @@ export default {
   text-align: center;
 }
 .ticket-text {
-  max-width: 1200px;
+  max-width: 1000px;
+  margin: auto;
   padding: 50px 0 100px 0;
   font-size: 1.2em;
   font-family: rational-light, sans-serif;
