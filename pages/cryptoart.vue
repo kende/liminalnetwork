@@ -663,4 +663,12 @@ export default {
     max-width: 200px;
   } */
 }
+
+@media (max-width: 374px) {
+  .speakers .section-title,
+  .artists .section-title {
+    font-size: 14vw;
+    text-align: center;
+  }
+}
 </style>
