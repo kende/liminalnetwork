@@ -79,7 +79,15 @@
           <img class="img" src="~/assets/jonathan.jpg" alt="Jonathan mann">
           <div class="text">
             <div class="name">Jonathan Mann</div>
-            an American singer-songwriter</div>
+            an American singer-songwriter
+          </div>
+        </div>
+        <div class="speaker-card">
+          <img class="img" src="~/assets/brittany.jpeg" alt="Brittany Laughlin">
+          <div class="text">
+            <div class="name">Brittany Laughlin</div>
+            Founding partner at Lattice Ventures
+          </div>
         </div>
         <div class="speaker-card">
           <img class="img" src="~/assets/jakob.jpg" alt="Jakob Balslev">
