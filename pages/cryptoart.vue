@@ -83,7 +83,7 @@
           </div>
         </div>
         <div class="speaker-card">
-          <img class="img" src="~/assets/brittany.jpg" alt="Brittany Laughlin">
+          <img class="img" src="~/assets/brittany.png" alt="Brittany Laughlin">
           <div class="text">
             <div class="name">Brittany Laughlin</div>
             Founding partner at Lattice Ventures
