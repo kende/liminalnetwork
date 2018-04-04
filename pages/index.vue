@@ -1,6 +1,7 @@
 <template>
   <div class='landing'>
     <section class='landing-header'>
+      <div class='thumbnail'><img src='~/assets/liminal.png'></div>
       <div class='background-img'>
         <img class='small-size' src='~/assets/featured_small.png' alt='featured small'>
         <img class='full-size' src='~/assets/featured.png' alt='featured' @load='imageLoaded'>
@@ -199,48 +200,14 @@ export default {
   padding: 0 20px;
 }
 
-/*
-.images-grid {
-  display: grid;
-  grid-template-rows: auto;
-  grid-template-columns: repeat(6, 1fr);
-  grid-gap: 10px;
+.thumbnail {
+  position: fixed;
+  top: 110%;
+  left: 110%;
+  z-index: -100;
+  opacity: 0;
+  transform: scale(0);
 }
-
-.image {
-  position: relative;
-  padding-top: 66%;
-  background: #eee;
-  overflow: hidden;
-}
-.image img {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transform: translate(-50%, -50%);
-  animation: blurin 1s;
-}
-
-.rowspan2 {
-  grid-row: span 2;
-}
-.rowspan3 {
-  grid-row: span 3;
-}
-.rowspan4 {
-  grid-row: span 4;
-}
-
-.colspan2 {
-  grid-column: span 2;
-}
-.colspan3 {
-  grid-column: span 3;
-}
-*/
 
 .apply-section {
   padding: 100px 24px;

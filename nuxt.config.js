@@ -10,11 +10,11 @@ module.exports = {
       { hid: 'description', name: 'description', content: 'Decentralized creative space.' },
       { hid: 'og_title', property: 'og:title', content: 'The Liminal Network' },
       { hid: 'og_description', property: 'og:description', content: 'Decentralized creative space.' },
-      { hid: 'og_image', property: 'og:image', content: require('~/assets/liminal.png') },
+      { hid: 'og_image', property: 'og:image', content: 'https://liminal.network/_nuxt/img/liminal.aaf41b4.png'},
       { hid: 'og_url', property: 'og:url', content: 'https://liminal.network' },
       { hid: 'twitter_title', property: 'twitter:title', content: 'The Liminal Network' },
       { hid: 'twitter_description', property: 'twitter:description', content: 'Decentralized creative space.' },
-      { hid: 'twitter_image', property: 'twitter:image', content: require('~/assets/liminal.png') },
+      { hid: 'twitter_image', property: 'twitter:image', content: 'https://liminal.network/_nuxt/img/liminal.aaf41b4.png'},
       { hid: 'twitter_url', property: 'twitter:url', content: 'https://liminal.network' },
       { name: 'twitter:card', content: 'summary_large_image' }
     ],

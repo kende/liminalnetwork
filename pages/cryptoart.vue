@@ -286,8 +286,8 @@ export default {
     drawFlower (className, canvasId) {
       const vm = this
       const el = document.querySelector('.' + className)
-      vm.flowerh = el.clientHeight * 2
-      vm.flowerw = (el.clientWidth - 48) *2
+      vm.flowerh = el.clientHeight * 1.5
+      vm.flowerw = (el.clientWidth - 48) * 1.5
       vm.radius =  Math.min(vm.flowerw, vm.flowerh) * 0.4
       vm.mx = vm.flowerw / 2
       vm.my = vm.flowerh / 2
@@ -304,7 +304,7 @@ export default {
       vm.fctx.fillRect(0, 0, vm.flowerw, vm.flowerh)
       vm.fctx.strokeStyle = "#02efff"
       vm.fctx.lineWidth = 2
-      for(let i = 50; i < vm.radius; i += 8) {
+      for(let i = vm.radius; i > 50 ; i -= 8) {
         vm.drawCircle(i, vm.fctx)
       }
     },
@@ -319,12 +319,13 @@ export default {
         ctx.lineTo(x, y)
       }
       ctx.stroke()
+      ctx.fill()
 
     },
     calcPoint (angle, r) {
       const vm = this
       const noiseFactor = 50
-      const zoom = 120
+      const zoom = 100
       let x = Math.cos(angle) * r + vm.flowerw / 2
       let y = Math.sin(angle) * r + vm.flowerh / 2
       const n = (vm.simplex.noise3D(x / zoom, y / zoom, vm.counter)) * noiseFactor
