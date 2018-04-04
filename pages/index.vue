@@ -1,6 +1,5 @@
 <template>
   <div class='landing'>
-    <!-- <div class='thumbnail'><img src='~/assets/liminal.png'></div> -->
     <section class='landing-header'>
       <div class='background-img'>
         <img class='small-size' src='~/assets/featured_small.png' alt='featured small'>
@@ -140,9 +139,6 @@ export default {
     imageLoaded () {
       document.querySelector('.small-size').remove()
     }
-  },
-  mounted () {
-    document.querySelector('#fbImage').content = require('~/assets/liminal.png')
   }
 }
 </script>
@@ -287,15 +283,6 @@ export default {
 }
 .footer-item a:hover {
   text-decoration: underline;
-}
-
-.thumbnail {
-  position: fixed;
-  top: 110%;
-  left: 110%;
-  z-index: -100;
-  opacity: 0;
-  transform: scale(0);
 }
 
 .opening-section {

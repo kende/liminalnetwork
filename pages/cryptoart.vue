@@ -39,6 +39,7 @@
       </div>
     </section>
     <section class="speakers flower1">
+      <canvas id="flowerCanvas1"></canvas>
       <div class="section-title">SPEAKERS</div>
       <div class="cards-wrapper">
         <div class="speaker-card">
@@ -114,6 +115,7 @@
     </section>
 
     <!-- <section class="artists flower2">
+      <canvas id="flowerCanvas2"></canvas>
       <div class="section-title">Artists</div>
       <div class="cards-wrapper">
         <div class="speaker-card">
@@ -188,6 +190,7 @@
 </template>
 
 <script>
+import SimplexNoise from 'simplex-noise'
 import Footer from '~/components/Footer.vue'
 
 export default {
@@ -212,10 +215,11 @@ export default {
     return {
       canvash: 0,
       canvasw: 0,
+      counter: 0,
     }
   },
   methods: {
-    draw () {
+    drawImage () {
       const vm = this
       const el = document.querySelector('.banner')
       vm.canvash = el.clientHeight
@@ -267,14 +271,89 @@ export default {
         vm.interval = setInterval(vm.imgAnimation, 20)
       }, 500)
 
+      this.drawFlower('flower1', 'flowerCanvas1')
+      // this.drawFlower('flower2', 'flowerCanvas2')
+
+      if (window.innerWidth < 768) {
+        document.querySelector('.flower1').removeEventListener('mousemove', this.onMove)
+        // document.querySelector('.flower2').removeEventListener('mousemove', this.onMove)
+      } else {
+        document.querySelector('.flower1').addEventListener('mousemove', this.onMove)
+        // document.querySelector('.flower2').addEventListener('mousemove', this.onMove)
+      }
+
+    },
+    drawFlower (className, canvasId) {
+      const vm = this
+      const el = document.querySelector('.' + className)
+      vm.flowerh = el.clientHeight * 2
+      vm.flowerw = (el.clientWidth - 48) *2
+      vm.radius =  Math.min(vm.flowerw, vm.flowerh) * 0.4
+      vm.mx = vm.flowerw / 2
+      vm.my = vm.flowerh / 2
+
+      vm.flower = document.querySelector('#' + canvasId)
+
+      vm.fctx = vm.flower.getContext('2d')
+      vm.flower.height = vm.flowerh
+      vm.flower.width = vm.flowerw
+
+      vm.counter += 0.1
+      // requestAnimationFrame(vm.drawFlower)
+      vm.fctx.fillStyle = "white"
+      vm.fctx.fillRect(0, 0, vm.flowerw, vm.flowerh)
+      vm.fctx.strokeStyle = "#02efff"
+      vm.fctx.lineWidth = 2
+      for(let i = 50; i < vm.radius; i += 8) {
+        vm.drawCircle(i, vm.fctx)
+      }
+    },
+    drawCircle (r, ctx) {
+      const vm = this
+      ctx.beginPath()
+      let point, x, y
+      for(let angle = 0; angle <= Math.PI * 2; angle += 0.01) {
+        point = vm.calcPoint(angle, r)
+        x = point[0]
+        y = point[1]
+        ctx.lineTo(x, y)
+      }
+      ctx.stroke()
+
+    },
+    calcPoint (angle, r) {
+      const vm = this
+      const noiseFactor = 50
+      const zoom = 120
+      let x = Math.cos(angle) * r + vm.flowerw / 2
+      let y = Math.sin(angle) * r + vm.flowerh / 2
+      const n = (vm.simplex.noise3D(x / zoom, y / zoom, vm.counter)) * noiseFactor
+      x = Math.cos(angle) * (r + n) + vm.flowerw / 2
+      y = Math.sin(angle) * (r + n) + vm.flowerh / 2
+      return [x, y]
+    },
+    onMove (e) {
+      const num = e.target.className.replace(/[^1-9]/g, '')
+      this.drawFlower(`flower${num}`, `flowerCanvas${num}`)
     }
   },
   mounted () {
-    this.draw()
+    this.drawImage()
+    this.simplex = new SimplexNoise()
     window.addEventListener('resize', this.onResize)
+    if (window.innerWidth >= 768) {
+      this.drawFlower('flower1', 'flowerCanvas1')
+      // this.drawFlower('flower2', 'flowerCanvas2')
+      document.querySelector('.flower1').addEventListener('mousemove', this.onMove)
+      // document.querySelector('.flower2').addEventListener('mousemove', this.onMove)
+    }
   },
   beforeDestroy() {
     window.removeEventListener('resize', this.onResize)
+    if (window.innerWidth >= 768) {
+      document.querySelector('.flower1').removeEventListener('mousemove', this.onMove)
+      // document.querySelector('.flower2').removeEventListener('mousemove', this.onMove)
+    }
   }
 }
 </script>
@@ -401,6 +480,7 @@ export default {
 }
 
 .speakers, .artists {
+  position: relative;
   margin: 0 auto 40px;
   padding: 0 24px 40px;
   max-width: 1000px;
@@ -414,6 +494,7 @@ export default {
 }
 
 .cards-wrapper {
+  position: relative;
   padding: 0 20px;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
@@ -448,17 +529,27 @@ export default {
   color: #ff1bf3;
 }
 
-.flower1 {
-  background-image: url('~/assets/flower-example.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-}
+.flower1,
 .flower2 {
-  background-image: url('~/assets/flower-example.png');
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
+  position: relative;
+}
+
+.flower1:after ,
+.flower2:after  {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+
+.flower1 canvas,
+.flower2 canvas {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
 }
 
 .organazations {
@@ -590,12 +681,6 @@ export default {
   .artists .section-title {
     font-size: 10vw;
   }
-
-  .flower1,
-  .flower2 {
-    background: none;
-  }
-
   .hidden-on-mobile {
     display: none;
   }
@@ -671,6 +756,12 @@ export default {
     width: 100%;
     max-width: 200px;
   } */
+
+  .flower1 canvas,
+  .flower2 canvas {
+    display: none;
+  }
+
 }
 
 @media (max-width: 374px) {
