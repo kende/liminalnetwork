@@ -1,6 +1,6 @@
 <template>
   <div class='landing'>
-    <div class='thumbnail'><img src='~/assets/liminal.png'></div>
+    <!-- <div class='thumbnail'><img src='~/assets/liminal.png'></div> -->
     <section class='landing-header'>
       <div class='background-img'>
         <img class='small-size' src='~/assets/featured_small.png' alt='featured small'>
