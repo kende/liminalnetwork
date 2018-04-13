@@ -42,21 +42,21 @@
       <div class="section-title">FIRESIDE CHAT</div>
       <div class="cards-wrapper">
         <div class="speaker-card">
-          <img class="img" src="~/assets/judy.png" alt="Judy Mam">
+          <img class="img" src="~/assets/stephanie.jpg" alt="Stephanie French">
           <div class="text">
             <div class="name">
-              Judy Mam
+              Stephanie French
             </div>
-            Writer and Co-Founder of dada.nyc
+            Responsible for the flow of more than $1.5B in corporate arts sponsorships since ‘81. Will be leading an exploration of how to sustain the magic of creation in a commercial world, and how our new tools will inform the future of art, sponsorship, and valuation.
           </div>
         </div>
         <div class="speaker-card">
-          <img class="img" src="~/assets/steven.jpg" alt="Steven Waterhouse">
+          <img class="img" src="~/assets/nadia-profile.png" alt="Steven Waterhouse">
           <div class="text">
             <div class="name">
-              Steven Waterhouse
+              Nadia Chilmonik
             </div>
-            CEO of Orchid Labs
+            Byzantine CDO, focused on ML algorithms and design. Painter [IRL and VR], teacher, NASA Datanaut, futurist, humanist, vegan — not necessarily in that order. Also: retired ballerina because, ya know...all the other stuff.
           </div>
         </div>
         <div class="speaker-card"></div>
@@ -73,16 +73,16 @@
             <div class="name">
               Judy Mam
             </div>
-            Writer and Co-Founder of dada.nyc
+            Film blogger, writer, and cofounder of dada.nyc — a social network where people speak through drawings that can be collected on the Ethereum blockchain. {QUIP}
           </div>
         </div>
         <div class="speaker-card">
-          <img class="img" src="~/assets/steven.jpg" alt="Steven Waterhouse">
+          <img class="img" src="~/assets/david.jpg" alt="David Block">
           <div class="text">
             <div class="name">
-              Steven Waterhouse
+              David Block
             </div>
-            CEO of Orchid Labs
+            Live electronic composer, multi-instrumentalist, producer, and community builder best known for his performances as The Human Experience. Genre? Ancient Futurism.
           </div>
         </div>
         <div class="speaker-card">
@@ -91,28 +91,37 @@
             <div class="name">
               Jessica Angel
             </div>
-            Trans media visual artist
-          </div>
-        </div>
-        <div class="speaker-card">
-          <img class="img" src="~/assets/seth.jpg" alt="Seth Goldstein">
-          <div class="text">
-            <div class="name">Seth Goldstein</div>
-            Entrepreneur & Angel Investor
+            Transmedia visual artist whose work reveals the many universes accessible through ceilings and walls.
           </div>
         </div>
         <div class="speaker-card">
           <img class="img" src="~/assets/jonathan.jpg" alt="Jonathan mann">
           <div class="text">
             <div class="name">Jonathan Mann</div>
-            an American singer-songwriter
+            Singer-songwriter who’s released a song a day for over 3300 days, or nine years. Recently started Digitally Rare, a Youtube channel exploring the influence of blockchain on art and value. [Bacon pancakes available upon request.]
           </div>
         </div>
         <div class="speaker-card">
           <img class="img" src="~/assets/brittany.png" alt="Brittany Laughlin">
           <div class="text">
             <div class="name">Brittany Laughlin</div>
-            Founding partner at Lattice Ventures
+            Founding Partner at Lattice Ventures. Former GM at USV. Focused on the community side of crypto, and technology in general. Self-described resident of planet earth who views space as a mirror.
+          </div>
+        </div>
+        <div class="speaker-card">
+          <img class="img" src="~/assets/steven.jpg" alt="Steven Waterhouse">
+          <div class="text">
+            <div class="name">
+              Steven Waterhouse
+            </div>
+            Veteran crypto investor building a decentralized, surveillance-free internet as CEO of Orchid Labs. AKA Seven — when sharing space with a doge named Steve.
+          </div>
+        </div>
+        <div class="speaker-card">
+          <img class="img" src="~/assets/seth.jpg" alt="Seth Goldstein">
+          <div class="text">
+            <div class="name">Seth Goldstein</div>
+            Artist. Gallerist. Entrepreneur. Angel investor. Father of two. Recent cofounder of a nomadic layover lounge meant to accelerate humanity in welcoming spaces. 
           </div>
         </div>
         <div class="speaker-card">
@@ -121,7 +130,7 @@
             <div class="name">
               Jakob Balslev
             </div>
-            CEO & Founder @ Rokoko
+            Danish entrepreneur and film producer. Founder &amp; CEO at Rokoko, developing the smart suit that translates human motion into animated characters. An animated character in his own right.
           </div>
         </div>
       </div>
