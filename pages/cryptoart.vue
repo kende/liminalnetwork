@@ -17,7 +17,7 @@
       <div class="text-wrapper">
         <div class="computer-mail">
           <p class="paragraph">
-            Byzantine is proud to host the Crypto/Art event of the year (to date!) in the Grand Ballroom of the Williamsburg Hotel on May 10th, 2018, at the transition between Creative Tech Week &  Blockchain Week in NYC.
+            Byzantine is proud to host the Crypto/Art event of the year (to date!) in the Grand Ballroom of the Williamsburg Hotel on May 10th, 2018, at the transition between Creative Tech Week &amp; Blockchain Week in NYC.
             <span class="hidden-on-mobile">
               <br>
               <br>
@@ -36,6 +36,31 @@
           <p class="paragraph hidden-on-mobile">Expect crypto whales 🐳 underground brooklyn artists 🎨, blockchain developers, art dealers, and collectors to make appearances.</p>
           <p class="paragraph show-on-mobile"><span>Stay for a specially curated art exhibit and ERC-721 exclusive token release for ticket holders only at the end of the show.</span></p>
         </div>
+      </div>
+    </section>
+    <section class="fireside-chat">
+      <div class="section-title">FIRESIDE CHAT</div>
+      <div class="cards-wrapper">
+        <div class="speaker-card">
+          <img class="img" src="~/assets/judy.png" alt="Judy Mam">
+          <div class="text">
+            <div class="name">
+              Judy Mam
+            </div>
+            Writer and Co-Founder of dada.nyc
+          </div>
+        </div>
+        <div class="speaker-card">
+          <img class="img" src="~/assets/steven.jpg" alt="Steven Waterhouse">
+          <div class="text">
+            <div class="name">
+              Steven Waterhouse
+            </div>
+            CEO of Orchid Labs
+          </div>
+        </div>
+        <div class="speaker-card"></div>
+        <div class="speaker-card"></div>
       </div>
     </section>
     <section class="speakers flower1">
@@ -409,7 +434,7 @@ export default {
   letter-spacing: .3em;
   line-height: 1.6em;
 }
-.speakers .section-title {
+.fireside-chat .section-title {
   padding: 0 20px 30px;
   background: linear-gradient(0deg, #fff 70%, rgba(255, 255, 255, .01));
   font-size: 4em;
@@ -419,7 +444,8 @@ export default {
   color: #fff;
   text-shadow: -3px -3px #ff1bf3;
 }
-.artists .section-title{
+.speakers .section-title,
+.artists .section-title {
   padding: 30px 0;
   font-size: 4em;
   font-family: arame-regular, sans-serif;
@@ -480,17 +506,18 @@ export default {
   padding: 0 40% 20% 8%;
 }
 
-.speakers, .artists {
+.fireside-chat,
+.speakers, 
+.artists {
   position: relative;
   margin: 0 auto 40px;
   padding: 0 24px 40px;
   max-width: 1000px;
-  position: relative;
 }
 .artists{
   padding-bottom: 100px;
 }
-.speakers {
+.fireside-chat {
   margin-top: -25px;
 }
 
@@ -678,6 +705,7 @@ export default {
     background-size: contain;
     max-width: 600px;
   }
+  .fireside-chat .section-title,
   .speakers .section-title,
   .artists .section-title {
     font-size: 10vw;
@@ -723,7 +751,9 @@ export default {
     bottom: 25%;
     margin-right: 30px;
   }
-  .speakers .section-title {
+  .fireside-chat .section-title,
+  .speakers .section-title,
+  .artists .section-title  {
     padding: 50px 0 10px 5px;
     margin: auto;
     text-align: center;
@@ -766,6 +796,7 @@ export default {
 }
 
 @media (max-width: 374px) {
+  .fireside-chat .section-title,
   .speakers .section-title,
   .artists .section-title {
     font-size: 14vw;
