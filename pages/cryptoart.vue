@@ -599,7 +599,7 @@ export default {
 }
 .fireside-chat .img {
   position: relative;
-  transform: scale(.5);
+  transform: scale(.6);
   z-index: 2;
 }
 .speaker-card .name {
