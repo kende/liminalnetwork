@@ -316,6 +316,7 @@ export default {
       if (window.innerWidth < 768) {
         document.querySelector('.flower1').removeEventListener('mousemove', this.onMove)
         // document.querySelector('.flower2').removeEventListener('mousemove', this.onMove)
+        window.cancelAnimationFrame(vm.bgMove)
       } else {
         document.querySelector('.flower1').addEventListener('mousemove', this.onMove)
         // document.querySelector('.flower2').addEventListener('mousemove', this.onMove)
@@ -394,12 +395,12 @@ export default {
       ctx.drawImage(img, 0, 0, w, h)
 
       const data = ctx.getImageData(0, 0, w, h)
-      this.animate(ctx, w, data)
+      if (window.innerWidth >= 768) this.animate(ctx, w, data)
     },
     animate (ctx, w, data) {
       const vm = this
 
-      requestAnimationFrame(function() {
+      vm.bgMove = requestAnimationFrame(function() {
         vm.animate(ctx, w, data)
       })
 
