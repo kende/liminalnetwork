@@ -377,17 +377,13 @@ export default {
       this.drawFlower(`flower${num}`, `flowerCanvas${num}`)
     },
     drawPixel (name) {
-      console.log('haha')
       const vm = this
       const canvas = document.querySelector('#' + name + 'Canvas')
       const ctx = canvas.getContext('2d')
       const img = document.querySelector('#' + name)
-      console.log(img)
 
       if (img.complete) vm.processImage(canvas, ctx, img)
       else img.onload = () => { vm.processImage(canvas, ctx, img) }
-
-
     },
     processImage(canvas, ctx, img) {
       const w = img.width
@@ -397,14 +393,30 @@ export default {
       canvas.height = h
       ctx.drawImage(img, 0, 0, w, h)
 
-      // vm.hahadata = ctx.getImageData(0, 0, w, h)
-      // vm.hahalen = data.data.length
-      // vm.hahaw = w
-      // vm.hahactx = ctx
-
-      // this.animate()
-      // console.log(data)
+      const data = ctx.getImageData(0, 0, w, h)
+      this.animate(ctx, w, data)
     },
+    animate (ctx, w, data) {
+      const vm = this
+
+      requestAnimationFrame(function() {
+        vm.animate(ctx, w, data)
+      })
+
+      for (let i = data.data.length - 5; i > 0; i -= 4) {
+        let temp = i * 0.25
+        let y = Math.floor(temp / w)
+        let x = Math.random() > 0.1 ? temp + 1 : temp
+
+        x = ((x % w) + w * y) * 4
+
+        data.data[x    ] = data.data[i    ];
+        data.data[x + 1] = data.data[i + 1];
+        data.data[x + 2] = data.data[i + 2];
+        data.data[x + 3] = data.data[i + 3];
+      }
+      ctx.putImageData(data, 0, 0);
+    }
   },
   mounted () {
     this.drawImage()
@@ -612,7 +624,6 @@ export default {
   height: 100%;
   width: 100%;
   opacity: .6;
-  filter: blur(4px);
 }
 
 /* .moderator {
