@@ -56,7 +56,7 @@
             <div class="name">
               Nadia Chilmonik
             </div>
-            Byzantine CDO, focused on ML algorithms and design. Painter [IRL and VR], teacher, NASA Datanaut, futurist, humanist, vegan — not necessarily in that order. Also: retired ballerina because, ya know...all the other stuff.
+            Byzantine CDO, focused on Machine Learning algorithms and data. Painter [IRL and VR], NASA Datanaut, futurist, AI Philosopher, vegan — not necessarily in that order. Also: retired ballerina because, ya know...all the other stuff.
           </div>
         </div>
         <div class="speaker-card"></div>
@@ -121,7 +121,7 @@
           <img class="img" src="~/assets/seth.jpg" alt="Seth Goldstein">
           <div class="text">
             <div class="name">Seth Goldstein</div>
-            Artist. Gallerist. Entrepreneur. Angel investor. Father of two. Recent cofounder of a nomadic layover lounge meant to accelerate humanity in welcoming spaces. 
+            Artist. Gallerist. Entrepreneur. Angel investor. Father of two. Recent cofounder of a nomadic layover lounge meant to accelerate humanity in welcoming spaces.
           </div>
         </div>
         <div class="speaker-card">
@@ -516,7 +516,7 @@ export default {
 }
 
 .fireside-chat,
-.speakers, 
+.speakers,
 .artists {
   position: relative;
   margin: 0 auto 40px;
