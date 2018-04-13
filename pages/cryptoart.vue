@@ -40,9 +40,13 @@
     </section>
     <section class="fireside-chat">
       <div class="section-title">FIRESIDE CHAT</div>
+      <div class="section-subtitle">Recreating the Bottom Line</div>
       <div class="cards-wrapper">
         <div class="speaker-card">
-          <img class="img" src="~/assets/stephanie.jpg" alt="Stephanie French">
+          <div class="image-wrapper">
+            <canvas id="stephanieCanvas"></canvas>
+            <img id="stephanie" class="img" src="~/assets/stephanie.jpg" alt="Stephanie French">
+          </div>
           <div class="text">
             <div class="name">
               Stephanie French
@@ -51,7 +55,10 @@
           </div>
         </div>
         <div class="speaker-card">
-          <img class="img" src="~/assets/nadia-profile.png" alt="Steven Waterhouse">
+          <div class="image-wrapper">
+            <canvas id="nadiaCanvas"></canvas>
+            <img id="nadia" class="img" src="~/assets/nadia-profile.png" alt="Steven Waterhouse">
+          </div>
           <div class="text">
             <div class="name">
               Nadia Chilmonik
@@ -59,8 +66,6 @@
             Byzantine CDO, focused on ML algorithms and design. Painter [IRL and VR], teacher, NASA Datanaut, futurist, humanist, vegan — not necessarily in that order. Also: retired ballerina because, ya know...all the other stuff.
           </div>
         </div>
-        <div class="speaker-card"></div>
-        <div class="speaker-card"></div>
       </div>
     </section>
     <section class="speakers flower1">
@@ -370,10 +375,41 @@ export default {
     onMove (e) {
       const num = e.target.className.replace(/[^1-9]/g, '')
       this.drawFlower(`flower${num}`, `flowerCanvas${num}`)
-    }
+    },
+    drawPixel (name) {
+      console.log('haha')
+      const vm = this
+      const canvas = document.querySelector('#' + name + 'Canvas')
+      const ctx = canvas.getContext('2d')
+      const img = document.querySelector('#' + name)
+      console.log(img)
+
+      if (img.complete) vm.processImage(canvas, ctx, img)
+      else img.onload = () => { vm.processImage(canvas, ctx, img) }
+
+
+    },
+    processImage(canvas, ctx, img) {
+      const w = img.width
+      const h = img.height
+
+      canvas.width = w
+      canvas.height = h
+      ctx.drawImage(img, 0, 0, w, h)
+
+      // vm.hahadata = ctx.getImageData(0, 0, w, h)
+      // vm.hahalen = data.data.length
+      // vm.hahaw = w
+      // vm.hahactx = ctx
+
+      // this.animate()
+      // console.log(data)
+    },
   },
   mounted () {
     this.drawImage()
+    this.drawPixel('stephanie')
+    this.drawPixel('nadia')
     this.simplex = new SimplexNoise()
     window.addEventListener('resize', this.onResize)
     if (window.innerWidth >= 768) {
@@ -452,6 +488,15 @@ export default {
   line-height: 1em;
   color: #fff;
   text-shadow: -3px -3px #ff1bf3;
+}
+.fireside-chat .section-subtitle {
+  font-size: 1.2em;
+  margin-top: -20px;
+  margin-bottom: 40px;
+  padding: 0 20px;
+  font-family: arame-regular, sans-serif;
+  color: #ff1bf3;
+  letter-spacing: .3em;
 }
 .speakers .section-title,
 .artists .section-title {
@@ -540,7 +585,12 @@ export default {
 .speaker-card .img {
   width: 100%;
 }
-.speaker-card .name{
+.fireside-chat .img {
+  position: relative;
+  transform: scale(.5);
+  z-index: 2;
+}
+.speaker-card .name {
   font-size: 1.3em;
   font-family: arame-regular, sans-serif;
   letter-spacing: .4em;
@@ -550,6 +600,19 @@ export default {
   padding: 20px 0;
   font-family: rational-light, sans-serif;
   font-size: .9em;
+}
+
+.speaker-card .image-wrapper {
+  position: relative;
+}
+.speaker-card canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: .6;
+  filter: blur(4px);
 }
 
 /* .moderator {
