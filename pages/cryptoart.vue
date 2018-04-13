@@ -134,7 +134,7 @@
           </div>
         </div>
       </div>
-      <div class="moderator-title">MODERATED BY</div>
+      <!-- <div class="moderator-title">MODERATED BY</div>
       <div class="cards-wrapper moderator">
         <div class="speaker-card">
           <img class="img" src="~/assets/nadia-profile.png" alt="Nadia Chilmonik">
@@ -145,7 +145,7 @@
             Moderator, Artist & CDO @ Byzantine
           </div>
         </div>
-      </div>
+      </div> -->
     </section>
 
     <!-- <section class="artists flower2">
@@ -552,7 +552,7 @@ export default {
   font-size: .9em;
 }
 
-.moderator {
+/* .moderator {
   margin: auto;
   max-width: 220px;
 }
@@ -564,7 +564,7 @@ export default {
   text-align: center;
   letter-spacing: .2em;
   color: #ff1bf3;
-}
+} */
 
 .flower1,
 .flower2 {
@@ -770,9 +770,6 @@ export default {
     font-family: arame-regular, sans-serif;
     letter-spacing: .2em;
     line-height: 1.6em;
-  }
-  .moderator {
-    max-width: 100%;
   }
   .ticket-text {
     max-width: 1200px;
