@@ -417,19 +417,31 @@ export default {
         data.data[x + 3] = data.data[i + 3];
       }
       ctx.putImageData(data, 0, 0);
+    },
+    onscroll (top, bottom) {
+      if (window.scrollY > top && window.scrollY < bottom) {
+        this.drawFlower('flower1', 'flowerCanvas1')
+      }
     }
   },
   mounted () {
-    this.drawImage()
-    this.drawPixel('stephanie')
-    this.drawPixel('nadia')
-    this.simplex = new SimplexNoise()
-    window.addEventListener('resize', this.onResize)
+    const vm = this
+    vm.drawImage()
+    vm.drawPixel('stephanie')
+    vm.drawPixel('nadia')
+    vm.simplex = new SimplexNoise()
+    window.addEventListener('resize', vm.onResize)
     if (window.innerWidth >= 768) {
-      this.drawFlower('flower1', 'flowerCanvas1')
-      // this.drawFlower('flower2', 'flowerCanvas2')
-      document.querySelector('.flower1').addEventListener('mousemove', this.onMove)
-      // document.querySelector('.flower2').addEventListener('mousemove', this.onMove)
+      vm.drawFlower('flower1', 'flowerCanvas1')
+      // vm.drawFlower('flower2', 'flowerCanvas2')
+      document.querySelector('.flower1').addEventListener('mousemove', vm.onMove)
+      // document.querySelector('.flower2').addEventListener('mousemove', vm.onMove)
+    }
+
+    const top = vm.flower.getBoundingClientRect().top
+    const bottom = vm.flower.getBoundingClientRect().bottom
+    document.body.onscroll = function() {
+      vm.onscroll(top, bottom)
     }
   },
   beforeDestroy() {
