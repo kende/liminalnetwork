@@ -113,7 +113,7 @@
             Founding Partner at Lattice Ventures. Former GM at USV. Focused on the community side of crypto, and technology in general. Self-described resident of planet earth who views space as a mirror.
           </div>
         </div>
-        <div class="speaker-card">
+        <!-- <div class="speaker-card">
           <img class="img" src="~/assets/steven.jpg" alt="Steven Waterhouse">
           <div class="text">
             <div class="name">
@@ -121,7 +121,7 @@
             </div>
             Veteran crypto investor building a decentralized, surveillance-free internet as CEO of Orchid Labs. AKA Seven — when sharing space with a doge named Steve.
           </div>
-        </div>
+        </div> -->
         <div class="speaker-card">
           <img class="img" src="~/assets/seth.jpg" alt="Seth Goldstein">
           <div class="text">
