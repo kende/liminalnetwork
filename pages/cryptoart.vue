@@ -218,7 +218,7 @@
       <p class="location-text">The Ballroom at The Williamsburg Hotel</p>
       <p class="location-text">May 15, 2018</p>
       <div class="get-tickets">
-        <a class="ticket-btn unii-listing-button unii-custom unii-medium Light" href="https://www.universe.com/events/the-art-of-crypto-assets-tickets-FXY5T6?buttonColor=#ff1bf3&buttonText=Get Tickets">
+        <a class="ticket-btn unii-listing-button unii-custom unii-medium Light" href="https://www.universe.com/events/the-art-of-crypto-assets-tickets-P921L3?buttonColor=#ff1bf3&buttonText=Get Tickets">
           GET TICKETS
         </a>
       </div>
