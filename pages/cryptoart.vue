@@ -8,7 +8,7 @@
           <div class="text-shadow" data-text='CRYPTO'>CRYPTO</div>
           <div class="text-shadow" data-text='ASSETS'>ASSETS</div>
         </div>
-        <small>MAY 10 @ THE WILLIAMSBURG HOTEL</small>
+        <small>MAY 15 @ THE WILLIAMSBURG HOTEL</small>
       </div>
     </section>
     <section class="description">
@@ -216,7 +216,7 @@
     <section class="location">
       <div class="ticket-text"> Get your tickets soon! There are only 300 🎟️ and we expect them to go quickly. Ticket sales will fund the Liminal Artist Residency.</div>
       <p class="location-text">The Ballroom at The Williamsburg Hotel</p>
-      <p class="location-text">May 10, 2018</p>
+      <p class="location-text">May 15, 2018</p>
       <div class="get-tickets">
         <a class="ticket-btn unii-listing-button unii-custom unii-medium Light" href="https://www.universe.com/events/the-art-of-crypto-assets-tickets-FXY5T6?buttonColor=#ff1bf3&buttonText=Get Tickets">
           GET TICKETS
