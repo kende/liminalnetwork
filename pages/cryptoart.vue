@@ -28,10 +28,13 @@
         <div class="cursor-pink">
           <div class="cursor-pink-bg"></div>
           <p class="paragraph detail">
+            <!-- 6pm: Check-in / Mingling<br>
+            7pm: Panel Discussion / Q&A<br>
+            8pm: Fireside Chat / Q&A
+            <br>
+            <br> -->
             You will hear about the fractionalization of ownership in art, and how it defines the exchange and appreciation of value when everything is tokenized. <span class="hidden-on-mobile">The cross pollination of art and crypto through booze, snacks, and conversation will be the highlight of our day, but you will also get access to two star studded panels navigating very complex new terrains.
-            <br>
-            <br>
-            Stay for a specially curated art exhibit and ERC-721 exclusive token release for ticket holders only at the end of the show.
+
           </span>
           </p>
           <p class="paragraph hidden-on-mobile">Expect crypto whales 🐳 underground brooklyn artists 🎨, blockchain developers, art dealers, and collectors to make appearances.</p>
