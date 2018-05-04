@@ -39,7 +39,7 @@
         </div>
       </div>
     </section>
-    <section class="fireside-chat">
+    <!-- <section class="fireside-chat">
       <div class="section-title">FIRESIDE CHAT</div>
       <div class="section-subtitle">Recreating the Bottom Line</div>
       <div class="cards-wrapper">
@@ -68,12 +68,12 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="speakers flower1">
       <canvas id="flowerCanvas1"></canvas>
       <div class="section-title">SPEAKERS</div>
       <div class="cards-wrapper">
-        <div class="speaker-card">
+        <!-- <div class="speaker-card">
           <img class="img" src="~/assets/judy.png" alt="Judy Mam">
           <div class="text">
             <div class="name">
@@ -81,7 +81,7 @@
             </div>
             Film blogger, writer, and cofounder of dada.nyc — a social network where people speak through drawings that can be collected on the Ethereum blockchain. {QUIP}
           </div>
-        </div>
+        </div> -->
         <div class="speaker-card">
           <img class="img" src="~/assets/david.jpg" alt="David Block">
           <div class="text">
@@ -107,13 +107,13 @@
             Singer-songwriter who’s released a song a day for over 3300 days, or nine years. Recently started Digitally Rare, a Youtube channel exploring the influence of blockchain on art and value. [Bacon pancakes available upon request.]
           </div>
         </div>
-        <div class="speaker-card">
+        <!-- <div class="speaker-card">
           <img class="img" src="~/assets/brittany.png" alt="Brittany Laughlin">
           <div class="text">
             <div class="name">Brittany Laughlin</div>
             Founding Partner at Lattice Ventures. Former GM at USV. Focused on the community side of crypto, and technology in general. Self-described resident of planet earth who views space as a mirror.
           </div>
-        </div>
+        </div> -->
         <!-- <div class="speaker-card">
           <img class="img" src="~/assets/steven.jpg" alt="Steven Waterhouse">
           <div class="text">
@@ -202,12 +202,12 @@
         <div class="logo-card">
           <img class="img" src="~/assets/logo_wbh.png" alt="">
         </div>
-        <div class="logo-card">
+        <!-- <div class="logo-card">
           <img class="img" src="~/assets/logo_dispatch.png" alt="">
         </div>
         <div class="logo-card">
           <img class="img" src="~/assets/bureau-icon-small.png" alt="">
-        </div>
+        </div> -->
         <div class="logo-card">
           <img class="img" src="~/assets/Byzantine-Logo.png" alt="">
         </div>
