@@ -129,7 +129,7 @@
             Artist. Gallerist. Entrepreneur. Angel investor. Father of two. Recent cofounder of a nomadic layover lounge meant to accelerate humanity in welcoming spaces.
           </div>
         </div>
-        <div class="speaker-card">
+        <!-- <div class="speaker-card">
           <img class="img" src="~/assets/jakob.jpg" alt="Jakob Balslev">
           <div class="text">
             <div class="name">
@@ -137,7 +137,7 @@
             </div>
             Danish entrepreneur and film producer. Founder &amp; CEO at Rokoko, developing the smart suit that translates human motion into animated characters. An animated character in his own right.
           </div>
-        </div>
+        </div> -->
       </div>
       <!-- <div class="moderator-title">MODERATED BY</div>
       <div class="cards-wrapper moderator">
@@ -213,7 +213,7 @@
       </div>
     </section>
     <section class="location">
-      <div class="ticket-text"> Get your tickets soon! There are only 300 🎟️ and we expect them to go quickly. Ticket sales will fund the Liminal Artist Residency. <br><br> As an added bonus each ticket holder that comes to the event can redeem their ticket for a unique ERC-721 tokenized art piece made for the event!</div>
+      <div class="ticket-text"> Get your tickets soon! There are only 300 🎟️ and we expect them to go quickly. Ticket sales will fund the Liminal Artist Residency.</div>
       <p class="location-text">The Ballroom at The Williamsburg Hotel</p>
       <p class="location-text">May 10, 2018</p>
       <div class="get-tickets">
