@@ -428,8 +428,8 @@ export default {
   mounted () {
     const vm = this
     vm.drawImage()
-    vm.drawPixel('stephanie')
-    vm.drawPixel('nadia')
+    //vm.drawPixel('stephanie')
+    //vm.drawPixel('nadia')
     vm.simplex = new SimplexNoise()
     window.addEventListener('resize', vm.onResize)
     if (window.innerWidth >= 768) {
