@@ -17,7 +17,7 @@
       <div class="text-wrapper">
         <div class="computer-mail">
           <p class="paragraph">
-            Byzantine is proud to host the Crypto/Art event of the year (to date!) in the Grand Ballroom of the Williamsburg Hotel on May 10th, 2018, at the transition between Creative Tech Week &amp; Blockchain Week in NYC.
+            Byzantine is proud to host the Crypto/Art event of the year (to date!) in the Grand Ballroom of the Williamsburg Hotel on May 15th, 2018, at the transition between Creative Tech Week &amp; Blockchain Week in NYC.
             <span class="hidden-on-mobile">
               <br>
               <br>
