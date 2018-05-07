@@ -76,7 +76,7 @@
       <canvas id="flowerCanvas1"></canvas>
       <div class="section-title">SPEAKERS</div>
       <div class="cards-wrapper">
-        <!-- <div class="speaker-card">
+        <div class="speaker-card">
           <img class="img" src="~/assets/judy.png" alt="Judy Mam">
           <div class="text">
             <div class="name">
@@ -84,7 +84,7 @@
             </div>
             Film blogger, writer, and cofounder of dada.nyc — a social network where people speak through drawings that can be collected on the Ethereum blockchain. {QUIP}
           </div>
-        </div> -->
+        </div>
         <div class="speaker-card">
           <img class="img" src="~/assets/david.jpg" alt="David Block">
           <div class="text">
