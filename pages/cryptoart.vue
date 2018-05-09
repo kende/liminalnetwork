@@ -110,22 +110,15 @@
             Singer-songwriter who’s released a song a day for over 3300 days, or nine years. Recently started Digitally Rare, a Youtube channel exploring the influence of blockchain on art and value. [Bacon pancakes available upon request.]
           </div>
         </div>
-        <!-- <div class="speaker-card">
-          <img class="img" src="~/assets/brittany.png" alt="Brittany Laughlin">
-          <div class="text">
-            <div class="name">Brittany Laughlin</div>
-            Founding Partner at Lattice Ventures. Former GM at USV. Focused on the community side of crypto, and technology in general. Self-described resident of planet earth who views space as a mirror.
-          </div>
-        </div> -->
-        <!-- <div class="speaker-card">
-          <img class="img" src="~/assets/steven.jpg" alt="Steven Waterhouse">
+        <div class="speaker-card">
+          <img class="img" src="~/assets/jacob.jpg" alt="Jacob Coley">
           <div class="text">
             <div class="name">
-              Steven Waterhouse
+              Jacob Coley
             </div>
-            Veteran crypto investor building a decentralized, surveillance-free internet as CEO of Orchid Labs. AKA Seven — when sharing space with a doge named Steve.
+            10+ years in the art world as buyer, seller, and collector. Has worked at Sotheby's, The Met, Ralph Lauren art acquisitions, and currently manages the old masters gallery Colnaghi: the oldest commercial gallery in the world, est. 1760
           </div>
-        </div> -->
+        </div>
         <div class="speaker-card">
           <img class="img" src="~/assets/seth.jpg" alt="Seth Goldstein">
           <div class="text">
@@ -133,15 +126,24 @@
             Artist. Gallerist. Entrepreneur. Angel investor. Father of two. Recent cofounder of a nomadic layover lounge meant to accelerate humanity in welcoming spaces.
           </div>
         </div>
-        <!-- <div class="speaker-card">
-          <img class="img" src="~/assets/jakob.jpg" alt="Jakob Balslev">
+        <div class="speaker-card">
+          <img class="img" src="~/assets/sean.jpg" alt="Sean Hoge">
           <div class="text">
             <div class="name">
-              Jakob Balslev
+              Sean Hoge
             </div>
-            Danish entrepreneur and film producer. Founder &amp; CEO at Rokoko, developing the smart suit that translates human motion into animated characters. An animated character in his own right.
+            Sean was a co-founder of crossfader.fm and now focuses on research uncovering the best up-and-coming currencies and tokens. His personal holdings ranked among the top 1000 ERC-20 token holders in the world.
           </div>
-        </div> -->
+        </div>
+        <div class="speaker-card">
+          <img class="img" src="~/assets/nadia-profile.png" alt="Nadia Chilmonik">
+          <div class="text">
+            <div class="name">
+              Nadia Chilmonik
+            </div>
+            Byzantine CDO, focused on Machine Learning algorithms and data. Painter [IRL and VR], NASA Datanaut, futurist, AI Philosopher, vegan — not necessarily in that order. Also: retired ballerina because, ya know...all the other stuff.
+          </div>
+        </div>
       </div>
       <!-- <div class="moderator-title">MODERATED BY</div>
       <div class="cards-wrapper moderator">
