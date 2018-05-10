@@ -85,7 +85,7 @@
             Film blogger, writer, and cofounder of dada.nyc — a social network where people speak through drawings that can be collected on the Ethereum blockchain. {QUIP}
           </div>
         </div>
-        <div class="speaker-card">
+        <!-- <div class="speaker-card">
           <img class="img" src="~/assets/david.jpg" alt="David Block">
           <div class="text">
             <div class="name">
@@ -93,7 +93,7 @@
             </div>
             Live electronic composer, multi-instrumentalist, producer, and community builder best known for his performances as The Human Experience. Genre? Ancient Futurism.
           </div>
-        </div>
+        </div> -->
         <div class="speaker-card">
           <img class="img" src="~/assets/jessica.png" alt="Jessica Angel">
           <div class="text">
