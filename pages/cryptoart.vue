@@ -82,18 +82,18 @@
             <div class="name">
               Judy Mam
             </div>
-            Film blogger, writer, and cofounder of dada.nyc — a social network where people speak through drawings that can be collected on the Ethereum blockchain. {QUIP}
+            Film blogger, writer, and cofounder of dada.nyc — a social network where people speak through drawings that can be collected on the Ethereum blockchain.
           </div>
         </div>
-        <!-- <div class="speaker-card">
-          <img class="img" src="~/assets/david.jpg" alt="David Block">
+        <div class="speaker-card">
+          <img class="img" src="~/assets/stevenf.jpg" alt="Steven Fragale">
           <div class="text">
             <div class="name">
-              David Block
+              Steven Fragale
             </div>
-            Live electronic composer, multi-instrumentalist, producer, and community builder best known for his performances as The Human Experience. Genre? Ancient Futurism.
+            Artist & dad in NYC. A craftsman with a love of materials and techniques working in chalk, dry erase, VR, CAD, oil paint, jewelry and more.
           </div>
-        </div> -->
+        </div>
         <div class="speaker-card">
           <img class="img" src="~/assets/jessica.png" alt="Jessica Angel">
           <div class="text">
@@ -132,7 +132,7 @@
             <div class="name">
               Sean Hoge
             </div>
-            Sean was a co-founder of crossfader.fm and now focuses on research uncovering the best up-and-coming currencies and tokens. His personal holdings ranked among the top 1000 ERC-20 token holders in the world.
+            As the founder of Venture Coin, Sean focuses on uncovering the best up-and-coming currencies and tokens. His personal holdings have ranked among the top 1000 ERC-20 token holders in the world.
           </div>
         </div>
         <div class="speaker-card">
@@ -159,7 +159,7 @@
       </div> -->
     </section>
 
-    <!-- <section class="artists flower2">
+    <section class="artists flower2">
       <canvas id="flowerCanvas2"></canvas>
       <div class="section-title">Artists</div>
       <div class="cards-wrapper">
@@ -167,13 +167,13 @@
           <img class="img" src="~/assets/judy.png" alt="Judy Mam">
           <div class="text">
             <div class="name">
-              Katya
+              Judy Mam
             </div>
-            Sound and visual artist
+            cofounder @ dada.nyc
           </div>
         </div>
         <div class="speaker-card">
-          <img class="img" src="~/assets/steven.jpg" alt="Steven Waterhouse">
+          <img class="img" src="~/assets/armoni.jpg" alt="Armoni Boone">
           <div class="text">
             <div class="name">
               Armoni Boone
@@ -182,15 +182,15 @@
           </div>
         </div>
         <div class="speaker-card">
-          <img class="img" src="~/assets/jessica.png" alt="Jessica Angel">
+          <img class="img" src="~/assets/nadia-profile.png" alt="Jessica Angel">
           <div class="text">
             <div class="name">
-              Artist
+              Nadia Chilmonik
             </div>
-            artist
+            Painter + VR artist
           </div>
         </div>
-        <div class="speaker-card">
+        <!-- <div class="speaker-card">
           <img class="img" src="~/assets/seth.jpg" alt="Seth Goldstein">
           <div class="text">
             <div class="name">
@@ -198,9 +198,9 @@
             </div>
             Artist
           </div>
-        </div>
+        </div> -->
       </div>
-    </section> -->
+    </section>
 
     <section class="organazations">
       <div class="org-wrapper ">
