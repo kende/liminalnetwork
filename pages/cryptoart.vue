@@ -111,7 +111,7 @@
           </div>
         </div>
         <div class="speaker-card">
-          <img class="img" src="~/assets/jacob.jpg" alt="Jacob Coley">
+          <img class="img" src="~/assets/jacob2.jpg" alt="Jacob Coley">
           <div class="text">
             <div class="name">
               Jacob Coley
@@ -136,6 +136,15 @@
           </div>
         </div>
         <div class="speaker-card">
+          <img class="img" src="~/assets/cryptograffiti.jpg" alt="cryptograffiti">
+          <div class="text">
+            <div class="name">
+              cryptograffiti
+            </div>
+            First artist to utilize a public-facing wallet to receive crypto donations for street art. His current work is comprised of tangible materials from industries being disrupted by the blockchain.
+          </div>
+        </div>
+        <div class="speaker-card">
           <img class="img" src="~/assets/nadia-profile.png" alt="Nadia Chilmonik">
           <div class="text">
             <div class="name">
@@ -145,18 +154,6 @@
           </div>
         </div>
       </div>
-      <!-- <div class="moderator-title">MODERATED BY</div>
-      <div class="cards-wrapper moderator">
-        <div class="speaker-card">
-          <img class="img" src="~/assets/nadia-profile.png" alt="Nadia Chilmonik">
-          <div class="text">
-            <div class="name">
-              Nadia Chilmonik
-            </div>
-            Moderator, Artist & CDO @ Byzantine
-          </div>
-        </div>
-      </div> -->
     </section>
 
     <section class="artists flower2">
@@ -164,12 +161,12 @@
       <div class="section-title">Artists</div>
       <div class="cards-wrapper">
         <div class="speaker-card">
-          <img class="img" src="~/assets/judy.png" alt="Judy Mam">
+          <img class="img" src="~/assets/dada.png" alt="dada.nyc">
           <div class="text">
             <div class="name">
-              Judy Mam
+              dada.nyc
             </div>
-            cofounder @ dada.nyc
+              speak through drawings, collect art with crypto
           </div>
         </div>
         <div class="speaker-card">
