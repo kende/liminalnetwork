@@ -80,16 +80,14 @@
         <div class='price-card event-pass'>
           <div class='card-title'>FIRST 100</div>
           <div class='card-title'>NOMADS</div>
-          <div class='price'>$125 / month</div>
+          <div class='price'>$425 / month</div>
           <div class='detail'>One week each month</div>
-          <div class='detail'>$425 after launch</div>
         </div>
         <div class='price-card early-bird'>
           <div class='card-title'>FIRST 100</div>
           <div class='card-title'>CREATORS</div>
-          <div class='price'>$300 / month</div>
+          <div class='price'>$1000 / month</div>
           <div class='detail'>24/7 access</div>
-          <div class='detail'>$1000 + after launch</div>
         </div>
         <a class="spacequest" href="https://byzantine.network/spacequest/" target="_blank">
           <div class='price-card grand-opening'>
