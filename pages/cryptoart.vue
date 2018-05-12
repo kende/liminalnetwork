@@ -8,7 +8,7 @@
           <div class="text-shadow" data-text='CRYPTO'>CRYPTO</div>
           <div class="text-shadow" data-text='ASSETS'>ASSETS</div>
         </div>
-        <small>MAY 10 @ THE WILLIAMSBURG HOTEL</small>
+        <small>MAY 15 @ THE WILLIAMSBURG HOTEL</small>
       </div>
     </section>
     <section class="description">
@@ -17,7 +17,7 @@
       <div class="text-wrapper">
         <div class="computer-mail">
           <p class="paragraph">
-            Byzantine is proud to host the Crypto/Art event of the year (to date!) in the Grand Ballroom of the Williamsburg Hotel on May 10th, 2018, at the transition between Creative Tech Week &amp; Blockchain Week in NYC.
+            Byzantine is proud to host the Crypto/Art event of the year (to date!) in the Grand Ballroom of the Williamsburg Hotel on May 15th, 2018, at the transition between Creative Tech Week &amp; Blockchain Week in NYC.
             <span class="hidden-on-mobile">
               <br>
               <br>
@@ -28,17 +28,21 @@
         <div class="cursor-pink">
           <div class="cursor-pink-bg"></div>
           <p class="paragraph detail">
+            <!-- 6pm: Check-in / Mingling<br>
+            7pm: Panel Discussion / Q&A<br>
+            8pm: Fireside Chat / Q&A
+            <br>
+            <br> -->
             You will hear about the fractionalization of ownership in art, and how it defines the exchange and appreciation of value when everything is tokenized. <span class="hidden-on-mobile">The cross pollination of art and crypto through booze, snacks, and conversation will be the highlight of our day, but you will also get access to two star studded panels navigating very complex new terrains.
-            <br>
-            <br>
-            Stay for a specially curated art exhibit and ERC-721 exclusive token release for ticket holders only at the end of the show.</span>
+
+          </span>
           </p>
           <p class="paragraph hidden-on-mobile">Expect crypto whales 🐳 underground brooklyn artists 🎨, blockchain developers, art dealers, and collectors to make appearances.</p>
           <p class="paragraph show-on-mobile"><span>Stay for a specially curated art exhibit and ERC-721 exclusive token release for ticket holders only at the end of the show.</span></p>
         </div>
       </div>
     </section>
-    <section class="fireside-chat">
+    <!-- <section class="fireside-chat">
       <div class="section-title">FIRESIDE CHAT</div>
       <div class="section-subtitle">Recreating the Bottom Line</div>
       <div class="cards-wrapper">
@@ -67,7 +71,7 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="speakers flower1">
       <canvas id="flowerCanvas1"></canvas>
       <div class="section-title">SPEAKERS</div>
@@ -78,16 +82,16 @@
             <div class="name">
               Judy Mam
             </div>
-            Film blogger, writer, and cofounder of dada.nyc — a social network where people speak through drawings that can be collected on the Ethereum blockchain. {QUIP}
+            Film blogger, writer, and cofounder of dada.nyc — a social network where people speak through drawings that can be collected on the Ethereum blockchain.
           </div>
         </div>
         <div class="speaker-card">
-          <img class="img" src="~/assets/david.jpg" alt="David Block">
+          <img class="img" src="~/assets/stevenf.jpg" alt="Steven Fragale">
           <div class="text">
             <div class="name">
-              David Block
+              Steven Fragale
             </div>
-            Live electronic composer, multi-instrumentalist, producer, and community builder best known for his performances as The Human Experience. Genre? Ancient Futurism.
+            Artist & dad in NYC. A craftsman with a love of materials and techniques working in chalk, dry erase, VR, CAD, oil paint, jewelry and more.
           </div>
         </div>
         <div class="speaker-card">
@@ -107,21 +111,14 @@
           </div>
         </div>
         <div class="speaker-card">
-          <img class="img" src="~/assets/brittany.png" alt="Brittany Laughlin">
-          <div class="text">
-            <div class="name">Brittany Laughlin</div>
-            Founding Partner at Lattice Ventures. Former GM at USV. Focused on the community side of crypto, and technology in general. Self-described resident of planet earth who views space as a mirror.
-          </div>
-        </div>
-        <!-- <div class="speaker-card">
-          <img class="img" src="~/assets/steven.jpg" alt="Steven Waterhouse">
+          <img class="img" src="~/assets/jacob2.jpg" alt="Jacob Coley">
           <div class="text">
             <div class="name">
-              Steven Waterhouse
+              Jacob Coley
             </div>
-            Veteran crypto investor building a decentralized, surveillance-free internet as CEO of Orchid Labs. AKA Seven — when sharing space with a doge named Steve.
+            10+ years in the art world as buyer, seller, and collector. Has worked at Sotheby's, The Met, Ralph Lauren art acquisitions, and currently manages the old masters gallery Colnaghi: the oldest commercial gallery in the world, est. 1760
           </div>
-        </div> -->
+        </div>
         <div class="speaker-card">
           <img class="img" src="~/assets/seth.jpg" alt="Seth Goldstein">
           <div class="text">
@@ -130,44 +127,50 @@
           </div>
         </div>
         <div class="speaker-card">
-          <img class="img" src="~/assets/jakob.jpg" alt="Jakob Balslev">
+          <img class="img" src="~/assets/sean.jpg" alt="Sean Hoge">
           <div class="text">
             <div class="name">
-              Jakob Balslev
+              Sean Hoge
             </div>
-            Danish entrepreneur and film producer. Founder &amp; CEO at Rokoko, developing the smart suit that translates human motion into animated characters. An animated character in his own right.
+            As the founder of Venture Coin, Sean focuses on uncovering the best up-and-coming currencies and tokens. His personal holdings have ranked among the top 1000 ERC-20 token holders in the world.
           </div>
         </div>
-      </div>
-      <!-- <div class="moderator-title">MODERATED BY</div>
-      <div class="cards-wrapper moderator">
+        <div class="speaker-card">
+          <img class="img" src="~/assets/cryptograffiti.jpg" alt="cryptograffiti">
+          <div class="text">
+            <div class="name">
+              cryptograffiti
+            </div>
+            First artist to utilize a public-facing wallet to receive crypto donations for street art. His current work is comprised of tangible materials from industries being disrupted by the blockchain.
+          </div>
+        </div>
         <div class="speaker-card">
           <img class="img" src="~/assets/nadia-profile.png" alt="Nadia Chilmonik">
           <div class="text">
             <div class="name">
               Nadia Chilmonik
             </div>
-            Moderator, Artist & CDO @ Byzantine
+            Byzantine CDO, focused on Machine Learning algorithms and data. Painter [IRL and VR], NASA Datanaut, futurist, AI Philosopher, vegan — not necessarily in that order. Also: retired ballerina because, ya know...all the other stuff.
           </div>
         </div>
-      </div> -->
+      </div>
     </section>
 
-    <!-- <section class="artists flower2">
+    <section class="artists flower2">
       <canvas id="flowerCanvas2"></canvas>
       <div class="section-title">Artists</div>
       <div class="cards-wrapper">
         <div class="speaker-card">
-          <img class="img" src="~/assets/judy.png" alt="Judy Mam">
+          <img class="img" src="~/assets/dada.png" alt="dada.nyc">
           <div class="text">
             <div class="name">
-              Katya
+              dada.nyc
             </div>
-            Sound and visual artist
+              speak through drawings, collect art with crypto
           </div>
         </div>
         <div class="speaker-card">
-          <img class="img" src="~/assets/steven.jpg" alt="Steven Waterhouse">
+          <img class="img" src="~/assets/armoni.jpg" alt="Armoni Boone">
           <div class="text">
             <div class="name">
               Armoni Boone
@@ -176,15 +179,15 @@
           </div>
         </div>
         <div class="speaker-card">
-          <img class="img" src="~/assets/jessica.png" alt="Jessica Angel">
+          <img class="img" src="~/assets/nadia-profile.png" alt="Jessica Angel">
           <div class="text">
             <div class="name">
-              Artist
+              Nadia Chilmonik
             </div>
-            artist
+            Painter + VR artist
           </div>
         </div>
-        <div class="speaker-card">
+        <!-- <div class="speaker-card">
           <img class="img" src="~/assets/seth.jpg" alt="Seth Goldstein">
           <div class="text">
             <div class="name">
@@ -192,32 +195,32 @@
             </div>
             Artist
           </div>
-        </div>
+        </div> -->
       </div>
-    </section> -->
+    </section>
 
     <section class="organazations">
       <div class="org-wrapper ">
         <div class="logo-card">
           <img class="img" src="~/assets/logo_wbh.png" alt="">
         </div>
-        <div class="logo-card">
+        <!-- <div class="logo-card">
           <img class="img" src="~/assets/logo_dispatch.png" alt="">
         </div>
         <div class="logo-card">
           <img class="img" src="~/assets/bureau-icon-small.png" alt="">
-        </div>
+        </div> -->
         <div class="logo-card">
           <img class="img" src="~/assets/Byzantine-Logo.png" alt="">
         </div>
       </div>
     </section>
     <section class="location">
-      <div class="ticket-text"> Get your tickets soon! There are only 300 🎟️ and we expect them to go quickly. Ticket sales will fund the Liminal Artist Residency. <br><br> As an added bonus each ticket holder that comes to the event can redeem their ticket for a unique ERC-721 tokenized art piece made for the event!</div>
+      <div class="ticket-text"> Get your tickets soon! There are only 300 🎟️ and we expect them to go quickly. Ticket sales will fund the Liminal Artist Residency.</div>
       <p class="location-text">The Ballroom at The Williamsburg Hotel</p>
-      <p class="location-text">May 10, 2018</p>
+      <p class="location-text">May 15, 2018</p>
       <div class="get-tickets">
-        <a class="ticket-btn unii-listing-button unii-custom unii-medium Light" href="https://www.universe.com/events/the-art-of-crypto-assets-tickets-FXY5T6?buttonColor=#ff1bf3&buttonText=Get Tickets">
+        <a class="ticket-btn unii-listing-button unii-custom unii-medium Light" href="https://www.universe.com/events/the-art-of-crypto-assets-tickets-P921L3?buttonColor=#ff1bf3&buttonText=Get Tickets">
           GET TICKETS
         </a>
       </div>
@@ -240,11 +243,11 @@ export default {
     return {
       meta: [
         { hid: 'og_title', property: 'og:title', content: 'The Art of Crypto Assets' },
-        { hid: 'og_description', property: 'og:description', content: 'MAY 10 @ THE WILLIAMSBURG HOTEL' },
+        { hid: 'og_description', property: 'og:description', content: 'MAY 15 @ THE WILLIAMSBURG HOTEL' },
         { hid: 'og_image', property: 'og:image', content: require('~/assets/social_media_cryptoart.png')},
         { hid: 'og_url', property: 'og:url', content: 'https://liminal.network/cryptoart/' },
         { hid: 'twitter_title', property: 'twitter:title', content: 'The Art of Crypto Assets' },
-        { hid: 'twitter_description', property: 'twitter:description', content: 'MAY 10 @ THE WILLIAMSBURG HOTEL' },
+        { hid: 'twitter_description', property: 'twitter:description', content: 'MAY 15 @ THE WILLIAMSBURG HOTEL' },
         { hid: 'twitter_image', property: 'twitter:image', content: require('~/assets/social_media_cryptoart.png')},
         { hid: 'twitter_url', property: 'twitter:url', content: 'https://liminal.network/cryptoart/' }
       ]
@@ -427,8 +430,8 @@ export default {
   mounted () {
     const vm = this
     vm.drawImage()
-    vm.drawPixel('stephanie')
-    vm.drawPixel('nadia')
+    //vm.drawPixel('stephanie')
+    //vm.drawPixel('nadia')
     vm.simplex = new SimplexNoise()
     window.addEventListener('resize', vm.onResize)
     if (window.innerWidth >= 768) {
