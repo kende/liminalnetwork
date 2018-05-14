@@ -17,7 +17,7 @@
       <div class="text-wrapper">
         <div class="computer-mail">
           <p class="paragraph">
-            Byzantine is proud to host the Crypto/Art event of the year (to date!) in the Grand Ballroom of the Williamsburg Hotel on May 15th, 2018, at the transition between Creative Tech Week &amp; Blockchain Week in NYC.
+            Byzantine is proud to host the Crypto/Art event of the year (to date!)at the Williamsburg Hotel on May 15th, 2018, during Blockchain Week in NYC.
             <span class="hidden-on-mobile">
               <br>
               <br>
@@ -254,8 +254,9 @@
     <section class="location">
       <!-- <div class="ticket-text"> Get your tickets soon! Profits will fund the Liminal Artist Residency.</div> -->
       <div class="ticket-text"></div>
-      <p class="location-text">The Ballroom at The Williamsburg Hotel</p>
+      <p class="location-text">The Williamsburg Hotel</p>
       <p class="location-text">May 15, 2018</p>
+      <p class="location-text">6pm - 9pm</p>
       <div class="get-tickets">
         <a class="ticket-btn unii-listing-button unii-custom unii-medium Light" href="https://www.universe.com/events/the-art-of-crypto-assets-tickets-P921L3?buttonColor=#ff1bf3&buttonText=Get Tickets">
           GET TICKETS
