@@ -154,6 +154,15 @@
           </div>
         </div>
         <div class="speaker-card">
+          <img class="img" src="~/assets/louis.png" alt="Louis Parker">
+          <div class="text">
+            <div class="name">
+              Louis Parker
+            </div>
+            Native NYC blockchain entrepreneur and digital meme artist. Co-Founder of Archetype.mx, helping content creators benefit from decentralized networks. Maker of Rare Pepes (on the blockchain).
+          </div>
+        </div>
+        <div class="speaker-card">
           <img class="img" src="~/assets/nadia-profile.png" alt="Nadia Chilmonik">
           <div class="text">
             <div class="name">
