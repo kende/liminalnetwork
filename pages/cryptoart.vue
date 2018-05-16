@@ -17,7 +17,7 @@
       <div class="text-wrapper">
         <div class="computer-mail">
           <p class="paragraph">
-            Byzantine is proud to host the Crypto/Art event of the year (to date!) in the Grand Ballroom of the Williamsburg Hotel on May 15th, 2018, at the transition between Creative Tech Week &amp; Blockchain Week in NYC.
+            Byzantine is proud to host the Crypto/Art event of the year (to date!)at the Williamsburg Hotel on May 15th, 2018, during Blockchain Week in NYC.
             <span class="hidden-on-mobile">
               <br>
               <br>
@@ -145,6 +145,24 @@
           </div>
         </div>
         <div class="speaker-card">
+          <img class="img" src="~/assets/nanu.jpg" alt="Nanu Berks">
+          <div class="text">
+            <div class="name">
+              Nanu Berks
+            </div>
+            Full-time artist & crypto cultural arts ambassador with a writing background in Tech/AI/Communication, and enjoys “sharing information about the blockchain evolution through experiential art”
+          </div>
+        </div>
+        <div class="speaker-card">
+          <img class="img" src="~/assets/louis.png" alt="Louis Parker">
+          <div class="text">
+            <div class="name">
+              Louis Parker
+            </div>
+            Native NYC blockchain entrepreneur and digital meme artist. Co-Founder of Archetype.mx, helping content creators benefit from decentralized networks. Maker of Rare Pepes (on the blockchain).
+          </div>
+        </div>
+        <div class="speaker-card">
           <img class="img" src="~/assets/nadia-profile.png" alt="Nadia Chilmonik">
           <div class="text">
             <div class="name">
@@ -187,15 +205,42 @@
             Painter + VR artist
           </div>
         </div>
-        <!-- <div class="speaker-card">
-          <img class="img" src="~/assets/seth.jpg" alt="Seth Goldstein">
+        <div class="speaker-card">
+          <img class="img" src="~/assets/nanu.jpg" alt="Nanu Berks">
           <div class="text">
             <div class="name">
-              Artist
+              Nanu Berks
             </div>
-            Artist
+            Artist & crypto cultural arts ambassador
           </div>
-        </div> -->
+        </div>
+        <div class="speaker-card">
+          <img class="img" src="~/assets/alexa.jpg" alt="Alexa Rae Coppola">
+          <div class="text">
+            <div class="name">
+              Alexa Rae Coppola
+            </div>
+            Painter exploring patterns as they occur in technology and nature
+          </div>
+        </div>
+        <div class="speaker-card">
+          <img class="img" src="~/assets/leah.jpg" alt="Leah Goldensohn">
+          <div class="text">
+            <div class="name">
+              Leah Goldensohn
+            </div>
+            Plein air painter and bartender in Brooklyn
+          </div>
+        </div>
+        <div class="speaker-card">
+          <img class="img" src="~/assets/oliver.jpg" alt="Oliver Levine">
+          <div class="text">
+            <div class="name">
+              Oliver Levine
+            </div>
+            Multimedia artist. Worked on the production staff for Takashi Murakami, and for the artist  Kevin Mccoy on his Blockchain startup Monegraph at New Inc.
+          </div>
+        </div>
       </div>
     </section>
 
@@ -216,9 +261,11 @@
       </div>
     </section>
     <section class="location">
-      <div class="ticket-text"> Get your tickets soon! There are only 300 🎟️ and we expect them to go quickly. Ticket sales will fund the Liminal Artist Residency.</div>
-      <p class="location-text">The Ballroom at The Williamsburg Hotel</p>
+      <!-- <div class="ticket-text"> Get your tickets soon! Profits will fund the Liminal Artist Residency.</div> -->
+      <div class="ticket-text"></div>
+      <p class="location-text">The Williamsburg Hotel</p>
       <p class="location-text">May 15, 2018</p>
+      <p class="location-text">6pm - 9pm</p>
       <div class="get-tickets">
         <a class="ticket-btn unii-listing-button unii-custom unii-medium Light" href="https://www.universe.com/events/the-art-of-crypto-assets-tickets-P921L3?buttonColor=#ff1bf3&buttonText=Get Tickets">
           GET TICKETS
