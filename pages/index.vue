@@ -78,16 +78,17 @@
       <div class='title'>LOOKING FOR A PLAYGROUND <br /> TO CALL HOME?</div>
       <div class='price-row'>
         <div class='price-card event-pass'>
-          <div class='card-title'>FIRST 100</div>
           <div class='card-title'>NOMADS</div>
+          <div class='card-title'>Events Pass</div>
           <div class='price'>$425 / month</div>
-          <div class='detail'>One week each month</div>
+          <div class='detail'>7 days/month workspace</div>
         </div>
         <div class='price-card early-bird'>
-          <div class='card-title'>FIRST 100</div>
           <div class='card-title'>CREATORS</div>
+          <div class='card-title'>Community Contributors</div>
           <div class='price'>$1000 / month</div>
           <div class='detail'>24/7 access</div>
+          <div class='detail'>& host 2 events/month</div>
         </div>
         <a class="spacequest" href="https://byzantine.network/spacequest/" target="_blank">
           <div class='price-card grand-opening'>
@@ -97,6 +98,8 @@
               <img class='spacequest-icon' src='~/assets/eth-token-icon.png' alt='space quest icon'>
             </div>
             <div class='detail'>10k Limited Release</div>
+            <div class='detail'>Tile Holders Receive</div>
+            <div class='detail'>Discounted Membership</div>
           </div>
         </a>
       </div>
@@ -105,7 +108,7 @@
 
     <section class='event-section'>
       <div class='title'>UPCOMING EVENTS</div>
-      <div class='event'>
+      <!-- <div class='event'>
         <a href="/cryptoart" target="_blank">
           <div class='event-time'>May 10th</div>
           <div class='event-name'>The Art of Crypto Assets</div>
@@ -113,7 +116,7 @@
           <div class='ticket-btn'>Get tickets</div>
         </a>
       </div>
-      <!-- <div class='event'>
+      <div class='event'>
         <div class='event-name'>Blockparty</div>
         <div class='event-time'>May 12th</div>
         <div class='event-place'>@ The Williamsburg Hotel</div>
