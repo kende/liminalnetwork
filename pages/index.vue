@@ -85,7 +85,7 @@
         </div>
         <div class='price-card early-bird'>
           <div class='card-title'>CREATORS</div>
-          <div class='card-title'>Community Contributors</div>
+          <div class='card-title'>Full Membership</div>
           <div class='price'>$1000 / month</div>
           <div class='detail'>24/7 access</div>
           <div class='detail'>& host 2 events/month</div>
